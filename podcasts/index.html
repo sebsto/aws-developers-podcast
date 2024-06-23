@@ -1,0 +1,109 @@
+---
+layout: post
+title: The AWS Developer Podcast
+subtitle: 
+description: Seb and friends chat with the people behind Amazon Web Services (AWS) and the developers who are building on it
+background: '/img/podcast-banner.jpg'
+pagination:
+  enabled: true
+  collection: podcasts
+---
+
+<!-- 
+  this file is in index.html because it is a requirement for pagination.
+  It is not working from files with different names
+  https://jekyllrb.com/docs/pagination/
+-->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12 col-md-12 mx-auto">
+      
+<div>  <!-- allows to apply style 'no underline' for links, by default for post preview but overriden in _global.scss-->
+  
+  <style>
+  li a {
+    text-decoration: none;
+  }
+  </style>
+
+Subscribe in popular podcast apps on use <a href="https://feeds.soundcloud.com/users/soundcloud:users:994363549/sounds.rss">our RSS feed</a>.
+
+<ul>
+<li><a href="https://podcasts.apple.com/be/podcast/aws-developers-podcast/id1574162669" target="_blank">Apple Podcast</a></li>
+<li><a href="https://music.amazon.fr/podcasts/f8bf7630-2521-4b40-be90-c46a9222c159/aws-developers-podcast">Amazon Music</a></li>
+<li><a href="https://open.spotify.com/show/7rQjgnBvuyr18K03tnEHBI" target="_blank">Spotify</a></li>
+</ul>
+</div>
+
+<div style="padding: 20px;">
+  <a href="https://podcasts.apple.com/podcast/aws-developers-podcast/id1574162669"
+  >
+    <img src="https://tools.applemediaservices.com/api/badges/listen-on-apple-podcasts/standard-black/us-US?size=250x83&amp;releaseDate=1604640600&h=c5d308d9b330dbd28e209ba317f4d660"
+    alt="Ecouter sur Apple Podcasts" 
+    style="border: 1px solid #8F969C; padding: 10px; border-radius: 13px; width: 250px; height: 75px;"
+    >
+  </a> 
+</div>
+
+<iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.podcasts.apple.com/us/podcast/aws-developers-podcast/id1574162669"></iframe>
+
+{% capture now %}{{ 'now' | date: '%s' | plus: 0 }}{% endcapture %}
+{% for podcasts in paginator.posts %}
+
+  {% capture date %}{{ podcasts.date | date: '%s' | plus: 0 }}{% endcapture %}
+  {% if date < now %}
+  <article class="post-preview">
+      <a href="{{ site.url | xml_escape }}{{ podcasts.url | append: 'index.html' | xml_escape }}">
+        {% if page.episode %}
+        <h3 class="post-title">#{{ podcasts.episode }} {{ podcasts.title }}</h2>
+        {% else %}
+        <h3 class="post-title">{{ podcasts.title }}</h2>
+        {% endif %}
+        {% if podcasts.subtitle %}
+        <h4 class="post-subtitle">{{ podcasts.subtitle }}</h3>
+        {% endif %}
+        </a>
+      <p>
+        {{ podcasts.description }}
+      </p>
+      {% if podcasts.guest  %}
+      <p>
+        Avec {{ podcasts.guest }}
+      </p>
+      {% endif %}
+      <p>
+        {% if podcasts.appleEpisodeId  %}
+        <iframe src="https://embed.podcasts.apple.com/fr/podcast/{{ site.podcast.applePodcastId  }}?i={{ podcasts.appleEpisodeId  }}&amp;itsct=podcast_box&amp;itscg=30200" height="175px" frameborder="0" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation" allow="autoplay *; encrypted-media *;" style="width: 100%; max-width: 660px; overflow: hidden; border-radius: 10px; background: transparent;"></iframe>
+        {% else %}
+        <audio src="{{ site.podcast.link }}{{ podcasts.file }}" controls="">
+          <a href="{{ site.podcast.link }}{{ podcasts.file }}">Download episode »</a>
+        </audio>    
+        {% endif %}        
+      </p>
+  </article>
+
+  <!-- <hr> -->
+  {% endif %} <!-- if date > now -->
+
+{% endfor %}
+
+</div>
+</div>
+</div>
+<!-- Pager -->
+{% if paginator.total_pages > 1 %}
+
+  <div class="clearfix">
+
+    {% if paginator.previous_page %}
+      <a class="btn btn-primary float-left" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}index.html">&larr; Newer<span class="d-none d-md-inline"> Podcasts</span></a>
+    {% endif %}
+
+    {% if paginator.next_page %}
+      <a class="btn btn-primary float-right" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}index.html">Older<span class="d-none d-md-inline"> Podcasts</span> &rarr;</a>
+    {% endif %}
+
+
+  </div>
+
+{% endif %}

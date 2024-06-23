@@ -1,0 +1,87 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: AWS Developers Podcast
+author: Sébastien Stormacq
+email: stormacq@amazon.com
+description: >- # this means to ignore newlines until "baseurl:"
+  I am Developer Advocate at AWS.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://developers.podcast.go-aws.com/web" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: sebsto
+github_username:  sebsto
+linkedin_username: sebastienstormacq
+
+# google_analytics: UA-5360703-2
+
+# Build settings
+markdown: kramdown
+
+# theme: minima
+theme: jekyll-theme-clean-blog 
+
+# paginate for /posts/ page
+plugins:
+  - jekyll-paginate-v2
+
+autopages:
+  collections:
+    enabled: true
+
+# Pagination Settings
+pagination:
+  enabled: true
+  per_page: 10
+  permalink: '/:num/'
+  title: ':title | :num of :max'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+ # extension: htm
+ # indexpage: 'default'
+  trail: 
+    before: 2
+    after: 2
+
+# collections for podcasts
+collections:
+  podcasts:
+    output: true
+    permalink: /podcasts/:path/
+# collections_dir: collections
+
+# French AWS podcast
+podcast:
+  title: "The AWS Developers Podcast"
+  subtitle: "Seb and friends chat with the people behind Amazon Web Services (AWS) and the developers who are building on it.
+Very special thanks to Drew Blanke, aka Syntax Era, for the creation of the intro and outro music used in this podcast."
+  link: http://www.podtrac.com/pts/redirect.mp3/developers.podcast.go-aws.com/media/
+  artworklink: https://developers.podcast.go-aws.com
+  artwork: /img/LogoForApplePodcast-1400x1400.jpg
+  author: Amazon Web Services
+  applePodcastId: id1574162669
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - docker
+  - amplify
+  - buildspec.yaml
+  - publish.sh
+#   - node_modules
+  - vendor

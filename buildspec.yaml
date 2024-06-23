@@ -1,0 +1,47 @@
+# buildspec.yml
+# tested on aws/codebuild/amazonlinux2-x86_64-standard  
+version: 0.2
+
+phases:
+  install:
+    commands:
+      # - echo Install Ruby 2.4
+      # - yum install -y ruby24 ruby24-devel
+      # - alternatives --set ruby /usr/bin/ruby2.4
+      # - echo Install Bundle and Jekyll 
+      # - yum groupinstall -y "Development Tools"
+      #
+      # - gem install concurrent-ruby:1.1.4 jekyll:3.8.5 jekyll-paginate:1.1.0 jekyll-sass-converter:1.5.2 jekyll-theme-clean-blog:4.0.1 jekyll-watch:2.1.2
+      # - gem install jekyll:3.8.5 jekyll-theme-clean-blog jekyll-paginate-v2
+      - gem install jekyll:3.8.7 jekyll-theme-clean-blog jekyll-paginate-v2
+      # - gem install jekyll:3.9.2 jekyll-theme-clean-blog jekyll-paginate-v2
+      # - gem install jekyll:4.2.2 jekyll-theme-clean-blog jekyll-paginate-v2
+
+      # https://github.com/BlackrockDigital/startbootstrap-clean-blog-jekyll/pull/223
+      # - gem install jekyll:4.0.0 jekyll-theme-clean-blog jekyll-paginate-v2
+      
+      - ruby --version
+      - gem --version
+      - gem list --local
+      - jekyll --version
+
+  build:
+    commands:
+      - echo Build started on `date`
+      - jekyll build
+
+  post_build:
+    commands:
+      - echo Build completed on `date`, publishing to AWS Developers Podcast will be done by the pipeline.
+      # - aws s3 sync _site/ s3://stormacq.com
+
+artifacts:
+  type: zip
+  files:
+    - '**/*'
+  name: awsdeveloperspodcast-$(date +%Y%m%d%H%M%S).zip
+  base-directory: '_site'
+
+# cache:
+#   paths:
+#     - 'vendor/**/*''
