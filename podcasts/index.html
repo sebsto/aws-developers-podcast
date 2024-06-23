@@ -53,7 +53,7 @@ Subscribe in popular podcast apps on use <a href="https://feeds.soundcloud.com/u
   {% capture date %}{{ podcasts.date | date: '%s' | plus: 0 }}{% endcapture %}
   {% if date < now %}
   <article class="post-preview">
-      <a href="{{ site.url | xml_escape }}{{ podcasts.url | append: 'index.html' | xml_escape }}">
+      <a href="{{ site.url | base_url | xml_escape }}{{ podcasts.url | append: 'index.html' | xml_escape }}">
         {% if page.episode %}
         <h3 class="post-title">#{{ podcasts.episode }} {{ podcasts.title }}</h2>
         {% else %}
@@ -68,7 +68,7 @@ Subscribe in popular podcast apps on use <a href="https://feeds.soundcloud.com/u
       </p>
       {% if podcasts.guest  %}
       <p>
-        Avec {{ podcasts.guest }}
+        With {{ podcasts.guest }}
       </p>
       {% endif %}
       <p>
