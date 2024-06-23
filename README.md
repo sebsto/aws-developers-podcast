@@ -1,4 +1,2 @@
 
-![Build Status](https://codebuild.eu-central-1.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoiOXpqRUcvQzZDM3gzQUlPWGptd01zZ0lxNHR0ZjhIOXVtaFVUNFkzY1VBelpjU2xCZ3V4dFpzMzVtV1VCVXBjbnpKNkZydU5PdWdRSFBNQjJXSXhycU5JPSIsIml2UGFyYW1ldGVyU3BlYyI6IjdqL2ZWRHVmK0t5Q0ZUTXgiLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=master)
-
 This is the source code for the AWS Developers Podcast
