@@ -3,6 +3,6 @@ _site
 .jekyll-metadata
 .amplifyrc
 amplify
-vendor
+/vendor
 Gemfile.lock
 .DS_Store
