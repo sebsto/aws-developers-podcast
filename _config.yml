@@ -18,7 +18,7 @@ author: Sébastien Stormacq
 email: stormacq@amazon.com
 description: >- # this means to ignore newlines until "baseurl:"
   I am Developer Advocate at AWS.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/web" # the subpath of your site, e.g. /blog
 url: "https://developers.podcast.go-aws.com/web" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: sebsto
 github_username:  sebsto
