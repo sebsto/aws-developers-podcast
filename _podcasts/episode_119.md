@@ -1,6 +1,6 @@
 ---
 layout: podcast
-title:  "Spacial computing"
+title:  "Spatial computing"
 description: "Dive Deep into Spatial Computing on the AWS Developers Podcast
 This week on the AWS Developers Podcast, we're blasting off into the future with a deep dive into spatial computing!
 
@@ -41,5 +41,5 @@ background: /img/banner-web-transparent.png
 
 Here are the links to the tools, technologies, or articles we mentioned in this episode.
 
-- [AWS Spacial computing blog channel](https://aws.amazon.com/blogs/spatial/)
+- [AWS Spatial computing blog channel](https://aws.amazon.com/blogs/spatial/)
 - [A visual assets management system](https://aws.amazon.com/blogs/spatial/visual-asset-management-system-2-0-release/)
