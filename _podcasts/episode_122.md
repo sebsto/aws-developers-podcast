@@ -5,7 +5,7 @@ description: "In this week's episode of the AWS Developers Podcast, we delve int
 guest: "<a href='https://www.linkedin.com/in/holly-mesrobian-a1b710/'>Holly Mesrobian</a>, VP Serverless Compute, AWS, and <a href='https://www.linkedin.com/in/julianrwood/'>Julian Wood</a>, Developer Experience, AWS"
 episode: 122
 duration: "00:36:31" 
-size: 70 100 869
+size: 70100869
 file: 122.mp3
 date: 2024-07-19 04:00:00 +0000
 author: Sébastien Stormacq
