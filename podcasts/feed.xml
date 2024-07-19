@@ -23,7 +23,7 @@ layout: none
       <itunes:category text="Tech News"/>
     </itunes:category>
     <itunes:explicit>no</itunes:explicit>
-    <itunes:image href="{{ site.podcast.artworklink | xml_escape }}{{ site.podcast.artwork | xml_escape }}"/>
+    <itunes:image href="{{ site.podcast.artworkBase | xml_escape }}{{ site.podcast.artwork | xml_escape }}"/>
     <itunes:owner>
       <itunes:email>stormacq@amazon.com</itunes:email>
       <itunes:name>Sébastien Stormacq</itunes:name>
@@ -54,8 +54,11 @@ layout: none
         <itunes:subtitle>{{ podcast.subtitle | xml_escape }}</itunes:subtitle>
         <itunes:summary>{{ podcast.description | xml_escape }}</itunes:summary>
         <itunes:author>{{ podcast.author | xml_escape }}</itunes:author>
+        {% if podcast.social-background %}
         <itunes:image href="{{ site.podcast.artworklink | xml_escape }}{{ podcast.social-background | xml_escape }}"></itunes:image>
-
+				{% else %}
+        <itunes:image href="{{ site.podcast.artworklink | xml_escape }}{{ site.podcast.artwork | xml_escape }}"></itunes:image>
+				{% endif %}
         <itunes:duration>{{ podcast.duration }}</itunes:duration>
         {% if page.episode %}
         <itunes:episode>{{ podcast.episode }}</itunes:episode>
@@ -71,103 +74,6 @@ layout: none
 
     <!-- historical episodes on SoundCloud -->
 
-		<item>
-			<guid isPermaLink="false">tag:soundcloud,2010:tracks/1840786944</guid>
-			<title>Migrate 600 Oracle databases from on-premises to Amazon RDS</title>
-			<pubDate>Fri, 07 Jun 2024 06:13:13 +0000</pubDate>
-			<link>
-				https://soundcloud.com/awsdevelopers/migrate-600-oracle-databases-from-on-premises-to-amazon-rds</link>
-			<itunes:duration>00:33:04</itunes:duration>
-			<itunes:author>Sébastien Stormacq</itunes:author>
-			<itunes:explicit>no</itunes:explicit>
-			<itunes:summary>Join us as we dive into an inspiring conversation from the AWS Summit in
-				Stockholm with Matt Houghton, an AWS Ambassador and Community Builder. Matt shares insights
-				on his team at CDL and their monumental achievement of migrating 600 Oracle databases to RDS
-				Postgres. 🗂️💡
-
-				Tune in to hear how they convert schemas, modified applications, migrate data, and automated
-				the whole process. But most importantly hear how Oracle DBAs were involved and how they job
-				moved from DBA to Data engineers? 🤔
-
-				Don't miss out! 🎧
-
-				#AWS #CloudComputing #AWSCommunity #TechPodcast #DatabaseMigration #AWSDevelopers
-
-				CDL
-				https://www.cdl.co.uk/
-
-				Matt Houghton on Linked In
-				https://www.linkedin.com/in/matt-houghton-06b59010a/
-
-				Matt's session at AWS re:Invent 2022
-				https://www.youtube.com/watch?v=0gpEbbx2Hy0
-
-				AWS RDS Prescriptive Guidance - Amazon RDS Monitoring and Alerting
-				https://docs.aws.amazon.com/prescriptive-guidance/latest/amazon-rds-monitoring-alerting/overview.html
-				AWS Schema Conversion Tool
-				https://aws.amazon.com/dms/schema-conversion-tool/
-
-				Qlik Data Capture
-				https://www.qlik.com/us/change-data-capture/data-capture
-
-				AWS Database Migration Service
-				https://aws.amazon.com/dms/
-
-				Migration Oracle databases to Amazon RDS, a tutorial
-				https://aws.amazon.com/tutorials/move-to-managed/migrate-oracle-to-amazon-rds/
-
-				Training at a Cloud Guru
-				https://www.pluralsight.com/cloud-guru
-
-				Seb, the new host of this show
-				https://www.linkedin.com/in/sebastienstormacq/</itunes:summary>
-			<itunes:subtitle>Join us as we dive into an inspiring conversation…</itunes:subtitle>
-			<description>Join us as we dive into an inspiring conversation from the AWS Summit in
-				Stockholm with Matt Houghton, an AWS Ambassador and Community Builder. Matt shares insights
-				on his team at CDL and their monumental achievement of migrating 600 Oracle databases to RDS
-				Postgres. 🗂️💡
-
-				Tune in to hear how they convert schemas, modified applications, migrate data, and automated
-				the whole process. But most importantly hear how Oracle DBAs were involved and how they job
-				moved from DBA to Data engineers? 🤔
-
-				Don't miss out! 🎧
-
-				#AWS #CloudComputing #AWSCommunity #TechPodcast #DatabaseMigration #AWSDevelopers
-
-				CDL
-				https://www.cdl.co.uk/
-
-				Matt Houghton on Linked In
-				https://www.linkedin.com/in/matt-houghton-06b59010a/
-
-				Matt's session at AWS re:Invent 2022
-				https://www.youtube.com/watch?v=0gpEbbx2Hy0
-
-				AWS RDS Prescriptive Guidance - Amazon RDS Monitoring and Alerting
-				https://docs.aws.amazon.com/prescriptive-guidance/latest/amazon-rds-monitoring-alerting/overview.html
-				AWS Schema Conversion Tool
-				https://aws.amazon.com/dms/schema-conversion-tool/
-
-				Qlik Data Capture
-				https://www.qlik.com/us/change-data-capture/data-capture
-
-				AWS Database Migration Service
-				https://aws.amazon.com/dms/
-
-				Migration Oracle databases to Amazon RDS, a tutorial
-				https://aws.amazon.com/tutorials/move-to-managed/migrate-oracle-to-amazon-rds/
-
-				Training at a Cloud Guru
-				https://www.pluralsight.com/cloud-guru
-
-				Seb, the new host of this show
-				https://www.linkedin.com/in/sebastienstormacq/</description>
-			<enclosure type="audio/mpeg"
-				url="http://www.podtrac.com/pts/redirect.mp3/feeds.soundcloud.com/stream/1840786944-awsdevelopers-migrate-600-oracle-databases-from-on-premises-to-amazon-rds.mp3"
-				length="63491263" />
-			<itunes:image href="https://i1.sndcdn.com/artworks-CrMAJJG1rzQdjI2T-gj0xUg-t3000x3000.png" />
-		</item>
 		<item>
 			<guid isPermaLink="false">tag:soundcloud,2010:tracks/1806222654</guid>
 			<title>Episode 115 - From Burnout to Balance: Tech Mental Health with Rebekah Kulidzan</title>
