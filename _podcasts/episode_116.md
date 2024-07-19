@@ -9,15 +9,15 @@ Don't miss out! 🎧
 <p/>
 #AWS #CloudComputing #AWSCommunity #TechPodcast #DatabaseMigration #AWSDevelopers."
 guest: "<a href='https://www.linkedin.com/in/matt-houghton-06b59010a/'>Matt Houghton</a>, Data Architect, CDL"
-episode: 117
+episode: 116
 duration: "00:54:59" 
 size: 105576410
-file: 117.mp3
-date: 2024-06-07 04:00:00 +0000
+file: 116.mp3
+date: 2024-05-31 04:00:00 +0000
 author: Sébastien Stormacq
 category: podcasts
 background: /img/banner-web-transparent.png
-# social-background: /img/117.png
+# social-background: /img/116.png
 appleEpisodeId: 1000658137239
 # appleEpisodeId: https://podcasts.apple.com/fr/podcast/le-podcast-aws-en-français/id1452118442
 ---
