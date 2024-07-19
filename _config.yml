@@ -62,7 +62,7 @@ collections:
 
 # French AWS podcast
 podcast:
-  title: "The AWS Developers Podcast"
+  title: "AWS Developers Podcast"
   description: "Where we talk about things that matter for developers"
   subtitle: "Seb and friends chat with the people behind Amazon Web Services (AWS) and the developers who are building on it. Very special thanks to Drew Blanke, aka Syntax Era, for the creation of the intro and outro music used in this podcast."
   link:  https://dts.podtrac.com/redirect.mp3/developers.podcast.go-aws.com/media/
