@@ -1,0 +1,26 @@
+---
+layout: podcast
+title:  "AWS Amplify"
+description: "AWS Amplify is a collection of cloud services and libraries for fullstack application development. Amplify provides frontend libraries, UI components, backend building, and frontend hosting for building fullstack cloud apps. In this episode, we make a tour of AWS Amplify for web applications and native mobile applications. We talk about the new capabilities provided by Amplify Gen2, how it uses the Cloud Development Kit (CDK) and integrates easily with Git to create backends automatically for your branches or pull requests."
+guest: "<a href='https://www.linkedin.com/in/salihgueler/'>Muhammed Salih Güler</a>, Developer Advocate, AWS"
+episode: 123
+duration: "00:40:40" 
+size: 7809057
+file: 123.mp3
+date: 2024-07-26 04:00:00 +0000
+author: Sébastien Stormacq
+category: podcasts
+background: /img/banner-web-transparent.png
+social-background: /img/123.png
+# appleEpisodeId: 1000662725775
+---
+
+
+## Links
+
+Here are the links to the tools, technologies, or articles we mentioned in this episode.
+
+- [Getting started with AWS Amplify](https://docs.amplify.aws/react/start/)
+- [Amplify project on GitHub](https://github.com/aws-amplify)
+- [Amplify Discord](https://discord.gg/amplify)
+- [Integrate Amazon Bedrock services with Amplify and AppSync](https://aws.amazon.com/blogs/mobile/use-generative-ai-and-next-js-with-aws-amplify-to-build-a-fullstack-recipe-generator/)
