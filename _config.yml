@@ -84,3 +84,4 @@ exclude:
   - publish.sh
 #   - node_modules
   - vendor
+  - tools

@@ -6,3 +6,4 @@ amplify
 /vendor
 Gemfile.lock
 .DS_Store
+tools/**/venv
