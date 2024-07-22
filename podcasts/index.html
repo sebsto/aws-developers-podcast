@@ -36,26 +36,10 @@ Subscribe in popular podcast apps on use <a href="https://developers.podcast.go-
 </div>
 
 <div style="padding: 20px;">
-  <!--
-  <a href="https://podcasts.apple.com/podcast/aws-developers-podcast/id1574162669"
-  >
-    <img src="https://tools.applemediaservices.com/api/badges/listen-on-apple-podcasts/standard-black/us-US?size=250x83&amp;releaseDate=1604640600&h=c5d308d9b330dbd28e209ba317f4d660"
-    alt="Listen onr Apple Podcasts" 
-    style="border: 1px solid #8F969C; padding: 10px; border-radius: 13px; width: 250px; height: 75px;"
-    >
-  </a>
--->
 <a href="https://podcasts.apple.com/us/podcast/aws-developers-podcast/id1574162669?itsct=podcast_box_badge&amp;itscg=30200&amp;ls=1" style="display: inline-block; overflow: hidden; border-radius: 13px; width: 250px; height: 83px;"><img src="https://tools.applemediaservices.com/api/badges/listen-on-apple-podcasts/standard-black/en-us?size=250x83&amp;releaseDate=1721361600" alt="Listen on Apple Podcasts" style="border-radius: 13px; width: 250px; height: 83px;"></a> 
 </div>
 
-<!--
-<iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.podcasts.apple.com/us/podcast/aws-developers-podcast/id1574162669"></iframe>
--->
-
 <iframe id="embedPlayer" src="https://embed.podcasts.apple.com/us/podcast/aws-developers-podcast/id1574162669?itsct=podcast_box_player&amp;itscg=30200&amp;ls=1&amp;theme=auto" height="450px" frameborder="0" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation" allow="autoplay *; encrypted-media *; clipboard-write" style="width: 100%; max-width: 660px; overflow: hidden; border-radius: 10px; transform: translateZ(0px); animation: 2s ease 0s 6 normal none running loading-indicator; background-color: rgb(228, 228, 228);"></iframe>
-
-
-
 
 {% capture now %}{{ 'now' | date: '%s' | plus: 0 }}{% endcapture %}
 {% for podcasts in paginator.posts %}
@@ -83,7 +67,9 @@ Subscribe in popular podcast apps on use <a href="https://developers.podcast.go-
       {% endif %}
       <p>
         {% if podcasts.appleEpisodeId  %}
-        <iframe src="https://embed.podcasts.apple.com/us/podcast/{{ site.podcast.applePodcastId  }}?i={{ podcasts.appleEpisodeId  }}&amp;itsct=podcast_box&amp;itscg=30200" height="175px" frameborder="0" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation" allow="autoplay *; encrypted-media *;" style="width: 100%; max-width: 660px; overflow: hidden; border-radius: 10px; transform: translateZ(0px); animation: 2s ease 0s 6 normal none running loading-indicator; background-color: rgb(228, 228, 228);"></iframe>
+
+        <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.podcasts.apple.com/us/podcast/{{ site.podcast.applePodcastId  }}?i={{ podcasts.appleEpisodeId  }}&theme=auto"></iframe>
+
         {% else %}
         <audio src="{{ site.podcast.link }}{{ podcasts.file }}" controls="">
           <a href="{{ site.podcast.link }}{{ podcasts.file }}">Download episode »</a>
