@@ -46,7 +46,7 @@ layout: none
         <pubDate>{{ podcast.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
         <link>{{ site.url | xml_escape }}{{ podcast.url | append: 'index.html' | xml_escape }}</link>
         <enclosure url="{{ site.podcast.link }}{{ podcast.file }}" length="{{ podcast.size }}" type="audio/mpeg"/>
-        <guid isPermaLink="true">{{ podcast.file }}</guid>
+        <guid>{{ podcast.file }}</guid>
 
         <itunes:title>{{ podcast.title | xml_escape }}</itunes:title>
         <itunes:subtitle>{{ podcast.subtitle | xml_escape }}</itunes:subtitle>
