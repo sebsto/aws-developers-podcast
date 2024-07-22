@@ -38,7 +38,9 @@ layout: none
         <title>{{ podcast.title | xml_escape }}</title>
         <description>{{ podcast.description | xml_escape }}</description>
         <content:encoded><![CDATA[
-        {{ podcast.description }} {% if podcasts.guest  %} with {{ podcast.guest }}{% endif  %}
+        {{ podcast.description }}
+				<p/>
+				{% if podcast.guest  %}With {{ podcast.guest }}{% endif  %}
         <p/>
         {{ podcast.content }}
         ]]></content:encoded>
@@ -47,6 +49,9 @@ layout: none
         <link>{{ site.url | xml_escape }}{{ podcast.url | append: 'index.html' | xml_escape }}</link>
         <enclosure url="{{ site.podcast.link }}{{ podcast.file }}" length="{{ podcast.size }}" type="audio/mpeg"/>
         <guid>{{ podcast.file }}</guid>
+				{% if podcast.guest  %}
+				<guest><![CDATA[{{ podcast.guest }}]]></guest>
+				{% endif  %}
 
         <itunes:title>{{ podcast.title | xml_escape }}</itunes:title>
         <itunes:subtitle>{{ podcast.subtitle | xml_escape }}</itunes:subtitle>
