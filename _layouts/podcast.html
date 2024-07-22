@@ -35,7 +35,7 @@ layout: default
       {% endif %}
 
       {% if page.appleEpisodeId %}
-      <iframe src="https://embed.podcasts.apple.com/us/podcast/{{ site.podcast.applePodcastId  }}?i={{ page.appleEpisodeId }}&amp;itsct=podcast_box&amp;itscg=30200" height="175px" frameborder="0" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation" allow="autoplay *; encrypted-media *;" style="width: 100%; max-width: 660px; overflow: hidden; border-radius: 10px; background: transparent;"></iframe>
+      <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.podcasts.apple.com/us/podcast/{{ site.podcast.applePodcastId  }}?i={{ page.appleEpisodeId  }}&theme=auto"></iframe>
       {% else %}
       <audio src="{{ site.podcast.link }}{{ page.file }}" controls="">
         <a href="{{ site.podcast.link }}{{ page.file }}">Download episode »</a>
