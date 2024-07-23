@@ -19,6 +19,8 @@ phases:
 
       # https://github.com/BlackrockDigital/startbootstrap-clean-blog-jekyll/pull/223
       - gem install jekyll:4.0.0 jekyll-theme-clean-blog jekyll-paginate-v2
+      # https://github.com/jekyll/jekyll/issues/8523
+      - gem install webrick
       
       - ruby --version
       - gem --version
