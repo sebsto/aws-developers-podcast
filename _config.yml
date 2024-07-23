@@ -66,7 +66,6 @@ podcast:
   description: "Things that matter for developers"
   subtitle: "Seb and friends chat with the people behind Amazon Web Services (AWS) and the developers who are building on it. Very special thanks to Drew Blanke, aka Syntax Era, for the creation of the intro and outro music used in this podcast."
   link:  https://dts.podtrac.com/redirect.mp3/developers.podcast.go-aws.com/media/
-  # link:  https://developers.podcast.go-aws.com/media/
   artworklink: https://developers.podcast.go-aws.com
   artwork: /img/LogoForApplePodcast-1400x1400.jpg
   author: Amazon Web Services
@@ -79,9 +78,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - docker
-  - amplify
   - buildspec.yaml
   - publish.sh
-#   - node_modules
   - vendor
   - tools
