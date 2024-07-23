@@ -13,12 +13,12 @@ phases:
       #
       # - gem install concurrent-ruby:1.1.4 jekyll:3.8.5 jekyll-paginate:1.1.0 jekyll-sass-converter:1.5.2 jekyll-theme-clean-blog:4.0.1 jekyll-watch:2.1.2
       # - gem install jekyll:3.8.5 jekyll-theme-clean-blog jekyll-paginate-v2
-      - gem install jekyll:3.8.7 jekyll-theme-clean-blog jekyll-paginate-v2
+      # - gem install jekyll:3.8.7 jekyll-theme-clean-blog jekyll-paginate-v2
       # - gem install jekyll:3.9.2 jekyll-theme-clean-blog jekyll-paginate-v2
       # - gem install jekyll:4.2.2 jekyll-theme-clean-blog jekyll-paginate-v2
 
       # https://github.com/BlackrockDigital/startbootstrap-clean-blog-jekyll/pull/223
-      # - gem install jekyll:4.0.0 jekyll-theme-clean-blog jekyll-paginate-v2
+      - gem install jekyll:4.0.0 jekyll-theme-clean-blog jekyll-paginate-v2
       
       - ruby --version
       - gem --version
