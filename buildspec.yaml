@@ -48,4 +48,4 @@ artifacts:
 
 cache:
   paths:
-    - 'vendor/**/*''
+    - 'vendor/**/*'
