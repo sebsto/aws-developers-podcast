@@ -14,9 +14,13 @@ phases:
       # - gem install jekyll:3.8.7 jekyll-theme-clean-blog jekyll-paginate-v2
 
       # https://github.com/BlackrockDigital/startbootstrap-clean-blog-jekyll/pull/223
-      - gem install jekyll:4.3.3 jekyll-theme-clean-blog jekyll-paginate-v2
+      # - gem install jekyll:4.3.3 jekyll-theme-clean-blog jekyll-paginate-v2
       # https://github.com/jekyll/jekyll/issues/8523
-      - gem install webrick csv bigdecimal base64
+      # - gem install webrick csv bigdecimal base64
+
+      # install according to Gemfile
+      - bundle config set --local path 'vendor/bundle'
+      - bundle install
       
       - bundle --version
       - ruby --version
@@ -27,7 +31,8 @@ phases:
   build:
     commands:
       - echo Build started on `date`
-      - jekyll build
+      # - jekyll build
+      - bundle exec jekyll build
 
   post_build:
     commands:
