@@ -5,8 +5,8 @@
 
 # image from https://github.com/envygeeks/jekyll-docker
 
-export JEKYLL_VERSION=3.8
-# export JEKYLL_VERSION=4.0
+# export JEKYLL_VERSION=3.8
+export JEKYLL_VERSION=4.0
 docker run \
   -p 4000:4000 \
   --rm \
