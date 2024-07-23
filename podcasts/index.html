@@ -80,6 +80,13 @@ Subscribe in popular podcast apps on use <a href="https://developers.podcast.go-
         </audio>    
         {% endif %}        
       </p>
+      <p class="post-meta">Posted by
+        {% if podcasts.author %}
+          {{ podcasts.author }}
+        {% else %}
+          {{ podcasts.author }}
+        {% endif %}
+        on {{ podcasts.date | date: '%B %d, %Y' }}</p>      
   </article>
 
   <!-- <hr> -->
