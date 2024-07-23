@@ -4,8 +4,8 @@
 
 @font-face {
     font-family: 'amazon_ember_displayregular';
-    src: url('/fonts/webfontkit-20181018-085525/amazonemberdisplay_rg-webfont.woff2') format('woff2'),
-         url('/fonts/webfontkit-20181018-085525/amazonemberdisplay_rg-webfont.woff') format('woff');
+    src: url('/web/fonts/webfontkit-20181018-085525/amazonemberdisplay_rg-webfont.woff2') format('woff2'),
+         url('/web/fonts/webfontkit-20181018-085525/amazonemberdisplay_rg-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -16,8 +16,8 @@
 
 @font-face {
     font-family: 'amazon_ember_displaymedium';
-    src: url('/fonts/webfontkit-20181018-085525/amazonemberdisplay_md-webfont.woff2') format('woff2'),
-         url('/fonts/webfontkit-20181018-085525/amazonemberdisplay_md-webfont.woff') format('woff');
+    src: url('/web/fonts/webfontkit-20181018-085525/amazonemberdisplay_md-webfont.woff2') format('woff2'),
+         url('/web/fonts/webfontkit-20181018-085525/amazonemberdisplay_md-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -28,8 +28,8 @@
 
 @font-face {
     font-family: 'amazon_ember_displayheavy';
-    src: url('/fonts/webfontkit-20181018-085525/amazonemberdisplay_he-webfont.woff2') format('woff2'),
-         url('/fonts/webfontkit-20181018-085525/amazonemberdisplay_he-webfont.woff') format('woff');
+    src: url('/web/fonts/webfontkit-20181018-085525/amazonemberdisplay_he-webfont.woff2') format('woff2'),
+         url('/web/fonts/webfontkit-20181018-085525/amazonemberdisplay_he-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -40,8 +40,8 @@
 
 @font-face {
     font-family: 'amazon_ember_displaylight';
-    src: url('/fonts/webfontkit-20181018-085525/amazonemberdisplay_lt-webfont.woff2') format('woff2'),
-         url('/fonts/webfontkit-20181018-085525/amazonemberdisplay_lt-webfont.woff') format('woff');
+    src: url('/web/fonts/webfontkit-20181018-085525/amazonemberdisplay_lt-webfont.woff2') format('woff2'),
+         url('/web/fonts/webfontkit-20181018-085525/amazonemberdisplay_lt-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -52,8 +52,8 @@
 
 @font-face {
     font-family: 'amazon_ember_displaybold';
-    src: url('/fonts/webfontkit-20181018-085525/amazonemberdisplay_bd-webfont.woff2') format('woff2'),
-         url('/fonts/webfontkit-20181018-085525/amazonemberdisplay_bd-webfont.woff') format('woff');
+    src: url('/web/fonts/webfontkit-20181018-085525/amazonemberdisplay_bd-webfont.woff2') format('woff2'),
+         url('/web/fonts/webfontkit-20181018-085525/amazonemberdisplay_bd-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
