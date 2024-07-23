@@ -48,13 +48,10 @@ Subscribe in popular podcast apps on use <a href="https://developers.podcast.go-
   {% if date < now %}
   <article class="post-preview">
       <a href="{{ site.url | base_url | xml_escape }}{{ podcasts.url | append: 'index.html' | xml_escape }}">
-        {% if page.episode %}
-        <h3 class="post-title">#{{ podcasts.episode }} {{ podcasts.title }}</h2>
-        {% else %}
         <h3 class="post-title">{{ podcasts.title }}</h2>
-        {% endif %}
-        {% if podcasts.subtitle %}
-        <h4 class="post-subtitle">{{ podcasts.subtitle }}</h3>
+
+        {% if podcasts.episode %}
+        <h4 class="post-subtitle">Episode #{{ podcasts.episode }}</h3>
         {% endif %}
         </a>
       <p>
