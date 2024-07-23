@@ -58,7 +58,7 @@ Subscribe in popular podcast apps on use <a href="https://developers.podcast.go-
         <h3 class="post-title">{{ podcasts.title }}</h2>
 
         {% if podcasts.episode %}
-        <h4 class="post-subtitle">Episode #{{ podcasts.episode }}</h3>
+        <h4 class="post-subtitle">Episode #{{ podcasts.episode }} from {{ podcasts.date | date: '%B %d, %Y' }}</h3>
         {% endif %}
         </a>
       <p>
