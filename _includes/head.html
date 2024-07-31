@@ -29,12 +29,12 @@
   <meta content="{{ site.url }}/about/" property="article:author">
 {% endif %}
 {% if page.social-background %}
-<meta content="{{ site.podcast.artworklink | xml_escape }}{{ page.social-background }}" property="og:image">
+<meta name="image" content="{{ site.podcast.artworklink | xml_escape }}{{ page.social-background }}" property="og:image">
 {% else %}
   {% if page.background %}
-    <meta content="{{ site.url }}{{ page.background }}" property="og:image">
+    <meta name="image" content="{{ site.url }}{{ page.background }}" property="og:image">
   {% else %}
-    <meta content="/img/bg-post.png" property="og:image">
+    <meta name="image" content="/img/bg-post.png" property="og:image">
   {% endif %}
 {% endif %}  
 {% if page.categories %}
