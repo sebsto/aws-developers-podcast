@@ -46,7 +46,7 @@ layout: none
         ]]></content:encoded>
         <author>{{ podcast.author | xml_escape }}</author>
         <pubDate>{{ podcast.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
-        <link>{{ site.url | xml_escape }}{{ site.baseurl | xml_escape }}/{{ podcast.url | append: 'index.html' | xml_escape }}</link>
+        <link>{{ site.url | xml_escape }}{{ site.baseurl | xml_escape }}{{ podcast.url | append: 'index.html' | xml_escape }}</link>
         <enclosure url="{{ site.podcast.link }}{{ podcast.file }}" length="{{ podcast.size }}" type="audio/mpeg"/>
         <guid>{{ podcast.file }}</guid>
 				{% if podcast.guest  %}
