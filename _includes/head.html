@@ -28,15 +28,13 @@
   <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
   <meta content="{{ site.url }}/about/" property="article:author">
 {% endif %}
+
 {% if page.social-background %}
-<meta name="image" content="{{ site.podcast.artworklink | xml_escape }}{{ page.social-background }}" property="og:image">
+    <meta name="image" content="{{ site.podcast.artworklink | xml_escape }}{{ page.social-background }}" property="og:image">
 {% else %}
-  {% if page.background %}
-    <meta name="image" content="{{ site.url }}{{ page.background }}" property="og:image">
-  {% else %}
-    <meta name="image" content="/img/bg-post.png" property="og:image">
-  {% endif %}
+    <meta name="image" content="/img/podcast-artwork.png" property="og:image">
 {% endif %}  
+
 {% if page.categories %}
   {% for category in page.categories limit:1 %}
   <meta content="{{ category }}" property="article:section">
