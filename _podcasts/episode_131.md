@@ -9,16 +9,16 @@ We explore the intricacies of the exam format, including the types of questions,
 
 Whether you're a seasoned AWS professional looking to advance your career or just starting your cloud journey, this episode offers invaluable guidance on how to tackle the AWS Certified Solutions Architect - Professional exam and achieve your certification goals."
 guest: "<a href='https://www.linkedin.com/in/scott-lynn-b2905a1/'>Scott Lynn</a>, Product Manager, Amazon RDS "
-episode: 129
+episode: 131
 duration: "00:30:34" 
 size: 58688076
-file: 129.mp3	
-date: 2024-09-06 04:00:00 +0000
+file: 131.mp3	
+date: 2024-09-20 04:00:00 +0000
 author: Sébastien Stormacq
 category: podcasts
 background: /img/banner-web-transparent.png
 social-background: /img/129.png
-appleEpisodeId: 1000668568813
+# appleEpisodeId: 1000668568813
 ---
 
 ## Links
