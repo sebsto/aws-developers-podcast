@@ -13,6 +13,7 @@ category: podcasts
 background: /img/banner-web-transparent.png
 social-background: /img/126.png
 appleEpisodeId: 1000665561732
+aws-categories: Developer Tools
 ---
 
 ## Links

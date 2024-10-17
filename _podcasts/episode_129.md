@@ -20,7 +20,8 @@ author: Sébastien Stormacq
 category: podcasts
 background: /img/banner-web-transparent.png
 social-background: /img/129.png
-appleEpisodeId: 1000668568813 
+appleEpisodeId: 1000668568813
+aws-categories: Databases
 ---
 
 ## Links

@@ -13,6 +13,7 @@ category: podcasts
 background: /img/banner-web-transparent.png
 social-background: /img/124.png
 appleEpisodeId: 1000664097840
+aws-categories: Networking & Content Distribution
 ---
 
 

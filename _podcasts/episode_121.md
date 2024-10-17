@@ -13,6 +13,7 @@ category: podcasts
 background: /img/banner-web-transparent.png
 social-background: /img/121.png
 appleEpisodeId: 1000662777147
+aws-categories: Front-End Web & Mobile, Serverless
 ---
 
 
