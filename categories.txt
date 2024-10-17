@@ -1,0 +1,27 @@
+Analytics
+
+Compute
+
+Containers
+
+Databases
+
+Developer Tools
+
+End-User Computing
+
+Front-End Web & Mobile
+
+IoT
+
+Machine Learning & AI
+
+Management & Governance
+
+Migration
+
+Security, Identity & Compliance
+
+Serverless
+
+Storage

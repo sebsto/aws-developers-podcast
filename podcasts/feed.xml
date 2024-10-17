@@ -66,6 +66,10 @@ layout: none
         {% if page.episode %}
         <itunes:episode>{{ podcast.episode }}</itunes:episode>
         {% endif %}
+				
+        {% if page.categories %}
+        <aws:categories>{{ podcast.categories }}</aws:categories>
+        {% endif %}
 
         <itunes:explicit>no</itunes:explicit>
 
