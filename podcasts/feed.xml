@@ -63,11 +63,11 @@ layout: none
         <itunes:image href="{{ site.podcast.artworklink | xml_escape }}{{ site.podcast.artwork | xml_escape }}"></itunes:image>
 				{% endif %}
         <itunes:duration>{{ podcast.duration }}</itunes:duration>
-        {% if page.episode %}
+        {% if podcast.episode %}
         <itunes:episode>{{ podcast.episode }}</itunes:episode>
         {% endif %}
-				
-        {% if page.categories %}
+
+        {% if podcast.categories %}
         <aws:categories>{{ podcast.categories }}</aws:categories>
         {% endif %}
 
