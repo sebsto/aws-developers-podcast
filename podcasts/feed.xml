@@ -68,8 +68,8 @@ layout: none
         <itunes:episode>{{ podcast.episode }}</itunes:episode>
         {% endif %}
 
-        {% if podcast.categories %}
-        <aws:categories>{{ podcast.categories | xml_escape }}</aws:categories>
+        {% if podcast.aws-categories %}
+        <aws:categories>{{ podcast.aws-categories | xml_escape }}</aws:categories>
         {% endif %}
 
         <itunes:explicit>no</itunes:explicit>
