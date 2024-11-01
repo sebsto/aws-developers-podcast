@@ -23,6 +23,7 @@ url: "https://developers.podcast.go-aws.com" # the base hostname & protocol for 
 twitter_username: sebsto
 github_username:  sebsto
 linkedin_username: sebastienstormacq
+podcast_guid: 7f1c956e-38aa-5f6c-b397-9078a6f2a750 #?
 
 # Build settings
 markdown: kramdown
@@ -65,7 +66,7 @@ podcast:
   title: "AWS Developers Podcast"
   description: "Things that matter for developers"
   subtitle: "Seb and friends chat with the people behind Amazon Web Services (AWS) and the developers who are building on it. Very special thanks to Drew Blanke, aka Syntax Era, for the creation of the intro and outro music used in this podcast."
-  link:  https://dts.podtrac.com/redirect.mp3/developers.podcast.go-aws.com/media/
+  link:  https://op3.dev/e/https://dts.podtrac.com/redirect.mp3/developers.podcast.go-aws.com/media/
   artworklink: https://developers.podcast.go-aws.com
   artwork: /img/podcast-artwork.png
   author: Amazon Web Services
