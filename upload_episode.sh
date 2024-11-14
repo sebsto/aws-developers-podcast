@@ -73,5 +73,6 @@ then
 	exit -1
 fi
 
+echo Uploading $1.png
 aws --profile podcast s3 cp "$FILE" s3://$PODCAST_BUCKET/$IMG_PREFIX/$1.png
 
