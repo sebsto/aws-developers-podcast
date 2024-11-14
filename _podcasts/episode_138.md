@@ -20,7 +20,7 @@ aws-categories: Security, Identity & Compliance
 
 Here are the links to the tools, technologies, or articles we mentioned in this episode.
 
-- [Twilio]()
+- [Twilio](https://www.twilio.com/en-us)
 - [Google Zanzibar](https://research.google/pubs/zanzibar-googles-consistent-global-authorization-system/)
 - [Amazon Verified Permission](https://aws.amazon.com/verified-permissions/)
 - [Cedar: Learn about the language, tutorial and playground](https://cedarpolicy.com)
