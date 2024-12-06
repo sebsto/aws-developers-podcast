@@ -2,7 +2,7 @@
 layout: podcast
 title:  "AWS re:Invent re:Cap with Corey Quinn"
 description: "In this episode, cloud analyst and observer Corey Quinn shares his observation about trends and news from this week's AWS re:Invent conference,"
-guest:  "<a href='https://www.linkedin.com/in/coquinn/'>Corey Quinn</a>, Cloud Economist."
+guest:  "<a href='https://www.linkedin.com/in/coquinn/'>Corey Quinn</a>, Cloud Economist, The Duckbill Group."
 episode: 142
 duration: "00:29:16" 
 size: 56024840
@@ -12,7 +12,7 @@ author: Sébastien Stormacq
 category: podcasts
 background: /img/banner-web-transparent.png
 social-background: /img/142.png
-# appleEpisodeId: 1000677855172
+appleEpisodeId: 1000679514148
 aws-categories: General
 ---
 
