@@ -1,0 +1,20 @@
+# global variables, exposed under the `site` namespace
+baseUrl: "https://developers.podcast.go-aws.com"
+language: "en-US"
+title: "The AWS Developers Podcast"
+
+# data appearing in the footer
+copyright_year: "2023-2025"
+french_podcast_url: "https://francais.podcast.go-aws.com"
+developer_podcast_url: "https://developers.podcast.go-aws.com"
+youtube: "https://www.youtube.com/playlist?list=PLZ_TUMnTqfu8a3992JRToUOzAhnwONZ7I"
+linkedin: "https://www.linkedin.com/in/sebastienstormacq/"
+instagram: "https://www.instagram.com/awsdevelopers"
+twitter: "https://x.com/sebsto"
+bluesky: "https://bsky.app/profile/sebsto.bsky.social"
+
+# data appearing on the home page 
+amazon_music: "https://music.amazon.com/podcasts/f8bf7630-2521-4b40-be90-c46a9222c159/aws-developers-podcast"
+apple_podcast: "https://podcasts.apple.com/be/podcast/aws-developers-podcast/id1574162669"
+spotify: "https://open.spotify.com/show/7rQjgnBvuyr18K03tnEHBI"
+builderid: "https://profile.aws.amazon.com/"

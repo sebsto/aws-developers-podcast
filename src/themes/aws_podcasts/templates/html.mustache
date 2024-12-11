@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html {{#site.language}}lang="{{.}}"{{/site.language}} data-bs-theme="light">
+
+<head>
+  
+  {{> partials.head}}
+
+</head>
+
+<body>
+
+    {{> partials.header}}
+        
+    {{$main}}{{/main}}
+
+    {{> partials.footer}}
+    
+    {{> partials.audioplayer}}
+
+</body>
+</html>

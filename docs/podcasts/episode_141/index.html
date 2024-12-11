@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-US" data-bs-theme="light">
+
+<head>
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The AWS Developers Podcast</title>
+    <link rel="shortcut icon" href="http://127.0.0.1:3000/favicon.ico" />
+    <script defer src="http://127.0.0.1:3000/js/main.js"></script>
+    <link href="http://127.0.0.1:3000/css/main.css" rel="stylesheet">
+</head>
+
+<body>
+
+      <!-- Header -->
+        <header class="header">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12 d-flex justify-content-center">
+                <div class="header__background bg-light-subtle w-100 d-flex justify-content-center my-4">
+                  <div class="header__content w-100 d-flex align-items-center px-3">
+    
+                    <div class="pe-4">
+                      <svg class="header__logo">
+                        <use xlink:href="images/aws-logo.svg#logo"></use>
+                      </svg>
+                    </div>
+    
+                    <p class="m-0 pe-4 fw-bold">The AWS Developers Podcast</p>
+        
+                    <div class="form-check form-switch ms-auto">
+                      <input class="form-check-input hover-form-switch cursor-pointer" type="checkbox" role="switch" id="theme-toggle">
+                      <label class="form-check-label fw-medium cursor-pointer" for="theme-toggle">Dark mode</label>
+                    </div>
+    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+      <!-- End header -->        
+    
+    <!-- TODO INSERT DETAIL EPISODE HERE --> 
+    
+    141 : AWS Amplify AI Kit
+    
+
+
+      <!-- Footer -->
+        <footer class="footer bg-light-subtle">
+          <div class="container">
+            <div class="row py-4">
+              <div class="col-12">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="pe-4">
+                    <svg class="footer__logo">
+                      <use xlink:href="images/aws-logo.svg#logo"></use>
+                    </svg>
+                  </div>
+    
+                  <div>
+                    <a href="https://francais.podcast.go-aws.com" class="btn bg-dark-subtle text-dark-emphasis hover-gradient-1">Visit French Podcast site</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="row pb-4">
+              <div class="col-12">
+                <div class="border-bottom border-light-subtle"></div>
+              </div>
+            </div>
+    
+            <div class="row pb-4 justify-content-md-between align-items-center">
+              <div class="col-12 col-md-6">
+                <div class="d-flex justify-content-center justify-content-md-start column-gap-3">
+                  <div>
+                    <a href="https://www.youtube.com/playlist?list=PLZ_TUMnTqfu8a3992JRToUOzAhnwONZ7I" target="_blank" class="footer__social-icon text-body-emphasis hover-text-info hover-text-info-subtle">
+                      <svg>
+                        <use xlink:href="images/youtube.svg#youtube"></use>
+                      </svg>
+                    </a>
+                  </div>
+                  
+                  <div>
+                    <a href="https://www.linkedin.com/in/sebastienstormacq/" target="_blank" class="footer__social-icon text-body-emphasis hover-text-info hover-text-info-subtle">
+                      <svg>
+                        <use xlink:href="images/linkedin.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </div>
+    
+                  <div>
+                    <a href="https://www.instagram.com/awsdevelopers" target="_blank" class="footer__social-icon text-body-emphasis hover-text-info hover-text-info-subtle">
+                      <svg>
+                        <use xlink:href="images/instagram.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </div>
+    
+                  <div>
+                    <a href="https://x.com/sebsto" target="_blank" class="footer__social-icon text-body-emphasis hover-text-info hover-text-info-subtle">
+                      <svg>
+                        <use xlink:href="images/x.svg#x"></use>
+                      </svg>
+                    </a>
+                  </div>
+    
+                  <div>
+                    <a href="https://bsky.app/profile/sebsto.bsky.social" target="_blank" class="footer__social-icon text-body-emphasis hover-text-info hover-text-info-subtle">
+                      <svg>
+                        <use xlink:href="images/bluesky.svg#bluesky"></use>
+                      </svg>
+                    </a>
+                  </div>
+    
+                </div>
+              </div>
+    
+              <div class="col-12 col-md-6 pt-4 pt-md-0">
+                <p class="smaller text-center text-md-end mb-0"><span class="pe-3"><a href="https://aws.amazon.com/privacy/" target="_blank" class="text-body-emphasis hover-text-info hover-text-info-subtle">Privacy policy</a></span>© 2023-2025, Amazon Web Services, Inc. or its affiliates. All rights reserved.</p>
+              </div>
+            </div>
+          </div>
+        </footer>
+      <!-- End footer -->    
+     <!-- Audio player -->
+        <div id="audio-player" class="bg-light-subtle">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12 px-7 py-3 position-relative">
+                <div class="audio-controls d-flex align-items-center column-gap-4">
+                  <div class="audio-player__seek-slider-container">
+                    <div class="progress-fill"></div>
+                    <input type="range" id="progress" class="audio-player__seek-slider" value="0" step="1" min="0" max="100">
+                  </div>
+    
+                  <button id="play-pause" class="btn position-relative bg-dark-subtle text-dark-emphasis hover-bg-lighter hover-text-darker hover-border-darker icon-only cta-with-icon">
+                    <span class="cta__icon cta__icon--play">
+                      <svg>
+                        <use xlink:href="images/play.svg#play"></use>
+                      </svg>
+                    </span>
+                    <span class="cta__icon cta__icon--pause d-none">
+                      <svg>
+                        <use xlink:href="images/pause.svg#pause"></use>
+                      </svg>
+                    </span>
+                  </button>
+    
+                  <div>
+                    <p class="audio-player__title fw-medium mb-1"></p>
+                    <p class="audio-player__details smaller mb-0"></p>
+                  </div>
+                  
+                  <button id="close" class="btn position-relative text-light-emphasis hover-text-info hover-text-info-subtle border-0 icon-only cta-with-icon ms-auto">
+                    <span class="cta__icon">
+                      <svg>
+                        <use xlink:href="images/close.svg#close"></use>
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- End audio player -->
+</body>
+</html>
