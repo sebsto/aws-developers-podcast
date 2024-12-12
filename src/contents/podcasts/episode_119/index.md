@@ -1,5 +1,5 @@
 ---
-template: pages.episode
+type: podcast
 title:  "Spatial computing"
 description: "Dive Deep into Spatial Computing on the AWS Developers Podcast
 This week on the AWS Developers Podcast, we're blasting off into the future with a deep dive into spatial computing!

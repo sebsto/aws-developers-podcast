@@ -1,5 +1,5 @@
 ---
-template: pages.episode
+type: podcast
 title:  "Optimizing Database Performance with Amazon RDS"
 description: "In this episode, we delve into the world of database performance optimization with Scott Lynn, product manager for Amazon RDS.
 

@@ -1,5 +1,5 @@
 ---
-template: pages.episode
+type: podcast
 title:  "IAM Identity Center, Part 1"
 description: "In this week's episode, we dive deep into the world of AWS Identity Center and explore how it changed workforce identity access management within the AWS ecosystem.
 

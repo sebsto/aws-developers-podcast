@@ -1,5 +1,5 @@
 ---
-template: pages.episode
+type: podcast
 title:  "Trusted Identity Propagation"
 description: "In this episode of the AWS Developers Podcast, the hosts discuss trusted identity propagation with Joseph De Clerck and Raphael Koike. Trusted identity propagation (TIP) allows organizations to propagate the actual user identity downstream to AWS services. It enhances IAM roles with the actual user identity, enabling fine-grained access control and simplifying IAM role management. The benefits of TIP include improved security posture, fine-grained access control, simplified user experience, and support for various OAuth 2.0 flows. Services that currently support TIP include Lake Formation, S3 Access Grants, Redshift Query Editor, EMR Studio, Athena, and Amazon QuickSight."
 guest:  "<a href='https://www.linkedin.com/in/joseph-de-clerck-2a24a72a/'>Joseph de Clerck</a>, ProServ Consultant, <a href='https://www.linkedin.com/in/koike/'>Rafael Koike</a>, Solution Architect, AWS, <a href='https://www.linkedin.com/in/brookejamieson/'>Brooke Jamieson</a>, Developer Advocate, AWS."

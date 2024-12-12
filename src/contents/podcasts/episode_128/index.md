@@ -1,5 +1,5 @@
 ---
-template: pages.episode
+type: podcast
 title:  "The architecture behind aws-news.com"
 description: "This week on the AWS Developers Podcast, we're joined by AWS Serverless Hero Luc van Donkersgoed to explore the incredible story behind aws-news.com!
 

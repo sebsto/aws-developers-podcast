@@ -1,5 +1,5 @@
 ---
-template: pages.episode
+type: podcast
 title:  "How Generative AI Can Help Developers"
 description: "In this episode of the AWS Developers Podcast, Seb and Brooke are joined by Massimo Refere, a senior principal product manager in the Amazon Q team. They discuss how generative AI can help developers and introduce Amazon Q Developer, a generative AI assistant for work. They explore the different capabilities of Amazon Q Developer, including troubleshooting, coding assistance, and task assignment. They also discuss the conversational coding experience and the ability to customize models based on an organization's codebase. The episode concludes with a discussion on how developers can get started with Amazon Q Developer. The conversation covers topics such as the overlap between Q business and Q Developer, customization and personalization, the challenges of demoing customizations, the minimum amount of code required for customization, evaluating customized models, data security and protection, and the future direction of Amazon Q Developer."
 guest:  "<a href=''>Massimo Re Ferrè</a>, Director, Product Management, AWS, and <a href='https://www.linkedin.com/in/brookejamieson/'>Brooke Jamieson</a>, Developer Advocate, AWS."
