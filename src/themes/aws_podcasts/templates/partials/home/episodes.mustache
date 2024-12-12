@@ -30,8 +30,12 @@
               <div class="episode__content">
                 <h4 class="mb-3">{{ title }}</h4>
   
-                <p class="small fw-medium mb-3">TODO ADD SPEAKER</p>
-  
+                <p class="small fw-medium mb-3">
+                {{#guests}}
+                {{name}}</br>
+                {{/guests}}
+                </p>
+                
                 <!-- Could you truncate this using a filter/helper function in your template engine? and end with a ... -->
                 <p class="small mb-0 truncate">{{ description }}</p>
               </div>

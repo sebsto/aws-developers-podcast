@@ -16,11 +16,15 @@
   
                 <p class="text-white mb-3">{{publication.html}} • <span class="duration">{{duration}}</span></p>
   
-                <p class="text-white fw-medium mb-3">TODO ADD GUESTS</p>
+                 <p class="text-white fw-medium mb-3">
+                {{#guests}}
+                {{name}}</br>
+                {{/guests}}
+                </p>
   
                 <h3 class="text-white mb-3">{{title}}</h3>
   
-                <p class="text-white mb-0">{{ decsription }}</p>
+                <p class="text-white mb-0 truncate">{{ description }}</p>
               </div>
 
               <div>
