@@ -1,20 +1,20 @@
 id: podcast
 rss: true
 location: episodes
-template: pages.episode
+template: pages.episode_single
 
 pagination:
-    bundle: home
-    limit: 12
+    bundle: episodes/pagination
+    limit: 10
     sort: publication
     order: desc
 
 context:
     site:
-        podcasts:
-            sort: publication
-            order: desc
-            limit: 12
+        # podcasts:
+        #     sort: publication
+        #     order: desc
+        #     limit: 12
         
         latest:
             sort: publication
