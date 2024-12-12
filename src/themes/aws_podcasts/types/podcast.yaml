@@ -1,6 +1,6 @@
 id: podcast
 rss: true
-location: podcasts
+location: episodes
 template: pages.episode
 # css:
 #     - /css/post.css
