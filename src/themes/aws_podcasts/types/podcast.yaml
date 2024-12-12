@@ -4,7 +4,7 @@ location: episodes
 template: pages.episode
 
 pagination:
-    bundle: episodes/pagination
+    bundle: home
     limit: 12
     sort: publication
     order: desc
