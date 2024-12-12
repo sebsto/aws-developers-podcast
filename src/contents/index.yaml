@@ -18,3 +18,12 @@ amazon_music: "https://music.amazon.com/podcasts/f8bf7630-2521-4b40-be90-c46a922
 apple_podcast: "https://podcasts.apple.com/be/podcast/aws-developers-podcast/id1574162669"
 spotify: "https://open.spotify.com/show/7rQjgnBvuyr18K03tnEHBI"
 builderid: "https://profile.aws.amazon.com/"
+
+medialink:  https://op3.dev/e/https://dts.podtrac.com/redirect.mp3/developers.podcast.go-aws.com/media/
+# artworklink: https://developers.podcast.go-aws.com/img/
+# artwork: podcast-artwork.png
+
+# op3.dev dashboard page 
+#
+# https://op3.dev/show/fecb7a87-c357-57ef-a044-3fae2f4569a4
+#

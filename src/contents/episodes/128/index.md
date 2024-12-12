@@ -6,7 +6,8 @@ Luc takes us on a journey from a personal project fueled by curiosity about new 
 
 Join us as Luc unveils the challenges he conquered along the way, the secrets to his cost-effective operation, and how he's turned his passion project into a success story through subscriptions and sponsorships. Get ready to discover how serverless technologies empowered Luc to build a scalable platform for the future!"
 guests:
-   - name: "Luc van Donkersgoed, Serverless Hero"
+   - name: "Luc van Donkersgoed"
+     title: "Serverless Hero"
      link: "https://www.linkedin.com/in/donkersgoed/"
 episode: 128
 duration: "00:41:08" 

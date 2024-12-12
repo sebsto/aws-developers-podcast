@@ -22,7 +22,8 @@ Join us and:
 
 Ready to build the future? Tune in now!"
 guests:
-   - name: "Peter Daukintis, Principal Prototyper, AWS"
+   - name: "Peter Daukintis"
+     title: "Principal Prototyper, AWS"
      link: "https://www.linkedin.com/in/peterdaukintis/"
 episode: 119
 duration: "00:32:58" 

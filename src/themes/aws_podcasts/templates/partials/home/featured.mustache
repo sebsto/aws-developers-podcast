@@ -16,9 +16,9 @@
   
                 <p class="text-white mb-3">{{publication.html}} • <span class="duration">{{duration}}</span></p>
   
-                 <p class="text-white fw-medium mb-3">
+                <p class="text-white fw-medium mb-3">
                 {{#guests}}
-                {{name}}</br>
+                {{name}}, {{title}}{{^last()}} • {{/last()}}
                 {{/guests}}
                 </p>
   
@@ -44,7 +44,7 @@
 
                 <div class="episode__play position-absolute">
                   <!-- To allow the button to play audio files, include the data-audio-src with the url to the audio file along with a data-title and data-details for the track information -->
-                  <button class="btn btn-play bg-lighter text-darker hover-border-darker cta-with-icon" data-audio-src="audio/audio.mp3" data-title="Episode {{ episode }}: {{ title }}" data-details="TODO ADD SPEAKERS">
+                  <button class="btn btn-play bg-lighter text-darker hover-border-darker cta-with-icon" data-audio-src="{{medialink}}{{episode}}.mp3" data-title="Episode {{ episode }} : {{ title }}" data-details="{{#guests}}{{name}}{{^last()}}, {{/last()}}{{/guests}}">
                     <div class="cta-anim-text-right">
                       <span class="cta__icon">
                         <svg>

@@ -2,9 +2,11 @@
 title:  "An orchestrator for your AI agents"
 description: "In this episode of the AWS Developers Podcast, we discuss the Multi-Agent Orchestrator, an open-source framework designed to facilitate the orchestration of multiple AI agents. The conversation covers the challenges of building generative AI solutions, the need for specialized agents, and how the orchestrator functions as a smart router for directing user queries to the appropriate agents. They explore real-world use cases, including an e-commerce support system, and discuss the integration of new agents into the framework. The episode also compares the orchestrator with Amazon Bedrock's Converse API, highlighting the unique capabilities of the orchestrator in managing multiple agents."
 guests:
-   - name: "Corneliu Croitoru, Prototyping Architects, AWS"
+   - name: "Corneliu Croitoru"
+     title: "Prototyping Architects, AWS"
      link: "https://www.linkedin.com/in/corneliucroitoru/"
-   - name: "Anthony Bernabeu, Prototyping Architects, AWS"
+   - name: "Anthony Bernabeu"
+     title: "Prototyping Architects, AWS"
      link: "https://www.linkedin.com/in/anthonybernabeu/"
 episode: 139
 duration: "00:34:45" 

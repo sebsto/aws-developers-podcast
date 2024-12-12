@@ -2,7 +2,8 @@
 title:  "Domain-driven design for cloud automation"
 description: "This episode delves into applying Domain-Driven Design (DDD) to cloud automation, specifically for event-based integration systems. Author Gregor Hohpe emphasizes the importance of domain languages for clearly expressing core system concepts. He illustrates how Amazon Web Services (AWS) EventBridge can benefit from a domain model to differentiate between Pipes and Buses services. Hohpe argues that cloud automation languages like CDK and Pulumi should harness the power of object-oriented languages to provide developers with affordances. This means using types and interfaces to guide developers towards valid cloud resource combinations, catching errors at compile time rather than deployment. This episode explores how to implement DDD in cloud automation, the benefits of strongly typed automation languages, and how to leverage affordances for more efficient cloud automation."
 guests:
-   - name: "Gregor Hohpe, Enterprise Strategist & Author"
+   - name: "Gregor Hohpe"
+     title: "Enterprise Strategist & Author"
      link: "https://www.linkedin.com/in/ghohpe/"
 episode: 126
 duration: "00:50:26" 

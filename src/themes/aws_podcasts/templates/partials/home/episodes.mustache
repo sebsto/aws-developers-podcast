@@ -32,7 +32,7 @@
   
                 <p class="small fw-medium mb-3">
                 {{#guests}}
-                {{name}}</br>
+                {{name}}{{^last()}} • {{/last()}}
                 {{/guests}}
                 </p>
                 

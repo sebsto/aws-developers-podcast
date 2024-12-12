@@ -8,7 +8,8 @@ Don't miss out! 🎧
 <p/>
 #AWS #CloudComputing #AWSCommunity #TechPodcast #DatabaseMigration #AWSDevelopers."
 guests:
-   - name: "Matt Houghton, Data Architect, CDL"
+   - name: "Matt Houghton"
+     title: "Data Architect, CDL"
      link: "https://www.linkedin.com/in/matt-houghton-06b59010a/"
 episode: 116
 duration: "00:54:59" 

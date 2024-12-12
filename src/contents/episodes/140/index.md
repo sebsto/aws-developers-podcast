@@ -2,7 +2,8 @@
 title:  "Automate IAM policies creation across multiple accounts"
 description: "In this episode of the AWS Developers Podcast, Seb and Ran Isenberg discuss the automation of IAM policies across multiple AWS accounts. They explore the challenges faced in managing security and access in a multi-account environment, the design and implementation of an automation architecture that simplifies these processes, and the significant improvements in developer experience and operational efficiency achieved through this automation. Ran shares insights into the open-source project that supports this automation and discusses future enhancements and community engagement."
 guests:
-   - name: "Ran Isenberg, Software Architect, CyberArk"
+   - name: "Ran Isenberg"
+     title: "Software Architect, CyberArk"
      link: "https://www.linkedin.com/in/ranbuilder/"
 episode: 140
 duration: "00:34:20" 

@@ -6,7 +6,8 @@ We talk with Dennis from the AWS Developer Experience team about how Converse ta
 <p/>
 By the end, you'll be equipped to get the most out of foundation models on Amazon Bedrock."
 guests:
-   - name: "Dennis Traub, Developer Advocate, AWS"
+   - name: "Dennis Traub"
+     title: "Developer Advocate, AWS"
      link: "https://www.linkedin.com/in/dennis-traub/"
 episode: 117
 duration: "00:54:59" 

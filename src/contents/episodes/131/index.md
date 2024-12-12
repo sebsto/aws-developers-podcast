@@ -8,7 +8,8 @@ We explore the intricacies of the exam format, including the types of questions,
 
 Whether you're a seasoned AWS professional looking to advance your career or just starting your cloud journey, this episode offers invaluable guidance on how to tackle the AWS Certified Solutions Architect - Professional exam and achieve your certification goals."
 guests:
-   - name: "Patrick Sard, Solution Architect, AWS"
+   - name: "Patrick Sard"
+     title: "Solution Architect, AWS"
      link: "https://www.linkedin.com/in/patrick-sard/"
 episode: 131
 duration: "00:40:29" 

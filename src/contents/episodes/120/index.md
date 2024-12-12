@@ -7,8 +7,10 @@ Did you know that 83% of Maven's public server bandwidth is consumed by just 1% 
 We'll also share expert insights and best practices for deploying CodeArtifact at scale, ensuring you get the most out of this powerful service. Tune in to enhance your development process and learn how to be a responsible internet citizen."
 guests:
    - name: "Car Lewis"
+     title: "Software Development Manager, AWS"
      link: "https://www.linkedin.com/in/carlglewis/"
-   - name: "Derek Tam, Software Development Manager, AWS"
+   - name: "Derek Tam"
+     title: "Software Development Manager, AWS"
      link: "https://www.linkedin.com/in/derek-tam-3548987/"
 episode: 120
 duration: "00:33:14" 

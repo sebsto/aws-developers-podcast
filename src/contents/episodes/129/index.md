@@ -10,7 +10,8 @@ Join the discussion as we weigh the pros and cons of using self-managed database
 
 Don't miss this informative episode! Tune in to learn how to optimize your database performance and achieve maximum efficiency with Amazon RDS."
 guests:
-   - name: "Scott Lynn, Product Manager, Amazon RDS "
+   - name: "Scott Lynn"
+     title: "Product Manager, Amazon RDS"
      link: "https://www.linkedin.com/in/scott-lynn-b2905a1/"
 episode: 129
 duration: "00:30:34" 

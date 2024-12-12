@@ -2,9 +2,11 @@
 title:  "CloudFront hosting toolkit"
 description: "This week's episode of the AWS Developers podcast dives into the CloudFront Hosting Toolkit, a command-line tool designed to streamline web application deployment on AWS. The podcast explores how the toolkit simplifies the process by enabling deployment to Amazon S3 with exposure through CloudFront. Additionally, it delves into the creation of an automated deployment pipeline linked to your Git repository. Listeners will gain insights into configuring advanced features like dynamic routing for the latest application version, eliminating the need for cache invalidation. The episode offers a comprehensive overview of the CloudFront Hosting Toolkit and guidance on getting started."
 guests:
-   - name: "Achraf Souk, Edge Specialist SA, AWS"
+   - name: "Achraf Souk"
+     title: "Edge Specialist SA, AWS"
      link: "https://www.linkedin.com/in/achrafsouk/"
-   - name: "Corneliu Croitoru, Prototyping Architect, AWS"
+   - name: "Corneliu Croitoru"
+     title: "Prototyping Architect, AWS"
      link: "https://www.linkedin.com/in/corneliucroitoru/"
 episode: 118
 duration: "00:36:19" 

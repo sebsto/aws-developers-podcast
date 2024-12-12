@@ -6,9 +6,11 @@ Join us as we discuss the key differences between IAM and Identity Center, unrav
 
 We'll discuss the importance of choosing the right region and seamlessly integrating with your preferred identity providers. Additionally, we'll shed light on common pitfalls and scenarios to be aware of when leveraging Identity Center."
 guests:
-   - name: "Joseph de Clerck, ProServ Consultant, AWS"
+   - name: "Joseph de Clerck"
+     title: "ProServ Consultant, AWS"
      link: "https://www.linkedin.com/in/joseph-de-clerck-2a24a72a/"
-   - name: "Roberto Migli, Solution Architect, AWS"
+   - name: "Roberto Migli"
+     title: "Solution Architect, AWS"
      link: "https://www.linkedin.com/in/robertomigli/"     
 episode: 132
 duration: "00:37:49" 
