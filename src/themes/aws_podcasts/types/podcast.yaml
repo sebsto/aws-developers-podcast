@@ -14,10 +14,10 @@ template: pages.episode
 #     order: desc
 
 properties:
-    featured:
-        type: bool
-        required: false
-        defaultValue: "false"
+    # featured:
+    #     type: bool
+    #     required: false
+    #     defaultValue: "false"
     episode:
         type: int
         required: true
@@ -49,12 +49,12 @@ context:
         
         latest:
             sort: publication
-            order: desc
+            order: asc
             limit: 1
-            filter:
-                field: featured
-                method: equals
-                value: true
+            # filter:
+            #     field: featured
+            #     method: equals
+            #     value: true
                 
 #     local:
 #         prev:

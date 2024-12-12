@@ -3,9 +3,23 @@
 
 {{> partials.home.hero}}
 
-<!-- TODO INSERT FEATURED EPISODE HERE --> 
+{{> partials.home.featured}}
+
+<!--
+{{#empty(site.context.podcasts)}}
+{{/empty(site.context.podcasts)}}
+{{^empty(site.context.podcasts)}}
+<div class="grid grid-321">
+{{#site.context.podcasts}}
+    {{episode}}
+    {{title}}
+    <br>
+{{/site.context.podcasts}}
+</div>
+{{/empty(site.context.podcasts)}}
 
 {{> partials.home.text}}
+--> 
 
 {{/main}}
 {{/html}}
