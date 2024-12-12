@@ -28,8 +28,8 @@ def replace_guest_entry(file_path):
         guest2_name = re.sub(r',$', '', guest2_name)
 
 				# remove trailing . when it exists
-        guest1_name = re.sub(r'.$', '', guest1_name)
-        guest2_name = re.sub(r'.$', '', guest2_name)
+        guest1_name = re.sub(r'\.$', '', guest1_name)
+        guest2_name = re.sub(r'\.$', '', guest2_name)
 
         new_guest_entries = f'guest1: "{guest1_name}"\nguest1_link: "{guest1_link}"\nguest2: "{guest2_name}"\nguest2_link: "{guest2_link}"'
 
