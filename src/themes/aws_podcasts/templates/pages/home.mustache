@@ -5,7 +5,8 @@
 
 {{> partials.home.featured}}
 
-<!--
+{{> partials.home.text}}
+
 {{#empty(site.context.podcasts)}}
 {{/empty(site.context.podcasts)}}
 {{^empty(site.context.podcasts)}}
@@ -17,9 +18,6 @@
 {{/site.context.podcasts}}
 </div>
 {{/empty(site.context.podcasts)}}
-
-{{> partials.home.text}}
---> 
 
 {{/main}}
 {{/html}}

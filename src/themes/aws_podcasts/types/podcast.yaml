@@ -43,13 +43,13 @@ properties:
 context:
     site:
         podcasts:
-            sort: publication
+            sort: episode
             order: desc
             limit: 12
         
         latest:
-            sort: publication
-            order: asc
+            sort: date
+            order: desc
             limit: 1
             # filter:
             #     field: featured
