@@ -1,10 +1,10 @@
 ---
 type: pagination
 home: episodes
-slug: episodes/{{number}}
+slug: episodes/pages/{{number}}
 title: Episodes
 description: Browse all episodes.
-template: pages.episodes
+template: pages.episode
 ---
 
 # Episodes

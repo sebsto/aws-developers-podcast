@@ -1,45 +1,11 @@
 {{<html}}
 {{$main}}
 
-{{> partials.home.hero}}
+{{> partials.home.hero }}
 
-{{> partials.home.featured}}
+{{> partials.home.featured }}
 
-<div>
-
-    <h3>Latest podcast</h3>
-    {{#site.context.latest}}
-        {{episode}} - {{title}} - {{publication.html}}<br>
-    {{/site.context.latest}}
-
-    ---
-
-    <h3>Podcast list</h3>
-    {{#empty(site.context.podcasts)}}
-    {{/empty(site.context.podcasts)}}
-    {{^empty(site.context.podcasts)}}
-    <div class="grid grid-321">
-    {{#site.context.podcasts}}
-        {{episode}} - {{title}} - {{publication.html}}<br>
-    {{/site.context.podcasts}}
-    </div>
-    {{/empty(site.context.podcasts)}}
-
-    <a href="/episodes/1/">Browse all episodes</a>
-</div>
-
-<!--
-{{#empty(site.context.podcasts)}}
-{{/empty(site.context.podcasts)}}
-{{^empty(site.context.podcasts)}}
-<div class="grid grid-321">
-{{#site.context.podcasts}}
-    {{episode}}
-    {{title}}
-    <br>
-{{/site.context.podcasts}}
-</div>
-{{/empty(site.context.podcasts)}}
+{{> partials.home.episodes }}
 
 {{/main}}
 {{/html}}
