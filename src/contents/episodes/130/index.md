@@ -1,5 +1,4 @@
 ---
-type: podcast
 title:  "Create your document processing pipelines with project Lakechain"
 description: "In this episode of the AWS Developers Podcast, Seb and Brooke Jamieson interview Halim Qarroum, the head of application prototyping at AWS, about the document processing pipeline. They discuss the concept of a document processing pipeline, the typical use cases for processing documents, and how Lake Chain, an open-source framework developed by Halim and his team, simplifies the process of building document processing pipelines. They also explore the architecture of Lake Chain, including the use of SQS and SNS as the messaging system, and the integration of various AWS services and open-source machine learning models. The episode concludes with a discussion on future plans for Lake Chain and how developers can contribute to the project."
 guest: "<a href='https://www.linkedin.com/in/hqm/'>Halim Qarroum</a>, Manager, Application Prototyping and <a href='https://www.linkedin.com/in/brookejamieson/'>Brooke Jamieson</a>, Developer Advocate, AWS."
@@ -7,7 +6,7 @@ episode: 130
 duration: "00:39:51" 
 size: 76520723
 file: 130.mp3	
-date: 2024-09-13 04:00:00 +0000
+publication: "2024-09-13 04:00:00 +0000"
 author: Sébastien Stormacq
 category: podcasts
 background: /img/banner-web-transparent.png

@@ -1,5 +1,4 @@
 ---
-type: podcast
 title:  "Optimizing Database Performance with Amazon RDS"
 description: "In this episode, we delve into the world of database performance optimization with Scott Lynn, product manager for Amazon RDS.
 
@@ -15,7 +14,7 @@ episode: 129
 duration: "00:30:34" 
 size: 58688076
 file: 129.mp3	
-date: 2024-09-06 04:00:00 +0000
+publication: "2024-09-06 04:00:00 +0000"
 author: Sébastien Stormacq
 category: podcasts
 background: /img/banner-web-transparent.png

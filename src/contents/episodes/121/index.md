@@ -1,5 +1,4 @@
 ---
-type: podcast
 title:  "Stream a response from your GraphQL API with asynchronous Lambda functions"
 description: "Dive into the world of GraphQL APIs on AWS this week! We'll explore the recently launched feature in AppSync: asynchronous Lambda functions for GraphQL resolvers. But first, we'll break down the advantages of GraphQL over REST APIs and the limitations of synchronous calls in GraphQL. Then, we'll uncover the power of async Lambdas: stream data directly to your client for a more responsive experience and unlock innovative use cases, like generative AI-powered chatbots built with Lambdas. Curious how this can transform your applications? Tune in to learn more!"
 guest: "<a href='https://www.linkedin.com/in/derekwbingham/'>Derek Bingham</a>, Developer Advocate, AWS</a>"
@@ -7,7 +6,7 @@ episode: 121
 duration: "00:26:38" 
 size: 51127194
 file: 121.mp3
-date: 2024-07-12 04:00:00 +0000
+publication: "2024-07-12 04:00:00 +0000"
 author: Sébastien Stormacq
 category: podcasts
 background: /img/banner-web-transparent.png

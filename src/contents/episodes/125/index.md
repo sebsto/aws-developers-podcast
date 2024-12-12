@@ -1,5 +1,4 @@
 ---
-type: podcast
 title:  "Embrace GitOps on AWS"
 description: "This week's AWS Developers Podcast dives into GitOps, i.e. using Git to manage cloud infrastructure. We'll uncover GitOps' core concepts, benefits, and challenges. Discover how to leverage GitOps on AWS with services like CloudFormation, CDK, CodeBuild, and CodePipeline. We'll explore exciting new features including CloudFormation Git Sync, CodePipeline v2, and Amplify Gen 2. Learn about resource replacement, the shift from imperative to declarative infrastructure, and the distinction between GitOps and immutable infrastructure. We'll guide you through adopting GitOps, emphasizing the mindset shift and comparing it to DevOps. Finally, we'll glimpse into the future of infrastructure management with GitOps, including its role in observability. Join us for actionable insights and best practices to effectively implement GitOps on AWS."
 guest: "<a href='https://www.linkedin.com/in/lockhead/'>Johannes Koch</a>, AWS DevTools Hero"
@@ -7,7 +6,7 @@ episode: 125
 duration: "00:35:03" 
 size: 67295527
 file: 125.mp3
-date: 2024-08-09 04:00:00 +0000
+publication: "2024-08-09 04:00:00 +0000"
 author: Sébastien Stormacq
 category: podcasts
 background: /img/banner-web-transparent.png

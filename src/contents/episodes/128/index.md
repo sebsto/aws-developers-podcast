@@ -1,5 +1,4 @@
 ---
-type: podcast
 title:  "The architecture behind aws-news.com"
 description: "This week on the AWS Developers Podcast, we're joined by AWS Serverless Hero Luc van Donkersgoed to explore the incredible story behind aws-news.com!
 
@@ -11,7 +10,7 @@ episode: 128
 duration: "00:41:08" 
 size: 78994205
 file: 128.mp3	
-date: 2024-08-30 04:00:00 +0000
+publication: "2024-08-30 04:00:00 +0000"
 author: Sébastien Stormacq
 category: podcasts
 background: /img/banner-web-transparent.png
