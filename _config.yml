@@ -23,7 +23,6 @@ url: "https://developers.podcast.go-aws.com" # the base hostname & protocol for 
 twitter_username: sebsto
 github_username:  sebsto
 linkedin_username: sebastienstormacq
-podcast_guid: 7f1c956e-38aa-5f6c-b397-9078a6f2a750 #?
 
 # Build settings
 markdown: kramdown
@@ -83,3 +82,8 @@ exclude:
   - publish.sh
   - vendor
   - tools
+
+# op3.dev dashboard page 
+#
+# https://op3.dev/show/fecb7a87-c357-57ef-a044-3fae2f4569a4
+#
