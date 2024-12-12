@@ -1,5 +1,4 @@
 let currentPage = 1;
-let maxPages = 3;
 
 function loadPage(page) {
 		fetch(`episodes/pages/${page}/index.html`)
@@ -25,6 +24,9 @@ function createObserver() {
 	observer.observe(document.querySelector('#scrollAnchor'));
 }
 
+/* 
+  maxPages is defined and initialized in templates/partial/home/episodes.mustache
+*/
 function handleIntersect(entries, observer) {
 	entries.forEach(entry => {
 			if (entry.isIntersecting) {
