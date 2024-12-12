@@ -14,19 +14,6 @@ function loadPage(page) {
 				});
 }
 
-// document.getElementById('prevPage').addEventListener('click', () => {
-// 		if (currentPage > 1) {
-// 				currentPage--;
-// 				loadPage(currentPage);
-// 		}
-// });
-
-// document.getElementById('nextPage').addEventListener('click', () => {
-// 		console.log("clicked");
-// 		currentPage++;
-// 		loadPage(currentPage);
-// });
-
 function createObserver() {
 	let options = {
 			root: null,

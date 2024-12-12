@@ -10,17 +10,9 @@ pagination:
     order: desc
 
 context:
-    site:
-        # podcasts:
-        #     sort: publication
-        #     order: desc
-        #     limit: 12
-        
+    site:        
         latest:
             sort: publication
             order: desc
             limit: 1
-            # filter:
-            #     field: featured
-            #     method: equals
-            #     value: true
+
