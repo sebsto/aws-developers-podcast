@@ -1,7 +1,7 @@
 ---
 title:  "AWS Amplify AI Kit"
 description: "In this episode of the AWS Developers Podcast, Tiffany and Seb discuss with Salih aboutthe new capabilities of AWS Amplify AI Kit, focusing on how it simplifies the process of building cloud-powered applications with generative AI. They explore the features of Amplify, including its ease of use for front-end developers and the integration of AI capabilities. The conversation also touches on cost considerations, future developments for the Amplify AI Kit, and practical examples of applications that can be built using this technology."
-guest:  "<a href='https://www.linkedin.com/in/salihgueler/'>Muhammed Salih Güler</a>, Developer Advocate, AWS"
+guest: "<a href='https://www.linkedin.com/in/salihgueler/'>Muhammed Salih Güler</a>, Developer Advocate, AWS"
 episode: 141
 duration: "00:30:26" 
 size: 14611244

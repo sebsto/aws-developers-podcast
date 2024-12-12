@@ -1,7 +1,7 @@
 ---
 title:  "Why Arm64 Matters for AWS Developers"
 description: "In this episode of the AWS Developers Podcast, Seb and Arthur discuss the Graviton processors and the Arm64 architecture. They explore the evolution of AWS's custom hardware, the benefits of adopting Arm architecture for AWS and developers, and the ease of porting applications to Arm64. The conversation also covers the challenges faced during migration, strategies for performance optimization, and the future of Graviton in AWS."
-guest:  "<a href='https://www.linkedin.com/in/arthur-petitpierre/'>Arthur PetitPierre</a>, Solution Architect, AWS"
+guest: "<a href='https://www.linkedin.com/in/arthur-petitpierre/'>Arthur PetitPierre</a>, Solution Architect, AWS"
 episode: 135
 duration: "00:44:09" 
 size: 21189921

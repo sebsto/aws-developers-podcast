@@ -5,7 +5,7 @@ description: "In this week's episode, we dive deep into the world of AWS Identit
 Join us as we discuss the key differences between IAM and Identity Center, unraveling how this powerful service is specifically designed to manage human user access to AWS accounts. Discover the diverse use cases for Identity Center, from managing employee access to AWS accounts to providing seamless access to various AWS applications.
 
 We'll discuss the importance of choosing the right region and seamlessly integrating with your preferred identity providers. Additionally, we'll shed light on common pitfalls and scenarios to be aware of when leveraging Identity Center."
-guest:  "<a href='https://www.linkedin.com/in/joseph-de-clerck-2a24a72a/'>Joseph de Clerck</a>, ProServ Consultant, <a href='https://www.linkedin.com/in/robertomigli/'>Roberto Migli</a>, Solution Architect, AWS, <a href='https://www.linkedin.com/in/brookejamieson/'>Brooke Jamieson</a>, Developer Advocate, AWS."
+guest: "<a href='https://www.linkedin.com/in/joseph-de-clerck-2a24a72a/'>Joseph de Clerck</a>, ProServ Consultant, <a href='https://www.linkedin.com/in/robertomigli/'>Roberto Migli</a>, Solution Architect, AWS, <a href='https://www.linkedin.com/in/brookejamieson/'>Brooke Jamieson</a>, Developer Advocate, AWS."
 episode: 132
 duration: "00:37:49" 
 size: 72621163
