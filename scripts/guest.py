@@ -31,10 +31,14 @@ def replace_guest_entry(file_path):
         guest1_name = re.sub(r'\.$', '', guest1_name)
         guest2_name = re.sub(r'\.$', '', guest2_name)
 
-        new_guest_entries = f'guest1: "{guest1_name}"\nguest1_link: "{guest1_link}"\nguest2: "{guest2_name}"\nguest2_link: "{guest2_link}"'
-
-        new_content = guest_pattern.sub(new_guest_entries, content)
-        # print(new_guest_entries)
+        guests = f'   - name: "{guest1_name}"\n     link: "{guest1_link}"'
+        if guest2_name:
+            guests += f'\n   - name: "{guest2_name}"\n     link: "{guest2_link}"'
+        
+        guests_entry = 'guests:\n' + guests
+        
+        new_content = guest_pattern.sub(guests_entry, content)
+        # print(guests_entry)
         with open(file_path, 'w') as file:
             file.write(new_content)
 
