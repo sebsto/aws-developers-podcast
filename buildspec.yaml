@@ -1,0 +1,25 @@
+# buildspec.yml
+# tested on aws/codebuild/amazonlinux2-x86_64-standard  
+# TODO either use a swift + ALI2 container, or a codebuild container with just the toucan binary in it
+version: 0.2
+
+phases:
+  install:
+    commands:
+#      - install toucan
+  build:
+    commands:
+      - echo Build started on `date`
+      # - toucan generate
+
+  post_build:
+    commands:
+      - echo Build completed on `date`, publishing to AWS Developers Podcast will be done by the pipeline.
+      # - aws s3 sync _site/ s3://stormacq.com
+
+artifacts:
+  type: zip
+  files:
+    - '**/*'
+  name: awsdeveloperspodcast-$(date +%Y%m%d%H%M%S).zip
+  base-directory: 'docs'
