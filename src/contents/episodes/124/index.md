@@ -1,7 +1,9 @@
 ---
 title:  "Free Data Transfer Out"
 description: "Join us for an in-depth conversation with the team behind AWS's global network infrastructure. Discover how they connect 33 AWS Regions, over 600 CloudFront points of presence, Local Zones, and Wavelength Zones. In this episode, we'll break down how data transfer out charges work and delve into the exciting announcement from March 2024: the ability to migrate your workloads out of AWS without incurring outgoing bandwidth costs. Tune in to learn more about these significant updates and what they mean for your cloud strategy."
-guest: "<a href='https://www.linkedin.com/in/camdenforgia/'>Camden Forgia</a>, Product Manager, Network Team, AWS"
+guests:
+   - name: "Camden Forgia, Product Manager, Network Team, AWS"
+     link: "https://www.linkedin.com/in/camdenforgia/"
 episode: 124
 duration: "00:25:54" 
 size: 49747928

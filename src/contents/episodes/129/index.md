@@ -9,7 +9,9 @@ We also delve into the differences between provisioned IOPS, General Purpose SSD
 Join the discussion as we weigh the pros and cons of using self-managed databases on EC2 versus fully managed databases on RDS.
 
 Don't miss this informative episode! Tune in to learn how to optimize your database performance and achieve maximum efficiency with Amazon RDS."
-guest: "<a href='https://www.linkedin.com/in/scott-lynn-b2905a1/'>Scott Lynn</a>, Product Manager, Amazon RDS "
+guests:
+   - name: "Scott Lynn, Product Manager, Amazon RDS "
+     link: "https://www.linkedin.com/in/scott-lynn-b2905a1/"
 episode: 129
 duration: "00:30:34" 
 size: 58688076

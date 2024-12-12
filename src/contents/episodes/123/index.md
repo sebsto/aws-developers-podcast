@@ -1,7 +1,9 @@
 ---
 title:  "AWS Amplify"
 description: "AWS Amplify is a collection of cloud services and libraries for fullstack application development. Amplify provides frontend libraries, UI components, backend building, and frontend hosting for building fullstack cloud apps. In this episode, we make a tour of AWS Amplify for web applications and native mobile applications. In this episode, we talk about the new capabilities provided by Amplify Gen 2. How it uses the Cloud Development Kit (CDK) and integrates easily with Git to create backends automatically for your branches or pull requests."
-guest: "<a href='https://www.linkedin.com/in/salihgueler/'>Muhammed Salih Güler</a>, Developer Advocate, AWS"
+guests:
+   - name: "Muhammed Salih Güler, Developer Advocate, AWS"
+     link: "https://www.linkedin.com/in/salihgueler/"
 episode: 123
 duration: "00:40:40" 
 size: 7809057

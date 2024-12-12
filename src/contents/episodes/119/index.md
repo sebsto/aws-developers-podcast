@@ -21,7 +21,9 @@ Join us and:
 - Get the inspiration and knowledge to kickstart your spatial development journey
 
 Ready to build the future? Tune in now!"
-guest: "<a href='https://www.linkedin.com/in/peterdaukintis/'>Peter Daukintis</a>, Principal Prototyper, AWS"
+guests:
+   - name: "Peter Daukintis, Principal Prototyper, AWS"
+     link: "https://www.linkedin.com/in/peterdaukintis/"
 episode: 119
 duration: "00:32:58" 
 size: 63300673

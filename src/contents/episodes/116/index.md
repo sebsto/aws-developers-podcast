@@ -7,7 +7,9 @@ Tune in to hear how they convert schemas, modified applications, migrate data, a
 Don't miss out! 🎧
 <p/>
 #AWS #CloudComputing #AWSCommunity #TechPodcast #DatabaseMigration #AWSDevelopers."
-guest: "<a href='https://www.linkedin.com/in/matt-houghton-06b59010a/'>Matt Houghton</a>, Data Architect, CDL"
+guests:
+   - name: "Matt Houghton, Data Architect, CDL"
+     link: "https://www.linkedin.com/in/matt-houghton-06b59010a/"
 episode: 116
 duration: "00:54:59" 
 size: 105576410

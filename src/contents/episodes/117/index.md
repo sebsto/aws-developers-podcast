@@ -5,7 +5,9 @@ description: "This episode dives into the Amazon Bedrock Converse API, a new rel
 We talk with Dennis from the AWS Developer Experience team about how Converse tackles common integration challenges, and explores the concept of tools for unlocking new orchestration capabilities for LLMs.
 <p/>
 By the end, you'll be equipped to get the most out of foundation models on Amazon Bedrock."
-guest: "<a href='https://www.linkedin.com/in/dennis-traub/'>Dennis Traub</a>, Developer Advocate, AWS"
+guests:
+   - name: "Dennis Traub, Developer Advocate, AWS"
+     link: "https://www.linkedin.com/in/dennis-traub/"
 episode: 117
 duration: "00:54:59" 
 size: 105576410

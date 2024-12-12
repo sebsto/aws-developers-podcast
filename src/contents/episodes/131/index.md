@@ -7,7 +7,9 @@ Patrick breaks down the key differences between the Associate and Professional l
 We explore the intricacies of the exam format, including the types of questions, time management strategies, and the importance of understanding the AWS Well-Architected Framework. Patrick also discusses the best resources for exam preparation, such as official AWS documentation, practice exams, and his own book, 'AWS Certified Solutions Architect Professional Exam Guide.'
 
 Whether you're a seasoned AWS professional looking to advance your career or just starting your cloud journey, this episode offers invaluable guidance on how to tackle the AWS Certified Solutions Architect - Professional exam and achieve your certification goals."
-guest: "<a href='https://www.linkedin.com/in/patrick-sard/'>Patrick Sard</a>, Solution Architect, AWS."
+guests:
+   - name: "Patrick Sard, Solution Architect, AWS"
+     link: "https://www.linkedin.com/in/patrick-sard/"
 episode: 131
 duration: "00:40:29" 
 size: 77757046

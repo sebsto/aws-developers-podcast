@@ -5,7 +5,11 @@ description: "Join us this week on the AWS Developers podcast as we dive deep in
 Did you know that 83% of Maven's public server bandwidth is consumed by just 1% of its client IP addresses? Utilizing a private artifact repository like CodeArtifact not only optimizes your workflows but also contributes to a more sustainable internet infrastructure.
 
 We'll also share expert insights and best practices for deploying CodeArtifact at scale, ensuring you get the most out of this powerful service. Tune in to enhance your development process and learn how to be a responsible internet citizen."
-guest: "<a href='https://www.linkedin.com/in/carlglewis/'>Car Lewis</a> and <a href='https://www.linkedin.com/in/derek-tam-3548987/'>Derek Tam</a>, Software Development Manager, AWS</a>"
+guests:
+   - name: "Car Lewis"
+     link: "https://www.linkedin.com/in/carlglewis/"
+   - name: "Derek Tam, Software Development Manager, AWS"
+     link: "https://www.linkedin.com/in/derek-tam-3548987/"
 episode: 120
 duration: "00:33:14" 
 size: 63823958
