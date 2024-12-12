@@ -1,5 +1,4 @@
 ---
-type: podcast
 title:  "AWS CodeArtifact"
 description: "Join us this week on the AWS Developers podcast as we dive deep into CodeArtifact, AWS's fully managed artifact repository service. In this insightful discussion with the team behind CodeArtifact, we explore what makes this service essential for developers. Discover the myriad benefits it offers in terms of availability, security, and cost-efficiency.
 
@@ -11,7 +10,7 @@ episode: 120
 duration: "00:33:14" 
 size: 63823958
 file: 120.mp3
-date: 2024-07-05 04:00:00 +0000
+publication: "2024-07-05 04:00:00 +0000"
 author: Sébastien Stormacq
 category: podcasts
 background: /img/banner-web-transparent.png

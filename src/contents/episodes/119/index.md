@@ -1,5 +1,4 @@
 ---
-type: podcast
 title:  "Spatial computing"
 description: "Dive Deep into Spatial Computing on the AWS Developers Podcast
 This week on the AWS Developers Podcast, we're blasting off into the future with a deep dive into spatial computing!
@@ -27,7 +26,7 @@ episode: 119
 duration: "00:32:58" 
 size: 63300673
 file: 119.mp3
-date: 2024-06-28 04:00:00 +0000
+publication: "2024-06-28 04:00:00 +0000"
 author: Sébastien Stormacq
 category: podcasts
 background: /img/banner-web-transparent.png

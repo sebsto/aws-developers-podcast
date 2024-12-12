@@ -1,5 +1,4 @@
 ---
-type: podcast
 title:  "Cracking the AWS Certified Solutions Architect - Professional Exam"
 description: "In this episode, we dive deep into the world of AWS certifications, specifically the prestigious Solutions Architect - Professional exam. Join us as we interview Patrick, a seasoned solution architect with extensive experience in preparing for and passing this challenging certification.
 
@@ -13,7 +12,7 @@ episode: 131
 duration: "00:40:29" 
 size: 77757046
 file: 131.mp3	
-date: 2024-09-20 04:00:00 +0000
+publication: "2024-09-20 04:00:00 +0000"
 author: Sébastien Stormacq
 category: podcasts
 background: /img/banner-web-transparent.png

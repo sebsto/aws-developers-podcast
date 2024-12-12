@@ -1,5 +1,4 @@
 ---
-type: podcast
 title:  "Migrate 600 Oracle databases from on-premises to Amazon RDS"
 description: "Join us as we dive into an inspiring conversation from the AWS Summit in Stockholm with Matt Houghton, an AWS Ambassador and Community Builder. Matt shares insights on his team at CDL and their monumental achievement of migrating 600 Oracle databases to RDS Postgres. 🗂️💡
 <p/>
@@ -13,15 +12,15 @@ episode: 116
 duration: "00:54:59" 
 size: 105576410
 file: 116.mp3
-date: 2024-05-31 04:00:00 +0000
+publication: "2024-05-31 04:00:00 +0000"
 author: Sébastien Stormacq
 category: podcasts
 background: /img/banner-web-transparent.png
 social-background: /img/116.png
 appleEpisodeId: 1000662777204
 aws-categories: Databases
+featured: true
 ---
-
 
 ## Links
 

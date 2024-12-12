@@ -1,5 +1,4 @@
 ---
-type: podcast
 title:  "Amazon Bedrock converse API"
 description: "This episode dives into the Amazon Bedrock Converse API, a new release that simplifies integrating large language models (LLMs) into your applications.
 <p/>
@@ -11,7 +10,7 @@ episode: 117
 duration: "00:54:59" 
 size: 105576410
 file: 117.mp3
-date: 2024-06-07 04:00:00 +0000
+publication: "2024-06-07 04:00:00 +0000"
 author: Sébastien Stormacq
 category: podcasts
 background: /img/banner-web-transparent.png

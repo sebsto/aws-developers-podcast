@@ -7,11 +7,11 @@ template: pages.episode
 # js:
 #     - /js/post.js
 
-# pagination:
-#     bundle: blog/articles/pagination
-#     limit: 9
-#     sort: publication
-#     order: desc
+pagination:
+    bundle: episodes/pagination
+    limit: 8
+    sort: publication
+    order: desc
 
 properties:
     # featured:
@@ -49,7 +49,7 @@ context:
         
         latest:
             sort: publication
-            order: asc
+            order: desc
             limit: 1
             # filter:
             #     field: featured
