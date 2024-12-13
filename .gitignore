@@ -4,6 +4,7 @@ node_modules/
 # Build directories
 build/
 dist/
+docs/
 out/
 coverage/
 
