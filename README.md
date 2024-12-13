@@ -48,3 +48,14 @@ toucan generate ./toucan ./dist
 #### Deploy 
 
 Copy the content of the `./dist` directory to your web server.
+
+## Test AWS CodeBuild locally 
+
+### Pull the CodeBuild local agent
+
+`docker pull amazon/aws-codebuild-local`
+
+### Run the build
+
+`docker run -it --rm -v .:/project -v /var/run/docker.sock:/var/run/docker.sock amazon/aws-codebuild-local`
+
