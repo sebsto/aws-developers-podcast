@@ -13,6 +13,13 @@ function loadPage(page) {
 				});
 }
 
+// Function to handle new content added to the page
+function handleNewContent(mutationsList, observer) {
+	console.log('New content added');
+	applyRenderers();
+	initAudioPlayer();
+}
+
 function createObserver() {
 	let options = {
 			root: null,
@@ -20,8 +27,20 @@ function createObserver() {
 			threshold: 1.0
 	};
 
-	let observer = new IntersectionObserver(handleIntersect, options);
-	observer.observe(document.querySelector('#scrollAnchor'));
+	let observer_infinite_scrolling = new IntersectionObserver(handleIntersect, options);
+	observer_infinite_scrolling.observe(document.querySelector('#scrollAnchor'));
+
+	// Create an observer instance linked to the callback function
+	const observer = new MutationObserver(handleNewContent);
+
+	// Options for the observer (which mutations to observe)
+	const config = { childList: true, subtree: true };
+
+	// Target node to observe
+	const targetNode = document.getElementById('episodes_cards');
+
+	// Start observing the target node for configured mutations
+	observer.observe(targetNode, config);
 }
 
 /* 

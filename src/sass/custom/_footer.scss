@@ -1,0 +1,15 @@
+.footer {
+  .footer__logo {
+    width: 3rem;
+    height: 1.8125rem;
+  }
+
+  .footer__social-icon {
+    outline: 0;
+
+    svg {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+}
