@@ -17,7 +17,7 @@ function loadPage(page) {
 function handleNewContent(mutationsList, observer) {
 	console.log('New content added');
 	applyRenderers();
-	initAudioPlayer();
+	// initAudioPlayer();
 }
 
 function createObserver() {
@@ -30,6 +30,7 @@ function createObserver() {
 	let observer_infinite_scrolling = new IntersectionObserver(handleIntersect, options);
 	observer_infinite_scrolling.observe(document.querySelector('#scrollAnchor'));
 
+	/*
 	// Create an observer instance linked to the callback function
 	const observer = new MutationObserver(handleNewContent);
 
@@ -41,6 +42,7 @@ function createObserver() {
 
 	// Start observing the target node for configured mutations
 	observer.observe(targetNode, config);
+	*/
 }
 
 /* 
