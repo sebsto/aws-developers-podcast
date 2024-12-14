@@ -8,6 +8,7 @@ phases:
       - npm install
       
   build:
+    # TODO : for normal publishing of new episodes, we should not build the site, just run toucan.
     commands:
       - echo Build started on `date`
       - npm run build
@@ -19,10 +20,10 @@ phases:
     commands:
       - echo Build completed on `date`, publishing to AWS Developers Podcast will be done by the pipeline.
       # - aws s3 sync _site/ s3://stormacq.com
+      - echo $CODEBUILD_BUILD_NUMBER
 
 artifacts:
-  type: zip
   files:
     - '**/*'
-  name: awsdeveloperspodcast-$(date +%Y%m%d%H%M%S).zip
+  name: adp-$(date +%Y%m%d)
   base-directory: 'dist'
