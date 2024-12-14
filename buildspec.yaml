@@ -12,18 +12,15 @@ phases:
     commands:
       - echo Build started on `date`
       - npm run build
-      - ls -al build
       - npm run copy
       - toucan generate ./toucan ./dist
 
   post_build:
     commands:
-      - echo Build completed on `date`, publishing to AWS Developers Podcast will be done by the pipeline.
-      # - aws s3 sync _site/ s3://stormacq.com
-      - echo $CODEBUILD_BUILD_NUMBER
+      - echo "Build $CODEBUILD_BUILD_NUMBER completed on `date`, publishing to AWS Developers Podcast will be done by the pipeline."
 
 artifacts:
   files:
     - '**/*'
-  name: adp-$(date +%Y%m%d)
+  name: adp-$(date +%Y%m%d%H%M%S).zip
   base-directory: 'dist'

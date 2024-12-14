@@ -69,6 +69,6 @@ curl -O  https://raw.githubusercontent.com/aws/aws-codebuild-docker-images/maste
 
 Run the build:
 ```sh
-./codebuild_build.sh -i adp:latest -a temp
+./codebuild_build.sh -i adp:latest -a .
 ```
 
