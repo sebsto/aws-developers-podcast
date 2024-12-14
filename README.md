@@ -57,5 +57,18 @@ Copy the content of the `./dist` directory to your web server.
 
 ### Run the build
 
-`docker run -it --rm -v .:/project -v /var/run/docker.sock:/var/run/docker.sock amazon/aws-codebuild-local`
+First time: 
+```sh 
+# build the custom codebuild container
+docker build . -t adp:latest
+# Get the codebuild agent
+docker pull amazon/aws-codebuild-local
+# get the script to launch the build
+curl -O  https://raw.githubusercontent.com/aws/aws-codebuild-docker-images/master/local_builds/codebuild_build.sh
+```
+
+Run the build:
+```sh
+./codebuild_build.sh -i adp:latest -a temp
+```
 

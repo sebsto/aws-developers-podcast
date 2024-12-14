@@ -1,16 +1,19 @@
 # buildspec.yml
-# tested on aws/codebuild/amazonlinux2-x86_64-standard  
-# TODO either use a swift + ALI2 container, or a codebuild container with just the toucan binary in it
 version: 0.2
 
 phases:
   install:
     commands:
-#      - install toucan
+      - echo Installing NPM packages...
+      - npm install
+      
   build:
     commands:
       - echo Build started on `date`
-      # - toucan generate
+      - npm run build
+      - ls -al build
+      - npm run copy
+      - toucan generate ./toucan ./dist
 
   post_build:
     commands:

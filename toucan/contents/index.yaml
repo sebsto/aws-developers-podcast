@@ -1,5 +1,5 @@
 # global variables, exposed under the `site` namespace
-baseUrl: "https://developers.podcast.go-aws.com"
+baseUrl: "https://developers.podcast.go-aws.com/web"
 language: "en-US"
 title: "The AWS Developers Podcast"
 

@@ -5,7 +5,7 @@
   "scripts": {
     "start": "webpack --watch",
     "build": "webpack",
-    "copy": "[[ -d build ]] && exit -1; echo 'Copying assets from build to toucan directory' && cp build/css/* toucan/themes/aws_podcasts/assets/css && cp build/fonts/* toucan/themes/aws_podcasts/assets/fonts && cp build/images/* toucan/themes/aws_podcasts/assets/images && cp build/js/* toucan/themes/aws_podcasts/assets/js && cp build/index.html /toucan/themes/aws_podcasts/assets/_index.html && echo 'Done'"
+    "copy": "[[ ! -d build ]] && exit -1; echo 'Copying assets from build to toucan directory' && cp build/css/* toucan/themes/aws_podcasts/assets/css && cp build/fonts/* toucan/themes/aws_podcasts/assets/fonts && cp build/images/* toucan/themes/aws_podcasts/assets/images && cp build/js/* toucan/themes/aws_podcasts/assets/js && cp build/index.html toucan/themes/aws_podcasts/assets/_index.html && echo 'Done'"
   },
   "keywords": [],
   "author": "",
