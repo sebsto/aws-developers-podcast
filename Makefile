@@ -19,3 +19,7 @@ png:
 
 jpg:
 	find ./toucan/* -type f -name '*.jpg' | xargs jpegoptim --all-progressive '*.jpg'
+
+codebuild:
+	docker build cdk/docker -t adp:latest
+	./codebuild_build.sh -i adp:latest -a .
