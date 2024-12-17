@@ -16,7 +16,7 @@ frontend:
               break
             fi
           done
-          echo "CONTENT_ONLY=$CONTENT_ONLY" >> $GITHUB_ENV
+          export CONTENT_ONLY=$CONTENT_ONLY
 
     build:
       # TODO : for normal publishing of new episodes, we should not build the site, just run toucan.
