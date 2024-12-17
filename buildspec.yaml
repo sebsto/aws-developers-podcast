@@ -13,7 +13,7 @@ phases:
       - echo Build started on `date`
       - npm run build
       - npm run copy
-      - toucan generate ./toucan ./dist
+      - npm run dist # invokes toucan
 
   post_build:
     commands:

@@ -13,7 +13,7 @@ frontend:
         - echo Build started on `date`
         - npm run build
         - npm run copy
-        - toucan generate ./toucan ./dist
+        - npm run dist # invokes toucan
 
     postBuild:
       commands:
