@@ -2,6 +2,8 @@ import * as cdk from 'aws-cdk-lib';
 import * as codebuild from 'aws-cdk-lib/aws-codebuild';
 import * as codepipeline from 'aws-cdk-lib/aws-codepipeline';
 import * as codepipeline_actions from 'aws-cdk-lib/aws-codepipeline-actions';
+import * as s3 from 'aws-cdk-lib/aws-s3';
+import * as s3deploy from 'aws-cdk-lib/aws-s3-deployment';
 import { Platform } from 'aws-cdk-lib/aws-ecr-assets';
 
 import { Construct } from 'constructs';
@@ -24,6 +26,8 @@ export class PipelineStack extends cdk.Stack {
     super(scope, id, props);
   
     // create an image and upload it to the ECR repo created during the bootstrap
+    // must disable containerd in docker for this to work
+    // see https://github.com/aws/aws-cdk/issues/31549
     const buildProject = new codebuild.PipelineProject(this, 'BuildProject', {
       environment: {
         // buildImage: codebuild.LinuxBuildImage.fromEcrRepository(repository, 'latest'),
@@ -40,6 +44,16 @@ export class PipelineStack extends cdk.Stack {
     // https://github.com/aws/aws-cdk/issues/5517#issuecomment-568596787
     const cfnArmTestProject = buildProject.node.defaultChild as codebuild.CfnProject
     cfnArmTestProject.addOverride('Properties.Environment.Type','ARM_CONTAINER')
+
+    // Create S3 bucket for website hosting
+    const websiteBucket = new s3.Bucket(this, 'AWSDevelopersPodcastWebsite', {
+      websiteIndexDocument: 'index.html',
+      websiteErrorDocument: 'error.html',
+      publicReadAccess: true,
+      blockPublicAccess: s3.BlockPublicAccess.BLOCK_ACLS,  
+      removalPolicy: cdk.RemovalPolicy.DESTROY,
+      autoDeleteObjects: true,
+    });
 
     // Create the pipeline
     const pipeline = new codepipeline.Pipeline(this, 'DeploymentPipeline', {
@@ -80,6 +94,22 @@ export class PipelineStack extends cdk.Stack {
       ],
     });
 
+    // Add deployment stage to S3
+    pipeline.addStage({
+      stageName: 'Deploy',
+      actions: [
+        new codepipeline_actions.S3DeployAction({
+          actionName: 'DeployToS3',
+          bucket: websiteBucket,
+          input: buildOutput,
+        }),
+      ],
+    });
 
+    // Output the website URL
+    new cdk.CfnOutput(this, 'WebsiteURL', {
+      value: websiteBucket.bucketWebsiteUrl,
+      description: 'The URL of the website',
+    });
   }
 }
