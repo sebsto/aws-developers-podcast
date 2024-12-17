@@ -7,6 +7,16 @@ function loadPage(page) {
 					let element = document.getElementById('episodes_cards');
 					let existing = element.innerHTML
 					element.innerHTML = existing + data;
+
+					// Parse the fetched HTML string into a DOM
+					let parser = new DOMParser();
+					let doc = parser.parseFromString(data, 'text/html');
+
+					// apply JS-based renderers on the newly loaded elements
+					applyRenderers(doc);
+
+					// Append the parsed and modified DOM to the existing content
+					element.innerHTML = existing + doc.body.innerHTML;
 				})
 				.catch(error => {
 						console.error('Error loading page:', error);

@@ -28,16 +28,16 @@ function formatDuration(text) {
     return formattedDuration.trim();
 }
 
-function applyRenderers() {
+function applyRenderers(doc) {
     // Truncate text
-    const truncateElements = document.querySelectorAll('.truncate');
+    const truncateElements = doc.querySelectorAll('.truncate');
     truncateElements.forEach(function(element) {
         const truncatedText = truncateText(element.textContent, 300); 
         element.textContent = truncatedText;
     });
 
     // Format duration
-    const durationElements = document.querySelectorAll('.duration');
+    const durationElements = doc.querySelectorAll('.duration');
     durationElements.forEach(function(element) {
         const durationText = formatDuration(element.textContent);
         element.textContent = durationText;
@@ -47,5 +47,5 @@ function applyRenderers() {
 // this is only triggered when the page is loaded
 // the MutationObserver is used to detect dynamic changes in the DOM
 document.addEventListener('DOMContentLoaded', function() {
-    applyRenderers();
+    applyRenderers(document);
 });
