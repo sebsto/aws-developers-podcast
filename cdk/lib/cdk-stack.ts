@@ -80,28 +80,6 @@ export class PipelineStack extends cdk.Stack {
       ],
     });
 
-    // Add deploy stage (example with CodeDeploy)
-    // You can modify this based on your deployment needs
-    // pipeline.addStage({
-    //   stageName: 'Deploy',
-    //   actions: [
-    //     new codepipeline_actions.CodeDeployServerDeployAction({
-    //       actionName: 'Deploy',
-    //       input: buildOutput,
-    //       deploymentGroup: cdk.aws_codedeploy.ServerDeploymentGroup.fromServerDeploymentGroupAttributes(
-    //         this,
-    //         'DeploymentGroup',
-    //         {
-    //           deploymentGroupName: 'YOUR_DEPLOYMENT_GROUP_NAME', // Replace with your deployment group name
-    //           application: cdk.aws_codedeploy.ServerApplication.fromServerApplicationName(
-    //             this,
-    //             'Application',
-    //             'YOUR_APPLICATION_NAME' // Replace with your application name
-    //           ),
-    //         }
-    //       ),
-    //     }),
-    //   ],
-    // });
+
   }
 }
