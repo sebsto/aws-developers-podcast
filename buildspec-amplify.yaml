@@ -1,0 +1,25 @@
+version: 1
+frontend:
+  buildpath: /
+  phases:
+    preBuild:
+      commands:
+        - echo Installing NPM packages...
+        - npm install
+        
+    build:
+      # TODO : for normal publishing of new episodes, we should not build the site, just run toucan.
+      commands:
+        - echo Build started on `date`
+        - npm run build
+        - npm run copy
+        - toucan generate ./toucan ./dist
+
+    postBuild:
+      commands:
+        - echo "Build $AWS_JOB_ID completed on `date`, publishing to AWS Developers Podcast will be done by the pipeline."
+
+  artifacts:
+    baseDirectory: 'dist'
+    files:
+      - '**/*'

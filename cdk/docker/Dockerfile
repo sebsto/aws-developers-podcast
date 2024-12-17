@@ -11,10 +11,10 @@ FROM public.ecr.aws/amazonlinux/amazonlinux:2023
 # Install toucan
 COPY --from=toucan /toucan/.build/release/toucan-cli /usr/local/bin/toucan
 
-# Install Node.js 23
+# Install GIT and Node.js 23
 RUN curl -fsSL https://rpm.nodesource.com/setup_23.x -o nodesource_setup.sh && \
     bash nodesource_setup.sh && \
-		dnf install -y nodejs && \
+		dnf install -y git nodejs && \
 		node -v
 
 # Set working directory
