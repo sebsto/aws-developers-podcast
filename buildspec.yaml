@@ -24,3 +24,24 @@ artifacts:
     - '**/*'
   name: adp-$(date +%Y%m%d%H%M%S).zip
   base-directory: 'dist'
+
+# TODO conditional builds
+
+    # preBuild:
+    #   commands:
+    #     - echo Installing NPM packages...
+    #     - npm install
+    #     - |
+    #       if [ "$CODEBUILD_WEBHOOK_EVENT" = "PUSH" ]; then
+    #         CHANGED_FILES=$(git diff --name-only $CODEBUILD_WEBHOOK_BASE_REF $CODEBUILD_RESOLVED_SOURCE_VERSION)
+    #       else
+    #         CHANGED_FILES=$(git diff --name-only HEAD^1 HEAD)
+    #       fi
+    #       CONTENT_ONLY=true
+    #       for file in $CHANGED_FILES; do
+    #         if [[ ! $file =~ ^toucan/content/.*\.md$ ]]; then
+    #           CONTENT_ONLY=false
+    #           break
+    #         fi
+    #       done
+    #       echo "CONTENT_ONLY=$CONTENT_ONLY" >> $CODEBUILD_ENV_FILE
