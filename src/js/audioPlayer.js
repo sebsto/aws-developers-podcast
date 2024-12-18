@@ -51,6 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     audio.addEventListener('loadeddata', () => {
+      console.log('Audio loaded:', audio.src);
       audio.play().catch(error => {
         console.error('Error playing audio:', error);
       });
@@ -98,23 +99,21 @@ document.addEventListener('DOMContentLoaded', () => {
   // Function to find the closest ancestor with the 'btn-play' class
   function findAncestorWithClass(element, className) {
     while (element && !element.classList.contains(className)) {
-      // console.log('element', element);
+      console.log('element', element);
       element = element.parentElement;
     }
     return element;
   }
 
   // click listener for the featured section (loaded at page load)
-  // document.querySelectorAll('.btn-play').forEach(button => {
-  //   button.addEventListener('click', (e) => {
   document.querySelector('.featured-episode').addEventListener('click', function (e) {
-    // console.log('CLICKED', e.target);
+    console.log('CLICKED', e.target);
 
     // Find the closest ancestor with the 'btn-play' class
     const btnPlayElement = findAncestorWithClass(e.target, 'btn-play');
 
     if (btnPlayElement && btnPlayElement.closest('.featured-episode')) {
-      // console.log('Featured Episode button clicked : ', btnPlayElement);
+      console.log('Featured Episode button clicked : ', btnPlayElement);
       handlePlayEvent(btnPlayElement);
     }
 
@@ -125,13 +124,13 @@ document.addEventListener('DOMContentLoaded', () => {
   // click listener for sections that are loaded dynamically
   // move the click listner to the container, not to individual epiosde card to avoid multiple event listeners
   document.getElementById('episodes_cards').addEventListener('click', function (e) {
-    // console.log('CLICKED', e.target);
+    console.log('CLICKED', e.target);
 
     // Find the closest ancestor with the 'btn-play' class
     const btnPlayElement = findAncestorWithClass(e.target, 'btn-play');
 
     if (btnPlayElement) {
-      // console.log('Dynamic Button clicked : ', btnPlayElement);
+      console.log('Dynamic Button clicked : ', btnPlayElement);
       handlePlayEvent(btnPlayElement);
     }
 
