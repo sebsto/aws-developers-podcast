@@ -40,10 +40,10 @@
     <enclosure url="{{ medialink }}{{ file }}" length="{{ size }}" type="audio/mpeg"/>
     <guid isPermaLink="false">{{ file }}</guid>
     {{#empty(guests)}}
-    <guest>Sébastien Stormacq, Developer Advocate, AWS</guest>
+    <aws:guest>Sébastien Stormacq, Developer Advocate, AWS</aws:guest>
     {{/empty(guests)}}
     {{#guests}}
-    <aws:guests>
+    <aws:guest>
     <![CDATA[ <a href='{{link}}'>{{name}}</a>, {{title}}{{^last()}} ; {{/last()}}]]>
     </aws:guest>
     {{/guests}}
