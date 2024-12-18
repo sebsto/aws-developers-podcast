@@ -49,6 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
     audio.addEventListener('loadeddata', () => {
+      console.log('Audio loaded:', audio.src);
       audio.play().catch(error => {
         console.error('Error playing audio:', error);
       });
@@ -99,8 +100,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // click listener for the featured section (loaded at page load)
-  // document.querySelectorAll('.btn-play').forEach(button => {
-  //   button.addEventListener('click', (e) => {
   document.querySelector('.featured-episode').addEventListener('click', function (e) {
     console.log('CLICKED', e.target);
 
