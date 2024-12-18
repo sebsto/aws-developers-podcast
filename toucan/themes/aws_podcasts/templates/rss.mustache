@@ -17,7 +17,7 @@
     <itunes:author>Amazon Web Services</itunes:author>
     <itunes:type>episodic</itunes:type>
     <itunes:category text="Technology"/>
-    <itunes:explicit>no</itunes:explicit>
+    <itunes:explicit>false</itunes:explicit>
     <itunes:image href="{{baseUrl}}{{rss.artwork}}"/>
     <itunes:owner>
         <itunes:name>{{rss.owner.name}}</itunes:name>
@@ -27,14 +27,8 @@
 <item>
     <title>{{ title }}</title>
     <description>{{ description }}</description>
-    <content:encoded>
-<![CDATA[
-    {{ description }} {{#guests}}with <a href='{{link}}'>{{name}}</a>, {{title}}{{^last()}} ; {{/last()}}{{/guests}}
-    <p/>
-    {{& contents }}
-]]>
-    </content:encoded>
-    <author>{{ author }}</author>
+    <content:encoded><![CDATA[{{ description }} {{#guests}}with <a href='{{link}}'>{{name}}</a>, {{title}}{{^last()}} ; {{/last()}}{{/guests}}<p/>{{& contents }}]]></content:encoded>
+    <aws:host>{{ author }}</aws:host>
     <pubDate>{{ publicationDate}}</pubDate>
     <link>{{ permalink }}index.html</link>
     <enclosure url="{{ medialink }}{{ file }}" length="{{ size }}" type="audio/mpeg"/>
