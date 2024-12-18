@@ -1,0 +1,6 @@
+# AWS Amplify Hosting custom HTTP headers
+customHeaders:
+  - pattern: '*.xml'
+    headers:
+    - key: 'Content-Type'
+      value: 'text/xml; charset=utf-8'
