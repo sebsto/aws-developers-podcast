@@ -4,10 +4,6 @@ function loadPage(page) {
 		fetch(`episodes/pages/${page}/index.html`)
 				.then(response => response.text())
 				.then(data => {
-					let element = document.getElementById('episodes_cards');
-					let existing = element.innerHTML
-					element.innerHTML = existing + data;
-
 					// Parse the fetched HTML string into a DOM
 					let parser = new DOMParser();
 					let doc = parser.parseFromString(data, 'text/html');
@@ -16,6 +12,8 @@ function loadPage(page) {
 					applyRenderers(doc);
 
 					// Append the parsed and modified DOM to the existing content
+					let element = document.getElementById('episodes_cards');
+					let existing = element.innerHTML
 					element.innerHTML = existing + doc.body.innerHTML;
 				})
 				.catch(error => {
