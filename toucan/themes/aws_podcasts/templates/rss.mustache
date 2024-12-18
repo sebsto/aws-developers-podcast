@@ -18,10 +18,10 @@
     <itunes:type>episodic</itunes:type>
     <itunes:category text="Technology"/>
     <itunes:explicit>no</itunes:explicit>
-    <itunes:image href="{{baseUrl}}/img/podcast-artwork.png"/>
+    <itunes:image href="{{baseUrl}}{{rss.artwork}}"/>
     <itunes:owner>
-        <itunes:name>{{owner.name}}</itunes:name>
-        <itunes:email>{{owner.email}}</itunes:email>
+        <itunes:name>{{rss.owner.name}}</itunes:name>
+        <itunes:email>{{rss.owner.email}}</itunes:email>
     </itunes:owner>
 {{#items}}
 <item>
@@ -31,12 +31,13 @@
 <![CDATA[
     {{ description }} {{#guests}}with <a href='{{link}}'>{{name}}</a>, {{title}}{{^last()}} ; {{/last()}}{{/guests}}
     <p/>
-    {{& page.contents }}
+    {{& contents }}
 ]]>
     </content:encoded>
     <author>{{ author }}</author>
     <pubDate>{{ publicationDate}}</pubDate>
-    <link>{{ permalink }}/index.html</link>
+    <link>{{ permalink }}index.html</link>
+    <enclosure url="{{ medialink }}{{ file }}" length="{{ size }}" type="audio/mpeg"/>
     <guid>{{ file }}</guid>
     {{#empty(guests)}}
     <guest>Sébastien Stormacq, Developer Advocate, AWS</guest>

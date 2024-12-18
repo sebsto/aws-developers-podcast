@@ -5,12 +5,6 @@ title: "The AWS Developers Podcast"
 dateFormat: "MMM dd, yy"
 description: "Stay updated on the latest AWS news and insights for developers, wherever you are, whenever you want."
 
-# not being picked up yet by the theme
-owner:
-  name: "Sebastien Stormacq"
-  email: "stormacq@amazon.com"
-
-
 # data appearing in the footer
 copyright_year: "2023-2025"
 french_podcast_url: "https://francais.podcast.go-aws.com"
@@ -28,8 +22,11 @@ spotify: "https://open.spotify.com/show/7rQjgnBvuyr18K03tnEHBI"
 builderid: "https://profile.aws.amazon.com/"
 
 medialink:  https://op3.dev/e/https://dts.podtrac.com/redirect.mp3/developers.podcast.go-aws.com/media/
-# artworklink: https://developers.podcast.go-aws.com/img/
-# artwork: podcast-artwork.png
+rss:
+  artwork: /img/podcast-artwork.png
+  owner:
+    name: "Sebastien Stormacq"
+    email: "stormacq@amazon.com"
 
 # op3.dev dashboard page 
 #
