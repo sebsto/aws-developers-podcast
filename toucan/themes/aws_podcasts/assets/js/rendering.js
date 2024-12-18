@@ -45,7 +45,6 @@ function applyRenderers(doc) {
 }
 
 // this is only triggered when the page is loaded
-// the MutationObserver is used to detect dynamic changes in the DOM
 document.addEventListener('DOMContentLoaded', function() {
     applyRenderers(document);
 });

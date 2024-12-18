@@ -73,22 +73,58 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     audioPlayer.classList.remove('show');
   });
-  document.querySelectorAll('.btn-play').forEach(button => {
-    button.addEventListener('click', e => {
-      const audioSrc = e.currentTarget.getAttribute('data-audio-src');
-      const title = e.currentTarget.getAttribute('data-title');
-      const details = e.currentTarget.getAttribute('data-details');
-      if (audioSrc) {
-        console.log('Setting audio source to:', audioSrc);
-        createAudioElement(audioSrc);
-        audioTitle.textContent = title;
-        audioDetails.textContent = details;
-        audioPlayer.classList.add('show');
-        playPauseButton.focus();
-      } else {
-        console.error('No audio source found for this button.');
-      }
-    });
+  function handlePlayEvent(element) {
+    const audioSrc = element.getAttribute('data-audio-src');
+    const title = element.getAttribute('data-title');
+    const details = element.getAttribute('data-details');
+    if (audioSrc) {
+      console.log('Setting audio source to:', audioSrc);
+      createAudioElement(audioSrc);
+      audioTitle.textContent = title;
+      audioDetails.textContent = details;
+      audioPlayer.classList.add('show');
+      playPauseButton.focus();
+    } else {
+      console.error('No audio source found for this button.');
+    }
+  }
+
+  // Function to find the closest ancestor with the 'btn-play' class
+  function findAncestorWithClass(element, className) {
+    while (element && !element.classList.contains(className)) {
+      console.log('element', element);
+      element = element.parentElement;
+    }
+    return element;
+  }
+
+  // click listener for the featured section (loaded at page load)
+  // document.querySelectorAll('.btn-play').forEach(button => {
+  //   button.addEventListener('click', (e) => {
+  document.querySelector('.featured-episode').addEventListener('click', function (e) {
+    console.log('CLICKED', e.target);
+
+    // Find the closest ancestor with the 'btn-play' class
+    const btnPlayElement = findAncestorWithClass(e.target, 'btn-play');
+    if (btnPlayElement && btnPlayElement.closest('.featured-episode')) {
+      console.log('Featured Episode button clicked : ', btnPlayElement);
+      handlePlayEvent(btnPlayElement);
+    }
+    e.stopImmediatePropagation();
+  });
+
+  // click listener for sections that are loaded dynamically
+  // move the click listner to the container, not to individual epiosde card to avoid multiple event listeners
+  document.getElementById('episodes_cards').addEventListener('click', function (e) {
+    console.log('CLICKED', e.target);
+
+    // Find the closest ancestor with the 'btn-play' class
+    const btnPlayElement = findAncestorWithClass(e.target, 'btn-play');
+    if (btnPlayElement) {
+      console.log('Dynamic Button clicked : ', btnPlayElement);
+      handlePlayEvent(btnPlayElement);
+    }
+    e.stopImmediatePropagation();
   });
 });
 

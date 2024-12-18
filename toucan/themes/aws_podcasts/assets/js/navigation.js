@@ -1,5 +1,5 @@
-let currentPage = 1;
-
+// load a blog of episodes. 
+// apply JS-based renderers on the newly loaded elements
 function loadPage(page) {
 		fetch(`episodes/pages/${page}/index.html`)
 				.then(response => response.text())
@@ -58,17 +58,19 @@ function createObserver() {
 */
 function handleIntersect(entries, observer) {
 	entries.forEach(entry => {
-			if (entry.isIntersecting) {
-					if (currentPage < maxPages) {
-						currentPage++;
-						console.log("loading page: " + currentPage);
-						loadPage(currentPage);
-					} else {
-						console.log("No more pages to load");
-					}
+		if (entry.isIntersecting) {
+			if (currentPage < maxPages) {
+				currentPage++;
+				console.log("loading page: " + currentPage);
+				loadPage(currentPage);
+			} else {
+				console.log("No more pages to load");
 			}
+		}
 	});
 }
+
+let currentPage = 1;
 
 // Load the first page initially
 loadPage(currentPage);
