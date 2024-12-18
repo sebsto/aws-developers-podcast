@@ -1,8 +1,15 @@
 # global variables, exposed under the `site` namespace
-baseUrl: "https://developers.podcast.go-aws.com/web"
-language: "en-US"
+baseUrl: "https://developers.podcast.go-aws.com"
+language: "en"
 title: "The AWS Developers Podcast"
 dateFormat: "MMM dd, yy"
+description: "Stay updated on the latest AWS news and insights for developers, wherever you are, whenever you want."
+
+# not being picked up yet by the theme
+owner:
+  - name: "Sebastien Stormacq"
+    email: "stormacq@amazon.com"
+
 
 # data appearing in the footer
 copyright_year: "2023-2025"

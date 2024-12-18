@@ -1,75 +1,62 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+<rss xmlns:atom="http://www.w3.org/2005/Atom" 
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+     xmlns:aws="http://developers.podcast.go-aws.com/" 
+     version="2.0">
 <channel>
     <title>{{title}}</title>
     <description>{{description}}</description>
-    <link>{{baseUrl}}</link>
+    <copyright>All rights reserved</copyright>
     <language>{{language}}</language>
+    <link>{{baseUrl}}</link>
+    <atom:link href="{{baseUrl}}/web/podcasts/feed.xml" rel="self" type="application/rss+xml"/>
     <lastBuildDate>{{lastBuildDate}}</lastBuildDate>
     <pubDate>{{publicationDate}}</pubDate>
-    <ttl>250</ttl>
-    <atom:link href="{{baseUrl}}rss.xml" rel="self" type="application/rss+xml"/>
+    <itunes:subtitle>Seb and friends chat with the people behind Amazon Web Services (AWS) and the developers who are building on it. Very special thanks to Drew Blanke, aka Syntax Era, for the creation of the intro and outro music used in this podcast.</itunes:subtitle>
+    <itunes:summary>Things that matter for developers</itunes:summary>
+    <itunes:author>Amazon Web Services</itunes:author>
+    <itunes:type>episodic</itunes:type>
+    <itunes:category text="Technology"/>
+    <itunes:explicit>no</itunes:explicit>
+    <itunes:image href="{{baseUrl}}/img/podcast-artwork.png"/>
+    <itunes:owner>
+        <itunes:name>Sébastien Stormacq</itunes:name>
+        <itunes:email>stormacq@amazon.com</itunes:email>
+    </itunes:owner>
 
 {{#items}}
 <item>
-    <guid isPermaLink="true">{{permalink}}</guid>
     <title><![CDATA[ {{title}} ]]></title>
     <description><![CDATA[ {{description}} ]]></description>
-    <link>{{permalink}}</link>
+    <content:encoded>
+<![CDATA[ {{description}} {{#guests}}with <a href='{{link}}'>{{name}}</a>, {{title}}{{^last()}} ; {{/last()}}{{/guests}}]]>
+    </content:encoded>
+    <author>{{ author }}</author>
     <pubDate>{{publicationDate}}</pubDate>
+    <link>{{permalink}}</link>
+    <guid>{{file}}</guid>
+
+    {{#empty(guests)}}
+    <guest>Sébastien Stormacq, Developer Advocate, AWS</guest>
+    {{/empty(guests)}}
+
+    {{#guests}}
+    <guest>
+    <![CDATA[ <a href='{{link}}'>{{name}}</a>, {{title}}{{^last()}} ; {{/last()}}]]>
+    </guest>
+    {{/guests}}
+
+    <itunes:title><![CDATA[ {{title}} ]]></itunes:title>
+    <itunes:subtitle/>
+    <itunes:summary><![CDATA[ {{description}} ]]></itunes:summary>
+    <itunes:author>{{author}}</itunes:author>
+    <itunes:image href="{{baseUrl}}{{social-background}}"/>
+    <itunes:duration>{{duration}}</itunes:duration>
+    <itunes:episode>{{episode}}</itunes:episode>
+    <aws:categories>{{aws-categories}}</aws:categories>
+    <itunes:explicit>no</itunes:explicit>
 </item>
 {{/items}}
-
-</channel>
-
-
-</rss>
-
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:aws="http://developers.podcast.go-aws.com/" version="2.0">
-<channel>
-<title>AWS Developers Podcast</title>
-<description>Things that matter for developers</description>
-<copyright>All rights reserved</copyright>
-<language>en</language>
-<link>https://developers.podcast.go-aws.com/podcasts/index.html</link>
-<atom:link href="https://developers.podcast.go-aws.com/web/podcasts/feed.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Fri, 06 Dec 2024 20:05:06 +0000</lastBuildDate>
-<pubDate>Fri, 06 Dec 2024 20:05:06 +0000</pubDate>
-<itunes:subtitle>Seb and friends chat with the people behind Amazon Web Services (AWS) and the developers who are building on it. Very special thanks to Drew Blanke, aka Syntax Era, for the creation of the intro and outro music used in this podcast.</itunes:subtitle>
-<itunes:summary>Things that matter for developers</itunes:summary>
-<itunes:author>Amazon Web Services</itunes:author>
-<itunes:type>episodic</itunes:type>
-<itunes:category text="Technology"/>
-<itunes:explicit>no</itunes:explicit>
-<itunes:image href="https://developers.podcast.go-aws.com/img/podcast-artwork.png"/>
-<itunes:owner>
-<itunes:email>stormacq@amazon.com</itunes:email>
-<itunes:name>Sébastien Stormacq</itunes:name>
-</itunes:owner>
-
-<item>
-<title>AWS re:Invent re:Cap with Corey Quinn</title>
-<description>In this episode, cloud analyst and observer Corey Quinn shares his observation about trends and news from this week's AWS re:Invent conference,</description>
-<content:encoded>
-<![CDATA[ In this episode, cloud analyst and observer Corey Quinn shares his observation about trends and news from this week's AWS re:Invent conference, <p/> With <a href='https://www.linkedin.com/in/coquinn/'>Corey Quinn</a>, Cloud Economist, The Duckbill Group. <p/> <h2 id="links">Links</h2> <p>Here are the links to the tools, technologies, or articles we mentioned in this episode.</p> <ul> <li><a href="https://www.lastweekinaws.com/">Last week in AWS</a> podcasts and newsletter.</li> <li><a href="https://aws.amazon.com/blogs/aws/">Get the details of the main launches at re:Invent, read the AWS News blog</a></li> </ul> ]]>
-</content:encoded>
-<author>Sébastien Stormacq</author>
-<pubDate>Fri, 06 Dec 2024 19:00:00 +0000</pubDate>
-<link>https://developers.podcast.go-aws.com/web/podcasts/episode_142/index.html</link>
-<enclosure url="https://op3.dev/e/https://dts.podtrac.com/redirect.mp3/developers.podcast.go-aws.com/media/142.mp3" length="56024840" type="audio/mpeg"/>
-<guid>142.mp3</guid>
-<guest>
-<![CDATA[ <a href='https://www.linkedin.com/in/coquinn/'>Corey Quinn</a>, Cloud Economist, The Duckbill Group. ]]>
-</guest>
-<itunes:title>AWS re:Invent re:Cap with Corey Quinn</itunes:title>
-<itunes:subtitle/>
-<itunes:summary>In this episode, cloud analyst and observer Corey Quinn shares his observation about trends and news from this week's AWS re:Invent conference,</itunes:summary>
-<itunes:author>Sébastien Stormacq</itunes:author>
-<itunes:image href="https://developers.podcast.go-aws.com/img/142.png"/>
-<itunes:duration>00:29:16</itunes:duration>
-<itunes:episode>142</itunes:episode>
-<aws:categories>General</aws:categories>
-<itunes:explicit>no</itunes:explicit>
-</item>
 
 <!--  historical episodes on SoundCloud  -->
 <item>
@@ -1682,5 +1669,6 @@
 <enclosure type="audio/mpeg" url="http://www.podtrac.com/pts/redirect.mp3/feeds.soundcloud.com/stream/1063907410-awsdevelopers-episode-001-aws-lambda-as-a-devops-tool-with-ken-collins.mp3" length="21193094"/>
 <itunes:image href="https://i1.sndcdn.com/artworks-Tlzdy16pLTWY9CF0-MA2kVw-t3000x3000.jpg"/>
 </item>
+
 </channel>
 </rss>
