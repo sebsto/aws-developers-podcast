@@ -2,6 +2,7 @@
 baseUrl: "https://developers.podcast.go-aws.com/web"
 language: "en-US"
 title: "The AWS Developers Podcast"
+dateFormat: "MMM dd, yy"
 
 # data appearing in the footer
 copyright_year: "2023-2025"
