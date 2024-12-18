@@ -20,40 +20,40 @@
     <itunes:explicit>no</itunes:explicit>
     <itunes:image href="{{baseUrl}}/img/podcast-artwork.png"/>
     <itunes:owner>
-        <itunes:name>Sébastien Stormacq</itunes:name>
-        <itunes:email>stormacq@amazon.com</itunes:email>
+        <itunes:name>{{owner.name}}</itunes:name>
+        <itunes:email>{{owner.email}}</itunes:email>
     </itunes:owner>
-
 {{#items}}
 <item>
-    <title><![CDATA[ {{title}} ]]></title>
-    <description><![CDATA[ {{description}} ]]></description>
+    <title>{{ title }}</title>
+    <description>{{ description }}</description>
     <content:encoded>
-<![CDATA[ {{description}} {{#guests}}with <a href='{{link}}'>{{name}}</a>, {{title}}{{^last()}} ; {{/last()}}{{/guests}}]]>
+<![CDATA[
+    {{ description }} {{#guests}}with <a href='{{link}}'>{{name}}</a>, {{title}}{{^last()}} ; {{/last()}}{{/guests}}
+    <p/>
+    {{& page.contents }}
+]]>
     </content:encoded>
     <author>{{ author }}</author>
-    <pubDate>{{publicationDate}}</pubDate>
-    <link>{{permalink}}</link>
-    <guid>{{file}}</guid>
-
+    <pubDate>{{ publicationDate}}</pubDate>
+    <link>{{ permalink }}/index.html</link>
+    <guid>{{ file }}</guid>
     {{#empty(guests)}}
     <guest>Sébastien Stormacq, Developer Advocate, AWS</guest>
     {{/empty(guests)}}
-
     {{#guests}}
     <guest>
     <![CDATA[ <a href='{{link}}'>{{name}}</a>, {{title}}{{^last()}} ; {{/last()}}]]>
     </guest>
     {{/guests}}
-
-    <itunes:title><![CDATA[ {{title}} ]]></itunes:title>
+    <itunes:title>{{ pagetitle }}></itunes:title>
     <itunes:subtitle/>
-    <itunes:summary><![CDATA[ {{description}} ]]></itunes:summary>
-    <itunes:author>{{author}}</itunes:author>
-    <itunes:image href="{{baseUrl}}{{social-background}}"/>
-    <itunes:duration>{{duration}}</itunes:duration>
-    <itunes:episode>{{episode}}</itunes:episode>
-    <aws:categories>{{aws-categories}}</aws:categories>
+    <itunes:summary>{{description}}</itunes:summary>
+    <itunes:author>{{ author }}</itunes:author>
+    <itunes:image href="{{ baseUrl }}{{social-background}}"/>
+    <itunes:duration>{{ duration }}</itunes:duration>
+    <itunes:episode>{{ episode }}</itunes:episode>
+    <aws:categories>{{ aws-categories }}</aws:categories>
     <itunes:explicit>no</itunes:explicit>
 </item>
 {{/items}}

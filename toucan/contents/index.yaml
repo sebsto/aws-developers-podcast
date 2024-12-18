@@ -7,8 +7,8 @@ description: "Stay updated on the latest AWS news and insights for developers, w
 
 # not being picked up yet by the theme
 owner:
-  - name: "Sebastien Stormacq"
-    email: "stormacq@amazon.com"
+  name: "Sebastien Stormacq"
+  email: "stormacq@amazon.com"
 
 
 # data appearing in the footer
