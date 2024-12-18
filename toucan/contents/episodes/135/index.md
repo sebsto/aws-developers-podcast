@@ -15,7 +15,8 @@ category: podcasts
 background: /img/banner-web-transparent.png
 social-background: /img/135.png
 appleEpisodeId: 1000673525533
-aws-categories: Compute
+aws-categories:
+  - "Compute"
 ---
 
 ## Links

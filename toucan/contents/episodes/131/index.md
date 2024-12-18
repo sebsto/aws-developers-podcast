@@ -21,7 +21,8 @@ category: podcasts
 background: /img/banner-web-transparent.png
 social-background: /img/131.png
 appleEpisodeId: 1000670128800
-aws-categories: Training & Certification
+aws-categories:
+  - "Training & Certification"
 ---
 
 ## Links

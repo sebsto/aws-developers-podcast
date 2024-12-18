@@ -18,7 +18,8 @@ category: podcasts
 background: /img/banner-web-transparent.png
 social-background: /img/139.png
 appleEpisodeId: 1000677039579
-aws-categories: Machine Learning & AI
+aws-categories:
+  - "Machine Learning & AI"
 ---
 
 ## Links

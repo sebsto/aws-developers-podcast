@@ -15,7 +15,8 @@ category: podcasts
 background: /img/banner-web-transparent.png
 social-background: /img/142.png
 appleEpisodeId: 1000679514148
-aws-categories: General
+aws-categories:
+  - "General"
 ---
 
 ## Links

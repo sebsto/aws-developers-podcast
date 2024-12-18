@@ -54,7 +54,10 @@
     <itunes:image href="{{ baseUrl }}{{social-background}}"/>
     <itunes:duration>{{ duration }}</itunes:duration>
     <itunes:episode>{{ episode }}</itunes:episode>
-    <aws:categories>{{ aws-categories }}</aws:categories>
+    {{#empty(aws-categorie)}}<aws:categories/>{{/empty(aws-categorie)}}
+    {{^empty(aws-categorie)}}
+    <aws:categories>{{# aws-categories }}{{.}}{{^last()}}, {{/last()}}{{/ aws-categories }}</aws:categories>
+    {{/empty(aws-categorie)}}
     <itunes:explicit>no</itunes:explicit>
 </item>
 {{/items}}

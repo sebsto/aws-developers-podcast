@@ -15,7 +15,9 @@ category: podcasts
 background: /img/banner-web-transparent.png
 social-background: /img/136.png
 appleEpisodeId: 1000674392878
-aws-categories: Compute, Serverless
+aws-categories:
+  - "Compute"
+  - "Serverless"
 ---
 
 ## Links

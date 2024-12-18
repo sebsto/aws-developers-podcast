@@ -21,7 +21,8 @@ category: podcasts
 background: /img/banner-web-transparent.png
 social-background: /img/116.png
 appleEpisodeId: 1000662777204
-aws-categories: Databases
+aws-categories:
+   - "Databases"
 ---
 
 ## Links

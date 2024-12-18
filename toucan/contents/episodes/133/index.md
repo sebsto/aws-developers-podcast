@@ -18,7 +18,9 @@ category: podcasts
 background: /img/banner-web-transparent.png
 social-background: /img/133.png
 appleEpisodeId: 1000671737804
-aws-categories: Developer Tools, Machine Learning & AI
+aws-categories:
+  - "Developer Tools"
+  - "Machine Learning & AI"
 ---
 
 ## Links
