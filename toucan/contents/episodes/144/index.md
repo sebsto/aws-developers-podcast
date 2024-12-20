@@ -14,7 +14,7 @@ episode: 144
 duration: "00:37:39" 
 size: 72288468
 file: 144.mp3	
-date: 2024-12-20 04:00:00 +0000
+publication: 2024-12-20 04:00:00 +0000
 author: Sébastien Stormacq
 category: podcasts
 background: /img/banner-web-transparent.png
