@@ -1,5 +1,4 @@
 ---
-layout: podcast
 title:  "Jeff Barr: 20 years of blogging"
 description: "In this special episode of the AWS Developers Podcast, Tiffany and Seb sit down with Jeff Barr, VP and Chief Evangelist at AWS, to celebrate 20 incredible years of the AWS News blog. Jeff shares the origin story of the blog, the values that shaped its growth, and his unique approach to making technical concepts accessible to developers worldwide.
 

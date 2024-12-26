@@ -1,5 +1,4 @@
 ---
-layout: podcast
 title:  "From Data to Gold: Swimming Australia’s Tech-Driven Edge"
 description: "In this episode of the AWS Developers Podcast, we dive into the world of aquatic analytics! 
 
