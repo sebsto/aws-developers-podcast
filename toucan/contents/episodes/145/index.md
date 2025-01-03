@@ -13,8 +13,6 @@ size: 21842147
 file: 145.mp3	
 publication: 2024-12-27 04:00:00 +0000
 author: Sébastien Stormacq
-category: podcasts
-background: /img/banner-web-transparent.png
 social-background: /img/145.png
 # appleEpisodeId: 1000681107139
 aws-categories:
