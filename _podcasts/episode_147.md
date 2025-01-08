@@ -4,8 +4,8 @@ title:  "Poolside.ai: personalized AI for the modern developer"
 description: "In this episode, Seb talks with Vitor Monteiro to explore how AI is transforming developer tools, focusing on Poolside, a company building custom AI models for software development. They discuss data quality, reinforcement learning, user experience, and the importance of personalization in AI tools. The conversation also touches on infrastructure, productivity, and the challenges of adopting AI in businesses, offering insights into the future of developer assistance."
 guest:  "<a href='https://www.linkedin.com/in/vitormonteiro/'>Vitor Monteiro</a>, Head of Solutions Engineering EMEA"
 episode: 147
-duration: "00:37:22" 
-size: 17940915
+duration: "00:41:02" 
+size: 78803616
 file: 147.mp3	
 date: 2025-01-10 04:00:00 +0000
 author: Sébastien Stormacq
@@ -13,7 +13,7 @@ category: podcasts
 background: /img/banner-web-transparent.png
 social-background: /img/147.png
 # appleEpisodeId: 1000682517749
-aws-categories: 
+aws-categories: "Developer Tools, Machine Learning & AI"
 ---
 
 ## Links
