@@ -15,7 +15,7 @@ PODCAST_BUCKET=aws-developers-podcast-media
 MEDIA_PREFIX=media
 IMG_PREFIX=img
 
-LOCAL_PODCAST=~/Documents/amazon/te/2024/10\ -\ podcast\ US
+LOCAL_PODCAST=~/Documents/amazon/te/2025/10\ -\ podcast\ US
 
 # check dependency on mwinit
 which mwinit > /dev/null
