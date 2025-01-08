@@ -6,8 +6,8 @@ guests:
     link: "https://www.linkedin.com/in/vitormonteiro/"
     title: Head of Solutions Engineering EMEA, Poolside.ai"
 episode: 147
-duration: "00:37:22" 
-size: 17940915
+duration: "00:41:02" 
+size: 78803616
 file: 147.mp3	
 publication: 2025-01-10 04:00:00 +0000
 author: Sébastien Stormacq
