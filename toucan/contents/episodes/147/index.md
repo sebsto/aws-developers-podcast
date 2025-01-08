@@ -1,0 +1,28 @@
+---
+title:  "Poolside.ai: personalized AI for the modern developer"
+description: "In this episode, Seb talks with Vitor Monteiro to explore how AI is transforming developer tools, focusing on Poolside, a company building custom AI models for software development. They discuss data quality, reinforcement learning, user experience, and the importance of personalization in AI tools. The conversation also touches on infrastructure, productivity, and the challenges of adopting AI in businesses, offering insights into the future of developer assistance."
+guests:
+  - name: "Vitor Monteiro"
+    link: "https://www.linkedin.com/in/vitormonteiro/"
+    title: Head of Solutions Engineering EMEA, Poolside.ai"
+episode: 147
+duration: "00:37:22" 
+size: 17940915
+file: 147.mp3	
+publication: 2025-01-10 04:00:00 +0000
+author: Sébastien Stormacq
+category: podcasts
+background: /img/banner-web-transparent.png
+social-background: /img/147.png
+# appleEpisodeId: 1000682517749
+aws-categories: 
+---
+
+## Links
+
+Here are the links to the tools, technologies, or articles we mentioned in this episode.
+
+- [poolside.ai](https://poolside.ai)
+- [Poolside AI is now available from Amazon Bedrock and Amazon EC2](https://press.aboutamazon.com/aws/2024/12/poolside-and-aws-announce-strategic-agreement-to-enable-secure-customized-generative-ai-for-software-engineering-on-amazon-bedrock-and-amazon-elastic-cloud-compute-ec2)
+- [AWS re:Invent: Dive into poolside: AI models just for software engineering (AIM133)](https://www.youtube.com/watch?v=1vj_5H0aCV8)
+
