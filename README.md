@@ -1,6 +1,6 @@
 
-This is the source code for the AWS Developers Podcast
-https://developers.podcast.go-aws.com/web/podcasts/index.html
+This is the source code for [the AWS Developers Podcast](https://developers.podcast.go-aws.com/web/index.html)
+at [https://developers.podcast.go-aws.com/web/index.html](https://developers.podcast.go-aws.com/web/index.html).
 
 This project uses NodeJS, Webpack, and SaSS to generate the build directory. Then, we use the [Toucan static web site generator](https://github.com/toucansites/toucan) to build the final web site with actual content.
 
