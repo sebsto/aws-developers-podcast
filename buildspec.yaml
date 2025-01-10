@@ -6,8 +6,6 @@ phases:
     commands:
       - echo Installing NPM packages...
       - npm install
-      # Fetch git history first
-      - git fetch --unshallow || true  # The || true prevents failure if already unshallow
       # Script to detect changes and set build type
       - |
         if [ "$CODEBUILD_WEBHOOK_EVENT" = "PUSH" ]; then
