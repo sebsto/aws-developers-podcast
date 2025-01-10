@@ -14,8 +14,8 @@ const getGithubConnectionArn = (scope: Construct): string => {
   switch (account) {
     case '401955065246': // Development account
       return 'arn:aws:codestar-connections:eu-central-1:401955065246:connection/1a3722f1-bd2f-40d4-badf-accd624640c6';
-    case 'xxx': // Production account
-      return 'todo';
+    case '533267385481': // Production account
+      return 'arn:aws:codestar-connections:us-west-2:533267385481:connection/5cbad601-4ff6-4618-a47e-02a7495d90fe';
     default:
       throw new Error(`No GitHub connection ARN configured for account ${account}`);
   }
@@ -45,15 +45,10 @@ export class PipelineStack extends cdk.Stack {
     const cfnArmTestProject = buildProject.node.defaultChild as codebuild.CfnProject
     cfnArmTestProject.addOverride('Properties.Environment.Type','ARM_CONTAINER')
 
-    // Create S3 bucket for website hosting
-    const websiteBucket = new s3.Bucket(this, 'AWSDevelopersPodcastWebsite', {
-      websiteIndexDocument: 'index.html',
-      websiteErrorDocument: 'error.html',
-      publicReadAccess: true,
-      blockPublicAccess: s3.BlockPublicAccess.BLOCK_ACLS,  
-      removalPolicy: cdk.RemovalPolicy.DESTROY,
-      autoDeleteObjects: true,
-    });
+    // Import existing S3 bucket for website hosting
+    const websiteBucket = s3.Bucket.fromBucketName(this, 'AWSDevelpersPodcastBucket', 
+      'aws-developers-podcast-media' 
+    );
 
     // Create the pipeline
     const pipeline = new codepipeline.Pipeline(this, 'DeploymentPipeline', {
@@ -96,12 +91,13 @@ export class PipelineStack extends cdk.Stack {
 
     // Add deployment stage to S3
     pipeline.addStage({
-      stageName: 'Deploy',
+      stageName: 'Deploy', 
       actions: [
         new codepipeline_actions.S3DeployAction({
           actionName: 'DeployToS3',
           bucket: websiteBucket,
           input: buildOutput,
+          objectKey: 'web', // Deploy under /web prefix
         }),
       ],
     });
