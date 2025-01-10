@@ -6,14 +6,32 @@ phases:
     commands:
       - echo Installing NPM packages...
       - npm install
-      
+        # Script to detect changes and set build type
+      - |
+        CHANGED_FILES=$(git diff --name-only HEAD HEAD~1)
+        CONTENT_ONLY=true
+        for file in $CHANGED_FILES; do
+          if [[ ! $file =~ ^toucan/.*$ ]]; then
+            CONTENT_ONLY=false
+            break
+          fi
+        done
+        export CONTENT_ONLY=$CONTENT_ONLY
+
   build:
     # TODO : for normal publishing of new episodes, we should not build the site, just run toucan.
     commands:
       - echo Build started on `date`
-      - npm run build
-      - npm run copy
-      - npm run dist # invokes toucan
+      - |
+        if [ "$CONTENT_ONLY" = "true" ]; then
+          echo "Content-only changes detected, running minimal build..."
+          npm run dist
+        else
+          echo "Source code changes detected, running full build..."
+          npm run build
+          npm run copy
+          npm run dist # invokes Toucan
+        fi
 
   post_build:
     commands:
