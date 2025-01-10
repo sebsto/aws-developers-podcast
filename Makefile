@@ -16,7 +16,7 @@ THEME_FILES = $(wildcard $(TOUCAN_DIR)/themes/aws_podcasts/**/*.*)
 
 # The dist target depends on the source files
 $(DIST_DIR): $(SRC_FILES) $(CONTENT_FILES) $(THEME_FILES)
-	npm run build && npm run copy
+	npm install && npm run build && npm run copy
 	toucan generate $(TOUCAN_DIR) $(DIST_DIR)
 
 # Development build depends on dist directory and adds base URL
