@@ -6,9 +6,17 @@ phases:
     commands:
       - echo Installing NPM packages...
       - npm install
-        # Script to detect changes and set build type
+      # Fetch git history first
+      - git fetch --unshallow || true  # The || true prevents failure if already unshallow
+      # Script to detect changes and set build type
       - |
-        CHANGED_FILES=$(git diff --name-only HEAD HEAD~1)
+        if [ "$CODEBUILD_WEBHOOK_EVENT" = "PUSH" ]; then
+          # For push events
+          CHANGED_FILES=$(git diff --name-only $CODEBUILD_WEBHOOK_PREV_COMMIT $CODEBUILD_RESOLVED_SOURCE_VERSION)
+        else
+          # For other events or manual builds
+          CHANGED_FILES=$(git ls-files)
+        fi
         CONTENT_ONLY=true
         for file in $CHANGED_FILES; do
           if [[ ! $file =~ ^toucan/.*$ ]]; then
