@@ -19,6 +19,10 @@ $(DIST_DIR): $(SRC_FILES) $(CONTENT_FILES) $(THEME_FILES)
 	npm install && npm run build && npm run copy
 	toucan generate $(TOUCAN_DIR) $(DIST_DIR)
 
+# Prod build depends on dist directory and adds base URL
+prod: $(DIST_DIR)
+	toucan generate $(TOUCAN_DIR) $(DIST_DIR) --base-url https://developers.podcast.go-aws.com/web
+
 # Development build depends on dist directory and adds base URL
 dev: $(DIST_DIR)
 	toucan generate $(TOUCAN_DIR) $(DIST_DIR) --base-url http://127.0.0.1:3000

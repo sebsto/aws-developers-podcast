@@ -1,5 +1,6 @@
 # global variables, exposed under the `site` namespace
-baseUrl: "https://developers.podcast.go-aws.com"
+# this one is replaced by the --base-url parameter at generation time
+# baseUrl: "https://developers.podcast.go-aws.com/web"
 language: "en"
 title: "The AWS Developers Podcast"
 dateFormat: "MMM dd, yy"
@@ -43,7 +44,7 @@ medialink:  https://op3.dev/e/https://dts.podtrac.com/redirect.mp3/developers.po
 rss:
   artwork: /img/podcast-artwork.png
   owner:
-    name: "Sebastien Stormacq"
+    name: "Sébastien Stormacq"
     email: "stormacq@amazon.com"
 
 # op3.dev dashboard page 
