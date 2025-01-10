@@ -2,10 +2,10 @@
 This is the source code for the AWS Developers Podcast
 https://developers.podcast.go-aws.com/web/podcasts/index.html
 
-This project uses NodeJS, Webpack, and SaSS to generate the build directory. Then, we use the Toucan web site generator to build the final web site with actual content.
+This project uses NodeJS, Webpack, and SaSS to generate the build directory. Then, we use the [Toucan static web site generator](https://github.com/toucansites/toucan) to build the final web site with actual content.
 
 > [!IMPORTANT] 
-> Any change to `index.html` must manually be reported to Toucan's template files (`'.mustache` file)
+> Any change to `index.html` must manually be reported to Toucan's template files (`'.mustache` files)
 
 ## Build procedure
 
@@ -37,17 +37,37 @@ Node version used is `23.3.0` as indicated by the .nvmrc file.
 > 2. `git clone https://github.com/toucansites/toucan`
 > 3. `cd toucan && sudo make install`
 
-#### Build the final web site 
+#### Build a preview of the web site 
 
-`make serve` - Use to generate the final web site with actual content.
+`make dev` - Use to generate a local version of the web site with actual content.
+
+`make serve` - Use to start a local web server to preview the local version
 
 ```sh
-toucan generate ./toucan ./dist
+make dev && make serve
+
+open http://127.0.0.1:3000
 ```
 
 #### Deploy 
 
-Copy the content of the `./dist` directory to your web server.
+```sh
+make prod
+```
+
+Then, copy the content of the `./dist` directory to your web server.
+
+In the context of this project, a `git commit && git push` will trigger the build and deployment on the AWS podcast website at [https://developers.podcast.go-aws.com/web/index.html](https://developers.podcast.go-aws.com/web/index.html)
+
+## Update the build and deploy pipeline 
+
+The build and deploy pipeline is defined in the `cdk/pipeline/lib` directory. Any change to the buid process or deployment must be done in the CDK.
+
+To deploy the pipeline :
+
+```sh
+cdk --profile xxx deploy
+```
 
 ## Test AWS CodeBuild locally 
 
@@ -60,7 +80,7 @@ Copy the content of the `./dist` directory to your web server.
 First time: 
 ```sh 
 # build the custom codebuild container
-docker build . -t adp:latest
+docker build cdk/docker -t adp:arm64
 # Get the codebuild agent
 docker pull amazon/aws-codebuild-local
 # get the script to launch the build
