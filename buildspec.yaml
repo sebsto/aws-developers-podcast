@@ -23,7 +23,7 @@ phases:
     commands:
       - echo Build started on `date`
       - |
-        if [ "$CONTENT_ONLY" = "true" ]; then
+        if [ "${CONTENT_ONLY}" = "true" ]; then
           echo "Content-only changes detected, running minimal build..."
           npm run dist
         else
