@@ -25,7 +25,7 @@ frontend:
         - |
           if [ "$CONTENT_ONLY" = "true" ]; then
             echo "Content-only changes detected, running minimal build..."
-            npm run dist
+            npm run preview
           else
             echo "Source code changes detected, running full build..."
             npm run build
