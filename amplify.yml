@@ -30,7 +30,7 @@ frontend:
             echo "Source code changes detected, running full build..."
             npm run build
             npm run copy
-            npm run dist
+            npm run preview
           fi
 
     postBuild:
