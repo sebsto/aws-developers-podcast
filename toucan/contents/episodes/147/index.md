@@ -12,10 +12,10 @@ file: 147.mp3
 publication: 2025-01-10 04:00:00 +0000
 author: Sébastien Stormacq
 category: podcasts
-background: /img/banner-web-transparent.png
-social-background: /img/147.png
-# appleEpisodeId: 1000682517749
-aws-categories: 
+social-background: 147.png
+aws-categories:
+  - "Machine Learning & AI"
+  - "Developer Tools"
 ---
 
 ## Links

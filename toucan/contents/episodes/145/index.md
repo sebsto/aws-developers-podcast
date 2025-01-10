@@ -13,7 +13,7 @@ size: 21842147
 file: 145.mp3	
 publication: 2024-12-27 04:00:00 +0000
 author: Sébastien Stormacq
-social-background: /img/145.png
+social-background: 145.png
 # appleEpisodeId: 1000681107139
 aws-categories:
   - "Machine Learning & AI"

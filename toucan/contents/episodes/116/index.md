@@ -18,8 +18,7 @@ file: 116.mp3
 publication: "2024-05-31 04:00:00 +0000"
 author: Sébastien Stormacq
 category: podcasts
-background: /img/banner-web-transparent.png
-social-background: /img/116.png
+social-background: 116.png
 appleEpisodeId: 1000662777204
 aws-categories:
    - "Databases"

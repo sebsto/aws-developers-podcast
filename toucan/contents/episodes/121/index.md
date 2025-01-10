@@ -12,8 +12,7 @@ file: 121.mp3
 publication: "2024-07-12 04:00:00 +0000"
 author: Sébastien Stormacq
 category: podcasts
-background: /img/banner-web-transparent.png
-social-background: /img/121.png
+social-background: 121.png
 appleEpisodeId: 1000662777147
 aws-categories:
   - "Front-End Web & Mobile, Serverless"

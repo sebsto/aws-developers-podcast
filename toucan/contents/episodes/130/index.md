@@ -15,8 +15,7 @@ file: 130.mp3
 publication: "2024-09-13 04:00:00 +0000"
 author: Sébastien Stormacq
 category: podcasts
-background: /img/banner-web-transparent.png
-social-background: /img/130.png
+social-background: 130.png
 appleEpisodeId: 1000669385229 
 aws-categories:
   - "Machine Learning & AI"

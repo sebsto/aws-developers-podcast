@@ -11,8 +11,7 @@ size: 17940915
 file: 146.mp3	
 publication: 2025-01-03 04:00:00 +0000
 author: Sébastien Stormacq
-background: /img/banner-web-transparent.png
-social-background: /img/146.png
+social-background: 146.png
 aws-categories:
   - "Management & Governance"
 ---

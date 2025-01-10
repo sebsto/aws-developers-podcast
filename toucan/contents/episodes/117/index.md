@@ -16,8 +16,7 @@ file: 117.mp3
 publication: "2024-06-07 04:00:00 +0000"
 author: Sébastien Stormacq
 category: podcasts
-background: /img/banner-web-transparent.png
-social-background: /img/117.png
+social-background: 117.png
 appleEpisodeId: 1000662777148
 aws-categories: 
   - "Machine Learning & AI"

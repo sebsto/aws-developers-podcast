@@ -18,7 +18,7 @@
     <itunes:type>episodic</itunes:type>
     <itunes:category text="Technology"/>
     <itunes:explicit>false</itunes:explicit>
-    <itunes:image href="{{baseUrl}}{{rss.artwork}}"/>
+    <itunes:image href="{{ imagelink }}{{rss.artwork}}"/>
     <itunes:owner>
         <itunes:name>{{rss.owner.name}}</itunes:name>
         <itunes:email>{{rss.owner.email}}</itunes:email>
@@ -45,7 +45,7 @@
     <itunes:subtitle/>
     <itunes:summary>{{description}}</itunes:summary>
     <itunes:author>{{ author }}</itunes:author>
-    <itunes:image href="{{ baseUrl }}/{{social-background}}"/>
+    <itunes:image href="{{ imagelink }}{{social-background}}"/>
     <itunes:duration>{{ duration }}</itunes:duration>
     <itunes:episode>{{ episode }}</itunes:episode>
     {{#empty(aws-categorie)}}<aws:categories/>{{/empty(aws-categorie)}}

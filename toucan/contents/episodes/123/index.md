@@ -12,8 +12,7 @@ file: 123.mp3
 publication: "2024-07-26 04:00:00 +0000"
 author: Sébastien Stormacq
 category: podcasts
-background: /img/banner-web-transparent.png
-social-background: /img/123.png
+social-background: 123.png
 appleEpisodeId: 1000663391167
 aws-categories:
   - "Front-End Web & Mobile"

@@ -12,8 +12,7 @@ file: 140.mp3
 publication: "2024-11-22 04:00:00 +0000"
 author: Sébastien Stormacq
 category: podcasts
-background: /img/banner-web-transparent.png
-social-background: /img/140.png
+social-background: 140.png
 appleEpisodeId: 1000677855172
 aws-categories:
 - "Security, Identity & Compliance"

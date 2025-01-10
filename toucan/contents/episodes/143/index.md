@@ -18,8 +18,7 @@ file: 143.mp3
 publication: 2024-12-13 04:00:00 +0000
 author: Sébastien Stormacq
 category: podcasts
-background: /img/banner-web-transparent.png
-social-background: /img/143.png
+social-background: 143.png
 appleEpisodeId: 1000680248169
 aws-categories: 
    - "General"

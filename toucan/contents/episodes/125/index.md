@@ -12,8 +12,7 @@ file: 125.mp3
 publication: "2024-08-09 04:00:00 +0000"
 author: Sébastien Stormacq
 category: podcasts
-background: /img/banner-web-transparent.png
-social-background: /img/125.png
+social-background: 125.png
 appleEpisodeId: 1000664785131
 aws-categories:
   - "Developer Tools"

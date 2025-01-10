@@ -12,8 +12,7 @@ file: 141.mp3
 publication: "2024-11-29 04:00:00 +0000"
 author: Sébastien Stormacq
 category: podcasts
-background: /img/banner-web-transparent.png
-social-background: /img/141.png
+social-background: 141.png
 # appleEpisodeId: 1000677855172
 aws-categories:
   - "Front-End Web & Mobile"

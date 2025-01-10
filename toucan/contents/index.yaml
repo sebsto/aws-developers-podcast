@@ -40,9 +40,10 @@ builder_id:
 episodes:
   title: "Explore all episodes"
 
-medialink:  https://op3.dev/e/https://dts.podtrac.com/redirect.mp3/developers.podcast.go-aws.com/media/
+medialink: "https://op3.dev/e/https://dts.podtrac.com/redirect.mp3/developers.podcast.go-aws.com/media/"
+imagelink: "https://developers.podcast.go-aws.com/img/"
 rss:
-  artwork: /img/podcast-artwork.png
+  artwork: podcast-artwork.png
   owner:
     name: "Sébastien Stormacq"
     email: "stormacq@amazon.com"

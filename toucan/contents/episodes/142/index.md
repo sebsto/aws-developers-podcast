@@ -12,8 +12,7 @@ file: 142.mp3
 publication: 2024-12-06 19:00:00 +0000
 author: Sébastien Stormacq
 category: podcasts
-background: /img/banner-web-transparent.png
-social-background: /img/142.png
+social-background: 142.png
 appleEpisodeId: 1000679514148
 aws-categories:
   - "General"

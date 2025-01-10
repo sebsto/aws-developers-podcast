@@ -16,8 +16,7 @@ file: 128.mp3
 publication: "2024-08-30 04:00:00 +0000"
 author: Sébastien Stormacq
 category: podcasts
-background: /img/banner-web-transparent.png
-social-background: /img/128.png
+social-background: 128.png
 appleEpisodeId: 1000667231313
 aws-categories:
   - "Serverless"

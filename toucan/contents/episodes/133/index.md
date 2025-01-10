@@ -15,8 +15,7 @@ file: 133.mp3
 publication: "2024-10-04 04:00:00 +0000"
 author: Sébastien Stormacq
 category: podcasts
-background: /img/banner-web-transparent.png
-social-background: /img/133.png
+social-background: 133.png
 appleEpisodeId: 1000671737804
 aws-categories:
   - "Developer Tools"

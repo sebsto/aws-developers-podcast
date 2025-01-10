@@ -12,8 +12,7 @@ file: 136.mp3
 publication: "2024-10-25 04:00:00 +0000"
 author: Sébastien Stormacq
 category: podcasts
-background: /img/banner-web-transparent.png
-social-background: /img/136.png
+social-background: 136.png
 appleEpisodeId: 1000674392878
 aws-categories:
   - "Compute"
