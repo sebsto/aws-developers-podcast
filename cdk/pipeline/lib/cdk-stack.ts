@@ -71,6 +71,7 @@ export class PipelineStack extends cdk.Stack {
           repo: 'aws-developers-podcast', 
           branch: 'main', 
           connectionArn: getGithubConnectionArn(this), // Use the ARN directly
+          codeBuildCloneOutput: true, // clone insteda of copy to get version history during the build
           output: sourceOutput,
         }),
       ],
