@@ -1,0 +1,54 @@
+# global variables, exposed under the `site` namespace
+# this one is replaced by the --base-url parameter at generation time
+# baseUrl: "https://developers.podcast.go-aws.com/web"
+language: "en"
+title: "The AWS Developers Podcast"
+dateFormat: "MMM dd, yy"
+description: "Stay updated on the latest AWS news and insights for developers, wherever you are, whenever you want."
+dark_mode: "Dark mode"
+
+# data appearing in the footer
+copyright_year: "2023-2025"
+french_podcast_url: "https://francais.podcast.go-aws.com"
+developer_podcast_url: "https://developers.podcast.go-aws.com"
+youtube: "https://www.youtube.com/playlist?list=PLZ_TUMnTqfu8a3992JRToUOzAhnwONZ7I"
+linkedin: "https://www.linkedin.com/in/sebastienstormacq/"
+instagram: "https://www.instagram.com/awsdevelopers"
+twitter: "https://x.com/sebsto"
+bluesky: "https://bsky.app/profile/sebsto.bsky.social"
+
+# data appearing on the home page (home/text.mustache)
+sources:
+  title: "Where to tune in"
+  amazon_music: "https://music.amazon.com/podcasts/f8bf7630-2521-4b40-be90-c46a9222c159/aws-developers-podcast"
+  apple_podcast: "https://podcasts.apple.com/be/podcast/aws-developers-podcast/id1574162669"
+  spotify: "https://open.spotify.com/show/7rQjgnBvuyr18K03tnEHBI"
+  youtube: "https://www.youtube.com/playlist?list=PLZ_TUMnTqfu8a3992JRToUOzAhnwONZ7I"
+
+podcast_description: 
+   title: "About the podcast"
+   subtitle: "All things that matter for cloud developers"
+   text: "The AWS Developers Podcast is your go-to resource for all things AWS development, offering insights, tips, and updates for developers of all skill levels. Hosted by experts from the AWS community, each episode dives deep into the latest tools, best practices, and success stories to help you build, innovate, and scale with confidence on the AWS Cloud. Whether you're exploring serverless architecture, machine learning, or DevOps strategies, this podcast keeps you informed and inspired with practical advice and engaging discussions. Tune in and stay ahead in the ever-evolving world of cloud development!"
+
+builder_id:
+  url: "https://profile.aws.amazon.com/"
+  title: "Your Builder ID"
+  text: "An AWS Builder ID unlocks a personal profile that's separate from your regular AWS accounts. It provides free private access to Amazon Q Developer and Code Catalyst, 600+ free Skill Builder courses, community resources, and more. Your AWS Builder ID is designed to accompany you through your goals—it's the perfect place to shape your skills, experiment without risk, and build a richer knowledge base of the AWS suite."
+  signup: "Sign up"
+
+# episodes.mustache
+episodes:
+  title: "Explore all episodes"
+
+medialink: "https://op3.dev/e/https://dts.podtrac.com/redirect.mp3/developers.podcast.go-aws.com/media/"
+imagelink: "https://developers.podcast.go-aws.com/img/"
+rss:
+  artwork: podcast-artwork.png
+  owner:
+    name: "Sébastien Stormacq"
+    email: "stormacq@amazon.com"
+
+# op3.dev dashboard page 
+#
+# https://op3.dev/show/fecb7a87-c357-57ef-a044-3fae2f4569a4
+#

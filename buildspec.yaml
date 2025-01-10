@@ -1,51 +1,47 @@
 # buildspec.yml
-# tested on aws/codebuild/amazonlinux2-x86_64-standard  
 version: 0.2
 
 phases:
   install:
     commands:
-      # - echo Install Ruby 2.4
-      # - yum install -y ruby24 ruby24-devel
-      # - alternatives --set ruby /usr/bin/ruby2.4
-      # - echo Install Bundle and Jekyll 
-      # - yum groupinstall -y "Development Tools"
-      #
-      # - gem install jekyll:3.8.7 jekyll-theme-clean-blog jekyll-paginate-v2
-
-      # https://github.com/BlackrockDigital/startbootstrap-clean-blog-jekyll/pull/223
-      # - gem install jekyll:4.3.3 jekyll-theme-clean-blog jekyll-paginate-v2
-      # https://github.com/jekyll/jekyll/issues/8523
-      # - gem install webrick csv bigdecimal base64
-
-      # install according to Gemfile
-      - bundle config set --local path 'vendor/bundle'
-      - bundle install
+      - echo Installing NPM packages...
+      - npm install
       
-      - bundle --version
-      - ruby --version
-      - gem --version
-      - gem list --local
-      - bundle exec jekyll --version
-
   build:
+    # TODO : for normal publishing of new episodes, we should not build the site, just run toucan.
     commands:
       - echo Build started on `date`
-      # - jekyll build
-      - bundle exec jekyll build
+      - npm run build
+      - npm run copy
+      - npm run dist # invokes toucan
 
   post_build:
     commands:
-      - echo Build completed on `date`, publishing to AWS Developers Podcast will be done by the pipeline.
-      # - aws s3 sync _site/ s3://stormacq.com
+      - echo "Build $CODEBUILD_BUILD_NUMBER completed on `date`, publishing to AWS Developers Podcast will be done by the pipeline."
 
 artifacts:
-  type: zip
   files:
     - '**/*'
-  name: awsdeveloperspodcast-$(date +%Y%m%d%H%M%S).zip
-  base-directory: '_site'
+  name: adp-$(date +%Y%m%d%H%M%S).zip
+  base-directory: 'dist'
 
-cache:
-  paths:
-    - 'vendor/**/*'
+# TODO conditional builds
+
+    # preBuild:
+    #   commands:
+    #     - echo Installing NPM packages...
+    #     - npm install
+    #     - |
+    #       if [ "$CODEBUILD_WEBHOOK_EVENT" = "PUSH" ]; then
+    #         CHANGED_FILES=$(git diff --name-only $CODEBUILD_WEBHOOK_BASE_REF $CODEBUILD_RESOLVED_SOURCE_VERSION)
+    #       else
+    #         CHANGED_FILES=$(git diff --name-only HEAD^1 HEAD)
+    #       fi
+    #       CONTENT_ONLY=true
+    #       for file in $CHANGED_FILES; do
+    #         if [[ ! $file =~ ^toucan/content/.*\.md$ ]]; then
+    #           CONTENT_ONLY=false
+    #           break
+    #         fi
+    #       done
+    #       echo "CONTENT_ONLY=$CONTENT_ONLY" >> $CODEBUILD_ENV_FILE

@@ -1,0 +1,42 @@
+ <!-- Audio player -->
+    <div id="audio-player" class="bg-light-subtle">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 px-7 py-3 position-relative">
+            <div class="audio-controls d-flex align-items-center column-gap-4">
+              <div class="audio-player__seek-slider-container">
+                <div class="progress-fill"></div>
+                <input type="range" id="progress" class="audio-player__seek-slider" value="0" step="1" min="0" max="100">
+              </div>
+
+              <button id="play-pause" class="btn position-relative bg-dark-subtle text-dark-emphasis hover-bg-lighter hover-text-darker hover-border-darker icon-only cta-with-icon">
+                <span class="cta__icon cta__icon--play">
+                  <svg>
+                    <use xlink:href="{{site.baseUrl}}/images/play.svg#play"></use>
+                  </svg>
+                </span>
+                <span class="cta__icon cta__icon--pause d-none">
+                  <svg>
+                    <use xlink:href="{{site.baseUrl}}/images/pause.svg#pause"></use>
+                  </svg>
+                </span>
+              </button>
+
+              <div>
+                <p class="audio-player__title fw-medium mb-1"></p>
+                <p class="audio-player__details smaller mb-0"></p>
+              </div>
+              
+              <button id="close" class="btn position-relative text-light-emphasis hover-text-info hover-text-info-subtle border-0 icon-only cta-with-icon ms-auto">
+                <span class="cta__icon">
+                  <svg>
+                    <use xlink:href="{{site.baseUrl}}/images/close.svg#close"></use>
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- End audio player -->

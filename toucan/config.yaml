@@ -1,0 +1,6 @@
+themes: 
+  use: "aws_podcasts"
+contents:
+  dateFormat: "yyyy-MM-dd HH:mm:ss Z"
+  rss:
+    output: feed.xml

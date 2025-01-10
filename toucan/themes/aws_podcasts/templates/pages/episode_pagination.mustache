@@ -1,0 +1,65 @@
+          {{#empty(pagination.data.podcast)}}
+          No episode
+          {{/empty(pagination.data.podcast)}}
+          
+          {{^empty(pagination.data.podcast)}}    
+          {{#pagination.data.podcast}}
+
+          <!-- Episode card start -->
+          <div class="col-12 col-md-6">
+            <div class="episode__card h-100 bg-light-subtle hover-gradient-2 position-relative p-4 p-md-6">
+
+              <div class="d-flex justify-content-between mb-4">
+                <p class="episode__tag text-uppercase text-white fw-bold mb-0"><span>Episode {{ episode }}</span></p>
+                
+                <p class="small mb-3">{{ publication.html }} • <span class="duration">{{duration}}</span></p>
+              </div>
+
+              <div class="episode__content">
+                <h4 class="mb-3">{{ title }}</h4>
+  
+                <p class="small fw-medium mb-3">
+                {{#guests}}
+                {{name}}, {{title}}{{^last()}} • {{/last()}}
+                {{/guests}}
+                </p>
+                
+                <!-- Could you truncate this using a filter/helper function in your template engine? and end with a ... -->
+                <p class="small mb-0 truncate">{{ description }}</p>
+              </div>
+
+              <div>
+                <div class="episode__cta pt-9">
+                  <!-- for phase 2 when detail pages are available -->
+                  <!-- <a href="#" class="btn btn-link stretched-link cta-with-icon text-white text-decoration-none px-0">
+                    <div class="cta-anim-text-left">
+                      <span class="cta__text cta__text--left">Learn more</span>
+                      <span class="cta__icon">
+                        <svg>
+                          <use xlink:href="{{site.baseUrl}}/img/arrow-right.svg#arrow-right"></use>
+                        </svg>
+                      </span>
+                    </div>
+                  </a> -->
+                </div>
+
+                <div class="episode__play position-absolute">
+                  <!-- To allow the button to play audio files, include the data-audio-src with the url to the audio file along with a data-title and data-details for the track information -->
+                  <button class="btn btn-play position-relative bg-dark-subtle text-dark-emphasis hover-bg-lighter hover-text-darker hover-border-darker icon-only cta-with-icon" data-audio-src="{{medialink}}{{episode}}.mp3" data-title="Episode {{ episode }} : {{ title }}" data-details="{{#guests}}{{name}}{{^last()}}, {{/last()}}{{/guests}}">
+                    <div>
+                      <span class="cta__icon">
+                        <svg>
+                          <use xlink:href="{{site.baseUrl}}/images/play.svg#play"></use>
+                        </svg>
+                      </span>
+                    </div>
+                  </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- Episode card end -->
+
+          {{/pagination.data.podcast}}
+          {{/empty(pagination.data.podcast)}}

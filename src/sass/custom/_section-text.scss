@@ -1,0 +1,19 @@
+.section-text {
+  .logo-badge {
+    transition: all 0.3s ease;
+    text-decoration: none;
+    outline: 0;
+
+    &:hover,
+    &:focus,
+    &:active {
+      text-decoration: underline;
+    }
+  }
+
+  .section-text__icon {
+    flex-shrink: 0;
+    width: 4rem;
+    height: 4rem;
+  }
+}

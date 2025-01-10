@@ -1,0 +1,24 @@
+.header {
+  .header__background {
+    max-width: calc(1200px + 7rem);
+    border-radius: 1rem;
+    padding: 1.09375rem 0.5rem;
+
+    @include media-breakpoint-up(lg) {
+      padding: 1.09375rem 3.5rem;
+    }
+  }
+
+  .header__content {
+    max-width: 1200px;
+  }
+
+  .header__logo {
+    width: 3rem;
+    height: 1.8125rem;
+  }
+
+  .form-switch * {
+    cursor: pointer;
+  }
+}

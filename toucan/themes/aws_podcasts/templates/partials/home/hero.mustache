@@ -1,0 +1,21 @@
+  <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <div class="row justify-content-between py-5 py-md-8">
+          <div class="col-12 col-md-6 col-lg-5 d-flex flex-column justify-content-center order-1 order-md-0 pt-4 pt-md-0">
+            
+            <p class="hero__supertitle text-uppercase fw-bold mb-5">{{page.supertitle}}</p>
+
+            <h1 class="fw-bold mb-5">{{page.title}}</h1>
+
+            <p class="lead mb-0">{{& page.contents}}</p>
+
+          </div>
+
+          <div class="col-12 col-md-6 d-flex align-items-center order-0 order-md-1">
+            <img src="{{site.baseUrl}}/images/hero-image.png" alt="Hero" class="w-100">
+          </div>
+        </div>
+      </div>
+    </section>
+  <!-- End hero -->

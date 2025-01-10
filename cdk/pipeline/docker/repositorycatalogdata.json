@@ -1,0 +1,11 @@
+{
+    "description": "This repository hosts the dockers images that build the AWS Developers Podcast web site and RSS feed",
+    "architectures": [
+        "x86", "arm64"
+    ],
+    "operatingSystems": [
+        "Linux"
+    ],
+    "aboutText": "This repository hosts the dockers images that build the AWS Developers Podcast web site and RSS feed",
+    "usageText": "This repository is not for public use."
+}

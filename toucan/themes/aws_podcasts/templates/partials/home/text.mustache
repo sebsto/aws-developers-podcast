@@ -1,0 +1,80 @@
+    <!-- Section text -->
+    <section class="section-text">
+      <div class="container">
+        <div class="row justify-content-between py-5 py-md-8">
+          <div class="col-12 col-md-6 col-lg-5">
+
+            <h2 class="fw-bold mb-5">{{podcast_description.title}}</h2>
+
+            <h4 class="fw-medium mb-3">{{podcast_description.subtitle}}</h4>
+
+            <p class="mb-0">{{podcast_description.text}}</p>
+
+          </div>
+
+          <div class="col-12 col-md-6 pt-4 pt-md-0">
+
+            <h4 class="fw-medium mb-5">{{sources.title}}</h4>
+
+            <div class="row row-gap-4 mb-5">
+              <div class="col-6">
+                <a href="{{sources.amazon_music}}" target="_blank" class="logo-badge text-body-emphasis">
+                  <div class="d-flex align-items-center column-gap-3">
+                    <svg class="section-text__icon">
+                      <use xlink:href="{{site.baseUrl}}/images/amazon-music.svg#amazon-music"></use>
+                    </svg>
+                    <p class="mb-0">Amazon Music</p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-6">
+                <a href="{{sources.apple_podcast}}" target="_blank" class="logo-badge text-body-emphasis">
+                  <div class="d-flex align-items-center column-gap-3">
+                    <svg class="section-text__icon">
+                      <use xlink:href="{{site.baseUrl}}/images/apple-podcast.svg#apple-podcast"></use>
+                    </svg>
+                    <p class="mb-0">Apple Podcast</p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-6">
+                <a href="{{sources.spotify}}" target="_blank" class="logo-badge text-body-emphasis">
+                  <div class="d-flex align-items-center column-gap-3">
+                    <svg class="section-text__icon dark-d-none">
+                      <use xlink:href="{{site.baseUrl}}/images/spotify.svg#spotify"></use>
+                    </svg>
+                    <svg class="section-text__icon light-d-none">
+                      <use xlink:href="{{site.baseUrl}}/images/spotify-alt.svg#spotify-alt"></use>
+                    </svg>
+                    <p class="mb-0">Spotify</p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-6">
+                <a href="{{sources.youtube}}" target="_blank" class="logo-badge text-body-emphasis">
+                  <div class="d-flex align-items-center column-gap-3">
+                    <svg class="section-text__icon">
+                      <use xlink:href="{{site.baseUrl}}/images/youtube-music.svg#youtube-music"></use>
+                    </svg>
+                    <p class="mb-0">YouTube</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <h4 class="fw-medium mb-3">{{builder_id.title}}</h4>
+
+            <p class="mb-0">{{builder_id.text}}</p>
+
+            <div class="mt-5">
+              <a href="{{builder_id.url}}" target="_blank" class="btn bg-dark-subtle text-dark-emphasis hover-gradient-1">{{builder_id.signup}}</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  <!-- End section text -->

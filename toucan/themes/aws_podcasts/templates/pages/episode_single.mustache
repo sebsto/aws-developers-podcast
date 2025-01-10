@@ -1,0 +1,34 @@
+{{<html}}
+{{$main}}
+
+{{& page.contents}}
+
+<div id="episodes" class="wrapper">
+
+    {{#empty(pagination.data.podcast)}}
+    Empty.
+    {{/empty(pagination.data.podcast)}}
+    
+    {{^empty(pagination.data.podcast)}}
+    <div class="grid grid-321">
+    {{#pagination.data.podcast}}
+        {{title}} - {{publication.html}}
+        <br>
+    {{/pagination.data.podcast}}
+    </div>
+    {{/empty(pagination.data.podcast)}}
+    
+    {{#empty(pagination.links.podcast)}}
+    {{/empty(pagination.links.podcast)}}
+    {{^empty(pagination.links.podcast)}}
+    <div class="pagination">
+    {{#pagination.links.podcast}}
+        {{> partials.pagination}}
+    {{/pagination.links.podcast}}
+    </div>
+    {{/empty(pagination.links.podcast)}}
+
+</div>
+
+{{/main}}
+{{/html}}

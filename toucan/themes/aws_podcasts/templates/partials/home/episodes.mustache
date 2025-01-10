@@ -1,0 +1,50 @@
+  <!-- Episodes -->
+  <script>
+  let maxPages = {{count(pagination.links.podcast)}};
+  console.log("maxPages = " + maxPages);
+  </script>
+
+    <section class="episodes">
+      <div class="container">
+        <div class="row pt-5 pt-md-8">
+          <div class="col-12">
+            <h2 class="fw-bold mb-5">{{episodes.title}}</h2>
+          </div>
+        </div>
+
+        <div class="row row-gap-4 pb-5 pb-md-8" id="episodes_cards">
+          <!-- 
+          
+          Display 11 of these episode cards and follow up with a show more card
+
+          Dynamically load episodes/pages/1/index.html + handle navigation with Javascript
+          
+          -->
+
+          <!-- Show more card, use the pagination method you spoke of in the templating engine. Also since this was set up to be like an infinite scroller, if that's not possible and classic pagination is required, perhaps, just use two of these button cards for previous 10 and next 10, then you only need to show initially 10 instead of 11. for mobile you can add order classes to display the two buttons appropriately or you can add the button cards to a seperate bootstrap row and have them side by side -->
+
+          <!-- Show more card start -->
+          <!-- replaced by infinite scrolling --> 
+          <!--
+          <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
+            <div class="py-5">
+              <button class="btn bg-light text-dark hover-gradient-1 cta-with-icon" id="nextPage">
+                <span class="cta__text cta__text--left">Show 10 more</span>
+                <span class="cta__icon">
+                  <svg>
+                    <use xlink:href="{{site.baseUrl}}/images/arrow-right.svg#arrow-right"></use>
+                  </svg>
+                </span>
+              </button>
+            </div>
+          -->
+          <!-- Show more card end -->
+
+        </div>
+
+        <!-- anchor for infinite scrolling -->
+        <span id="scrollAnchor"></span>
+      
+      </div>
+    </section>
+  <!-- End episodes -->

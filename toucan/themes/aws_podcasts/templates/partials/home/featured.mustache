@@ -1,0 +1,71 @@
+  
+{{#site.context.latest}}
+
+  <!-- Featured episode -->
+    <section class="featured-episode">
+      <div class="container">
+        <div class="row py-5 py-md-8">
+          <div class="col-12">
+            <div class="featured-episode__card hover-gradient-2 position-relative overflow-hidden p-4 p-md-6">
+
+<!--
+              <div class="featured-episode__background d-none d-md-block position-absolute"  style="background-image: url('{{site.baseUrl}}/images/featured-episode-0-bg.png');"></div>
+              <div class="featured-episode__background-mb d-block d-md-none position-absolute"  style="background-image: url('{{site.baseUrl}}/images/featured-episode-0-bg-mb.png');"></div>
+-->              
+              <div class="featured-episode__background d-none d-md-block position-absolute"  style="background-image: url('{{ imagelink }}{{ episode }}-bannerh.png');"></div>
+              <div class="featured-episode__background-mb d-block d-md-none position-absolute"  style="background-image: url('{{ imagelink }}{{ episode }}-bannerv.png');"></div>
+
+              <div class="featured-episode__content">
+                <p class="featured-episode__tag text-uppercase text-white fw-bold mb-9"><span>Episode {{episode}}</span></p>
+  
+                <p class="text-white mb-3">{{publication.html}} • <span class="duration">{{duration}}</span></p>
+  
+                <p class="text-white fw-medium mb-3">
+                {{#guests}}
+                {{name}}, {{title}}{{^last()}} • {{/last()}}
+                {{/guests}}
+                </p>
+  
+                <h3 class="text-white mb-3">{{title}}</h3>
+  
+                <p class="text-white mb-0 truncate">{{ description }}</p>
+              </div>
+
+              <div>
+                <div class="episode__cta pt-7">
+                  <!-- for phase 2 when detail pages are available -->
+                  <!-- <a href="#" class="btn btn-link stretched-link cta-with-icon text-white text-decoration-none px-0">
+                    <div class="cta-anim-text-left">
+                      <span class="cta__text cta__text--left">Learn more</span>
+                      <span class="cta__icon">
+                        <svg>
+                          <use xlink:href="{{site.baseUrl}}/images/arrow-right.svg#arrow-right"></use>
+                        </svg>
+                      </span>
+                    </div>
+                  </a> -->
+                </div>
+
+                <div class="episode__play position-absolute">
+                  <!-- To allow the button to play audio files, include the data-audio-src with the url to the audio file along with a data-title and data-details for the track information -->
+                  <button class="btn btn-play bg-lighter text-darker hover-border-darker cta-with-icon" data-audio-src="{{medialink}}{{episode}}.mp3" data-title="Episode {{ episode }} : {{ title }}" data-details="{{#guests}}{{name}}{{^last()}}, {{/last()}}{{/guests}}">
+                    <div class="cta-anim-text-right">
+                      <span class="cta__icon">
+                        <svg>
+                          <use xlink:href="{{site.baseUrl}}/images/play.svg#play"></use>
+                        </svg>
+                      </span>
+                      <span class="cta__text cta__text--right">Play</span>
+                    </div>
+                  </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  <!-- End featured episode -->
+
+  {{/site.context.latest}}

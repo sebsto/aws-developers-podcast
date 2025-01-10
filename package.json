@@ -1,0 +1,56 @@
+{
+  "name": "aws-developer-podcast",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack --watch",
+    "build": "webpack",
+    "copy": "[[ ! -d build ]] && exit -1; echo 'Copying assets from build to toucan directory' && cp build/css/* toucan/themes/aws_podcasts/assets/css && cp build/fonts/* toucan/themes/aws_podcasts/assets/fonts && cp build/images/* toucan/themes/aws_podcasts/assets/images && cp build/js/* toucan/themes/aws_podcasts/assets/js && cp build/index.html toucan/themes/aws_podcasts/assets/_index.html && echo 'Done'",
+    "dist": "/usr/local/bin/toucan generate ./toucan ./dist --base-url https://developers.podcast.go-aws.com/web",
+    "preview": "/usr/local/bin/toucan generate ./toucan ./dist --base-url https://preview-en.podcast.go-aws.com"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.3",
+    "svgxuse": "^1.2.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "autoprefixer": "^10.4.20",
+    "babel-loader": "^9.2.1",
+    "browser-sync": "^2.29.3",
+    "browser-sync-webpack-plugin": "^2.3.0",
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^7.1.2",
+    "html-loader": "^5.1.0",
+    "html-webpack-plugin": "^5.6.3",
+    "mini-css-extract-plugin": "^2.9.2",
+    "postcss": "^8.4.49",
+    "postcss-loader": "^8.1.1",
+    "postcss-preset-env": "^10.1.1",
+    "postcss-sort-media-queries": "^5.2.0",
+    "sass": "^1.81.0",
+    "sass-loader": "^16.0.3",
+    "webpack": "^5.96.1",
+    "webpack-cli": "^5.1.4"
+  },
+  "browserslist": {
+    "production": [
+      "last 2 versions",
+      ">2%",
+      "not ie > 0",
+      "not ie_mob > 0"
+    ],
+    "development": [
+      "last 2 versions",
+      ">2%",
+      "not ie > 0",
+      "not ie_mob > 0"
+    ]
+  }
+}

@@ -1,0 +1,121 @@
+.episode__tag span,
+.featured-episode__tag span {
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.episode__tag span {
+  background-color: $aws-darker;
+}
+
+.episode__play {
+  right: 1.5rem;
+  bottom: 1.5rem;
+  z-index: 2;
+
+  // .btn-play {
+  //   transition: all 0.3s ease;
+
+  //   &.icon-only  {
+  //     .cta__icon {
+  //       margin-left: 2px;
+  //     }
+  //   }
+  // }
+
+  @include media-breakpoint-up(lg) {
+    right: 2.5rem;
+    bottom: 2.5rem;
+  }
+}
+
+.episodes {
+  .episode__card {
+    border-radius: 1.5rem;
+    transition: all 0.3s ease;
+  }
+
+  .episode__content {
+    width: 80%;
+  }
+
+  .episode__tag span {
+    background: linear-gradient(90deg, #A82700, #7300E5);
+  }
+}
+
+.featured-episode {
+  .featured-episode__card {
+    border-radius: 1.5rem;
+    background-color: $aws-secondary;
+    transition: all 0.3s ease;
+
+    .featured-episode__content {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+
+      @include media-breakpoint-up(md) {
+        width: 80%;
+      }
+
+      @include media-breakpoint-up(lg) {
+        width: 60%;
+      }
+
+      .featured-episode__tag span {
+        background-color: $aws-darker;
+      }
+    }
+
+    // .episode__play {
+    //   .btn-play {
+    //     background-color: $white;
+
+    //     .cta__text,
+    //     .cta__icon {
+    //       color: $aws-darker;
+    //     }
+
+    //     .cta__icon {
+    //       color: $aws-darker;
+    //     }
+
+    //     &:hover,
+    //     &:focus,
+    //     &:active {
+    //       background-color: $aws-darker;
+
+    //       .cta__text,
+    //       .cta__icon {
+    //         color: $white;
+    //       }
+    //     }
+    //   }
+    // }
+
+    .featured-episode__background {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-position: 75% center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .featured-episode__background-mb {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-position: center 60%;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    @include media-breakpoint-down(md) {
+      padding-bottom: 50% !important;
+    }
+  }
+}

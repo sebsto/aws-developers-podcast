@@ -1,0 +1,19 @@
+id: podcast
+rss: true
+location: episodes
+# TODO : this is a temporary template while waiting for the agency delivery in 2025
+template: pages.episode_single
+
+pagination:
+    bundle: episodes/pagination
+    limit: 10
+    sort: publication
+    order: desc
+
+context:
+    site:        
+        latest:
+            sort: publication
+            order: desc
+            limit: 1
+
