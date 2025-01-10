@@ -69,7 +69,7 @@ export class PipelineStack extends cdk.Stack {
           actionName: 'GitHub_Source',
           owner: 'sebsto', 
           repo: 'aws-developers-podcast', 
-          branch: 'new_look', 
+          branch: 'main', 
           connectionArn: getGithubConnectionArn(this), // Use the ARN directly
           output: sourceOutput,
         }),
