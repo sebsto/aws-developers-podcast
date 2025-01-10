@@ -4,7 +4,7 @@ description: "In this episode, Seb talks with Vitor Monteiro to explore how AI i
 guests:
   - name: "Vitor Monteiro"
     link: "https://www.linkedin.com/in/vitormonteiro/"
-    title: Head of Solutions Engineering EMEA, Poolside.ai"
+    title: "Head of Solutions Engineering EMEA, Poolside.ai"
 episode: 147
 duration: "00:41:02" 
 size: 78803616
