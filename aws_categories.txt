@@ -15,4 +15,4 @@ Serverless
 Storage
 Training & Certification
 General
-
+Diversity, Equity, and Inclusion
