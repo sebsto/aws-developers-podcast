@@ -3,8 +3,13 @@ import * as codebuild from 'aws-cdk-lib/aws-codebuild';
 import * as codepipeline from 'aws-cdk-lib/aws-codepipeline';
 import * as codepipeline_actions from 'aws-cdk-lib/aws-codepipeline-actions';
 import * as s3 from 'aws-cdk-lib/aws-s3';
-import * as s3deploy from 'aws-cdk-lib/aws-s3-deployment';
 import { Platform } from 'aws-cdk-lib/aws-ecr-assets';
+import * as scheduler from 'aws-cdk-lib/aws-scheduler';
+import * as cloudfront from 'aws-cdk-lib/aws-cloudfront';
+import * as origins from 'aws-cdk-lib/aws-cloudfront-origins';
+import * as acm from 'aws-cdk-lib/aws-certificatemanager';
+import * as wafv2 from 'aws-cdk-lib/aws-wafv2';
+import * as iam from 'aws-cdk-lib/aws-iam';
 
 import { Construct } from 'constructs';
 
@@ -102,6 +107,89 @@ export class PipelineStack extends cdk.Stack {
         }),
       ],
     });
+
+    // There is no L2 construct for scheduler yet 
+    // https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_scheduler-readme.html
+    
+    // Create an IAM role for the scheduler to invoke CodePipeline
+    const schedulerRole = new iam.Role(this, 'SchedulerRole', {
+      assumedBy: new iam.ServicePrincipal('scheduler.amazonaws.com'),
+    });
+    
+    // Add permission to start pipeline execution
+    schedulerRole.addToPolicy(new iam.PolicyStatement({
+      actions: ['codepipeline:StartPipelineExecution'],
+      resources: [pipeline.pipelineArn],
+    }));
+    
+    // Create the schedule
+    const scheduleFriday = new scheduler.CfnSchedule(this, 'ADPFridayPipelineSchedule', {
+      flexibleTimeWindow: {
+        mode: 'OFF'
+      },
+      scheduleExpression: 'cron(0 4 ? * FRI *)',
+      scheduleExpressionTimezone: 'UTC',
+      target: {
+        arn: pipeline.pipelineArn,
+        roleArn: schedulerRole.roleArn,
+        input: JSON.stringify({}),
+      },
+      name: 'developers-podcast-friday-pipeline',
+      description: 'Triggers the Developers Podcast pipeline every Friday at 4am UTC',
+      state: 'ENABLED',
+    });
+    
+    //
+    // Cloudfront 
+    //
+
+    // Import existing ACM certificate
+    const certificate = acm.Certificate.fromCertificateArn(this, 'Certificate', 
+      'arn:aws:acm:us-east-1:533267385481:certificate/bf3dcc3c-1e7e-4c6f-9956-ad636633a79a'
+    );
+
+    // Create CloudFront distribution
+    // https://aws.amazon.com/blogs/devops/a-new-aws-cdk-l2-construct-for-amazon-cloudfront-origin-access-control-oac/
+    const distribution = new cloudfront.Distribution(this, 'Distribution', {
+      defaultBehavior: {
+        origin: origins.S3BucketOrigin.withOriginAccessControl(websiteBucket),
+        viewerProtocolPolicy: cloudfront.ViewerProtocolPolicy.HTTPS_ONLY,
+        allowedMethods: cloudfront.AllowedMethods.ALLOW_GET_HEAD,
+        cachedMethods: cloudfront.CachedMethods.CACHE_GET_HEAD,
+        compress: true,
+        cachePolicy: cloudfront.CachePolicy.CACHING_DISABLED
+      },
+      domainNames: ['developers.podcast.go-aws.com'],
+      certificate: certificate,
+      defaultRootObject: '',
+      enabled: true,
+      httpVersion: cloudfront.HttpVersion.HTTP2,
+      priceClass: cloudfront.PriceClass.PRICE_CLASS_ALL,
+      enableIpv6: true,
+      errorResponses: [
+        {
+          httpStatus: 403,
+          responseHttpStatus: 404,
+          responsePagePath: '/index.html',
+          ttl: cdk.Duration.seconds(10),
+        },
+      ],
+      logBucket: s3.Bucket.fromBucketName(this, 'LogBucket', 'aws-podcasts-cloudfront-logs'),
+      logFilePrefix: 'AWSDevelopersPodcast',
+      logIncludesCookies: false,
+    });
+
+    // Grant the CloudFront distribution access to the S3 bucket
+    websiteBucket.addToResourcePolicy(new iam.PolicyStatement({
+      actions: ['s3:GetObject'],
+      resources: [websiteBucket.arnForObjects('*')],
+      principals: [new iam.ServicePrincipal('cloudfront.amazonaws.com')],
+      conditions: {
+        StringEquals: {
+          'AWS:SourceArn': `arn:aws:cloudfront::${cdk.Stack.of(this).account}:distribution/${distribution.distributionId}`
+        }
+      }
+    }));    
 
     // Output the website URL
     new cdk.CfnOutput(this, 'WebsiteURL', {
