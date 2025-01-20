@@ -1,6 +1,6 @@
 ---
 title:  "Meet Darya, from sitting-at-home mom to data scientist"
-description: "In this episode, Darya Petrashka shares her inspiring journey from being a stay-at-home mom to becoming a data scientist. She discusses the challenges she faced in transitioning to a tech career, the importance of mentorship, and her experiences with cloud computing. Daria emphasizes the significance of community engagement and offers valuable advice for aspiring tech professionals, particularly women. She also addresses the common struggle of imposter syndrome and highlights the importance of continuous learning and support in career development."
+description: "In this episode, Darya Petrashka shares her inspiring journey from being a stay-at-home mom to becoming a data scientist. She discusses the challenges she faced in transitioning to a tech career, the importance of mentorship, and her experiences with cloud computing. Darya emphasizes the significance of community engagement and offers valuable advice for aspiring tech professionals, particularly women. She also addresses the common struggle of imposter syndrome and highlights the importance of continuous learning and support in career development."
 guests:
   - name: "Darya Petrashka"
     link: "https://www.linkedin.com/in/daryapetrashka/"
