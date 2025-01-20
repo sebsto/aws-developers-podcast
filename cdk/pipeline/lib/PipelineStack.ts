@@ -3,15 +3,16 @@ import * as codebuild from 'aws-cdk-lib/aws-codebuild';
 import * as codepipeline from 'aws-cdk-lib/aws-codepipeline';
 import * as codepipeline_actions from 'aws-cdk-lib/aws-codepipeline-actions';
 import * as s3 from 'aws-cdk-lib/aws-s3';
-import { Platform } from 'aws-cdk-lib/aws-ecr-assets';
 import * as scheduler from 'aws-cdk-lib/aws-scheduler';
 import * as cloudfront from 'aws-cdk-lib/aws-cloudfront';
 import * as origins from 'aws-cdk-lib/aws-cloudfront-origins';
 import * as acm from 'aws-cdk-lib/aws-certificatemanager';
-import * as wafv2 from 'aws-cdk-lib/aws-wafv2';
 import * as iam from 'aws-cdk-lib/aws-iam';
+import * as wafv2 from 'aws-cdk-lib/aws-wafv2';
 
+import { Platform } from 'aws-cdk-lib/aws-ecr-assets';
 import { Construct } from 'constructs';
+
 
 const getGithubConnectionArn = (scope: Construct): string => {
   const account = cdk.Stack.of(scope).account;
@@ -151,7 +152,10 @@ export class PipelineStack extends cdk.Stack {
     // Create CloudFront distribution
     // https://aws.amazon.com/blogs/devops/a-new-aws-cdk-l2-construct-for-amazon-cloudfront-origin-access-control-oac/
     const distribution = new cloudfront.Distribution(this, 'Distribution', {
+      webAclId: 'arn:aws:wafv2:us-east-1:533267385481:global/webacl/WebACL-2ijNukbvUyvs/4f9531f2-64dd-49a7-a220-d77130d5f4fa',   // created with PodcastWAFStack in us-east-1
       defaultBehavior: {
+        // we have to change the permission on the bucket manually 
+        // https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_cloudfront_origins-readme.html#setting-up-oac-with-imported-s3-buckets
         origin: origins.S3BucketOrigin.withOriginAccessControl(websiteBucket),
         viewerProtocolPolicy: cloudfront.ViewerProtocolPolicy.HTTPS_ONLY,
         allowedMethods: cloudfront.AllowedMethods.ALLOW_GET_HEAD,
