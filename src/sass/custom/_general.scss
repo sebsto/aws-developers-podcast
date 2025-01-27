@@ -4,6 +4,11 @@
   font-size: 0.75rem;
 }
 
+// gradient bg
+.gradient-1 {
+  background: linear-gradient(90.07deg, #004A9E -22.24%, #A000B8 122.91%);
+}
+
 // gradient hover
 .hover-gradient-1 {
   &:hover,

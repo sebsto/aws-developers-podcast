@@ -127,6 +127,11 @@ module.exports = () => ({
       filename: 'index.html',
       minify: false,
     }),
+    new HtmlWebpackPlugin({
+      template: 'src/detail.html',
+      filename: 'detail.html',
+      minify: false,
+    }),
     new RemoveAttributePlugin(),
     new BrowserSyncPlugin({
       host: 'localhost',
