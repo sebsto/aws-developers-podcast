@@ -1,0 +1,16 @@
+.link-card {
+  position: relative;
+  border-radius: 1.5rem;
+
+  &:hover,
+  &:active,
+  &:focus-within {
+    p {
+      text-decoration: underline;
+    }
+  }
+
+  p {
+    font-size: 1.25rem;
+  }
+}
