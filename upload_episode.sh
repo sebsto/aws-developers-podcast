@@ -79,8 +79,8 @@ upload_episode_image() {
         return 1
     fi
 
-    echo "Uploading $file_name.png"
-    aws --profile podcast s3 cp "$FILE" "s3://$PODCAST_BUCKET/$IMG_PREFIX/"
+    echo "Uploading $file_name"
+    aws --profile podcast s3 cp "$FILE" "s3://$PODCAST_BUCKET/$IMG_PREFIX/" 
     return $?
 }
 
