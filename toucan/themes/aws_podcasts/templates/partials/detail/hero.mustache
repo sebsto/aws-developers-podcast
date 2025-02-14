@@ -1,0 +1,38 @@
+<!-- Episode hero -->
+    <section class="episode-hero">
+      <div class="container">
+        <div class="row justify-content-between py-5 py-md-8">
+          <div class="col-12 col-md-6 col-lg-5 d-flex align-items-center">
+            <div class="ratio ratio-1x1">
+              <img src="{{ imagelink }}{{ page.episode }}.png" alt="Hero" class="object-fit-cover rounded-3">
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 d-flex flex-column justify-content-center pt-4 pt-md-0 episode__card">
+            
+            <p class="episode__tag text-uppercase text-white fw-bold mb-4"><span>Episode {{ page.episode }}</span></p>
+
+            <h1 class="mb-3">{{ page.title }}</h1>
+
+            <p class="mb-3 lead">{{ page.publication.html }} • {{ page.duration }}</p>
+
+            <p class="mb-0 lead">With {{#page.guests}}{{name}}, {{title}}{{^last()}}, and {{/last()}}{{/page.guests}}</p>
+
+            <div class="episode__play mt-4">
+							<button class="btn btn-play bg-dark-subtle text-dark-emphasis hover-bg-lighter hover-text-darker hover-border-darker cta-with-icon" data-audio-src="{{medialink}}{{page.episode}}.mp3" data-title="Episode {{ page.episode }} : {{ page.title }}" data-details="{{#page.guests}}{{name}}{{^last()}} • {{/last()}}{{/page.guests}}">
+                <div class="cta-anim-text-right">
+                  <span class="cta__icon">
+                    <svg>
+                      <use xlink:href="{{site.baseUrl}}/images/play.svg#play"></use>
+                    </svg>
+                  </span>
+                  <span class="cta__text cta__text--right">Play</span>
+                </div>
+              </button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  <!-- End episode hero -->

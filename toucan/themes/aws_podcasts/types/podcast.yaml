@@ -1,8 +1,7 @@
 id: podcast
 rss: true
 location: episodes
-# TODO : this is a temporary template while waiting for the agency delivery in 2025
-template: pages.episode_single
+template: pages.detail
 
 pagination:
     bundle: episodes/pagination
