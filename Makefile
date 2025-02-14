@@ -25,15 +25,15 @@ prod: $(DIST_DIR)
 
 # Development build depends on dist directory and adds base URL
 dev: $(DIST_DIR)
-	toucan generate $(TOUCAN_DIR) $(DIST_DIR) --base-url http://127.0.0.1:3000
+	toucan generate $(TOUCAN_DIR) $(DIST_DIR) --base-url http://127.0.0.1:8888
 
 # Watch depends on dev build
 watch: dev
-	toucan watch $(TOUCAN_DIR) $(DIST_DIR) --base-url http://127.0.0.1:3000
+	toucan watch $(TOUCAN_DIR) $(DIST_DIR) --base-url http://127.0.0.1:8888
 
 # Serve depends on having the dist directory
 serve: $(DIST_DIR)
-	toucan serve $(DIST_DIR) -p 3000
+	toucan serve $(DIST_DIR) -p 8888
 
 # Image optimization targets
 png: $(wildcard $(TOUCAN_DIR)/**/*.png)
