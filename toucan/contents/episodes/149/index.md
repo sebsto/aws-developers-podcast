@@ -18,7 +18,7 @@ category: podcasts
 aws-categories:
   - "Databases"
 links:
-  - text: "Doc][Amazon RDS Blue/Green deployments overview"
+  - text: "Doc: Amazon RDS Blue/Green deployments overview"
     link: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/blue-green-deployments-overview.html
   - text: "Amazon RDS Blue Green now allows performant storage switchover"
     link: https://aws.amazon.com/about-aws/whats-new/2024/11/amazon-rds-blue-green-deployments-green-storage-performant-switchover/
