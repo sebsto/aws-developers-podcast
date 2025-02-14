@@ -7,11 +7,7 @@
         <div class="row py-5 py-md-8">
           <div class="col-12">
             <div class="featured-episode__card hover-gradient-2 position-relative overflow-hidden p-4 p-md-6">
-
-<!--
-              <div class="featured-episode__background d-none d-md-block position-absolute"  style="background-image: url('{{site.baseUrl}}/images/featured-episode-0-bg.png');"></div>
-              <div class="featured-episode__background-mb d-block d-md-none position-absolute"  style="background-image: url('{{site.baseUrl}}/images/featured-episode-0-bg-mb.png');"></div>
--->              
+        
               <div class="featured-episode__background d-none d-md-block position-absolute"  style="background-image: url('{{ imagelink }}{{ episode }}-bannerh.png');"></div>
               <div class="featured-episode__background-mb d-block d-md-none position-absolute"  style="background-image: url('{{ imagelink }}{{ episode }}-bannerv.png');"></div>
 
@@ -33,8 +29,7 @@
 
               <div>
                 <div class="episode__cta pt-7">
-                  <!-- for phase 2 when detail pages are available -->
-                  <!-- <a href="#" class="btn btn-link stretched-link cta-with-icon text-white text-decoration-none px-0">
+                  <a href="{{site.baseUrl}}/episodes/{{episode}}/index.html" class="btn btn-link stretched-link cta-with-icon text-white text-decoration-none px-0">
                     <div class="cta-anim-text-left">
                       <span class="cta__text cta__text--left">Learn more</span>
                       <span class="cta__icon">
@@ -43,7 +38,7 @@
                         </svg>
                       </span>
                     </div>
-                  </a> -->
+                  </a>
                 </div>
 
                 <div class="episode__play position-absolute">
