@@ -24,10 +24,10 @@ links:
     link: https://aws.amazon.com/q/developer/
   - text: "A framework to adopt generative AI assistants for builders"
     link: https://it20.info/2024/5/a-framework-to-adopt-generative-ai-assistants-for-builders/
-  - name: "The Commodore 64 programming reference guide (Consider making a donation)"
+  - text: "The Commodore 64 programming reference guide (Consider making a donation)"
     link: https://archive.org/details/c64-programmer-ref
-  - name: "Ric's blog post: Back to the future: Writing 6502 assembler with Amazon Q Developer"
+  - text: "Ric's blog post: Back to the future: Writing 6502 assembler with Amazon Q Developer"
     link: https://community.aws/content/2oEqDGCIsQwoPrL3wjoSReyHnan/back-to-the-future-writing-6502-assembler-with-amazon-q-developer?lang=en
-  - name: "Create your free AWS Builder ID account"
+  - text: "Create your free AWS Builder ID account"
     link: https://docs.aws.amazon.com/signin/latest/userguide/sign-in-aws_builder_id.html
 ---

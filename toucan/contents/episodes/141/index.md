@@ -26,20 +26,20 @@ links:
     link: https://developers.podcast.go-aws.com/web/podcasts/episode_123/index.html
   - text: "AWS Amplify AI Kit"
     link: https://aws.amazon.com/amplify/ai/
-  - name: "AWS Amplify GitHub"
+  - text: "AWS Amplify GitHub"
     link: https://github.com/aws-amplify
-  - name: "AWS Amplify Discord"
+  - text: "AWS Amplify Discord"
     link: https://discord.com/invite/amplify
-  - name: "AWS Amplify AI Kit - Getting Started"
+  - text: "AWS Amplify AI Kit - Getting Started"
     link: https://docs.amplify.aws/react/ai/set-up-ai/
-  - name: "AWS Amplify AI Kit - tutorial"
+  - text: "AWS Amplify AI Kit - tutorial"
     link: https://github.com/aws-samples/amplify-ai-examples
-  - name: "AWS Amplify AI Kit - a 8 minutes video to show you how to build a chat app"
+  - text: "AWS Amplify AI Kit - a 8 minutes video to show you how to build a chat app"
     link: https://www.youtube.com/watch?v=f-UeIlQ1tAI
-  - name: "Blog : Create a Customized AI-Based Chat Interface With Your Application Data"
+  - text: "Blog : Create a Customized AI-Based Chat Interface With Your Application Data"
     link: https://aws.amazon.com/blogs/mobile/create-a-customized-ai-based-chat-interface-with-your-application-data/
-  - name: "Blog : Build a Travel Planner with React Native, AWS Amplify, and Amazon Bedrock Knowledge Base"
+  - text: "Blog : Build a Travel Planner with React Native, AWS Amplify, and Amazon Bedrock Knowledge Base"
     link: https://aws.amazon.com/blogs/mobile/building-a-personalized-travel-planner-with-amazon-bedrocks-knowledge-bases-and-rag/
-  - name: "Blog : Building RAG-based applications with AWS Amplify AI Kit and Neon Postgres"
+  - text: "Blog : Building RAG-based applications with AWS Amplify AI Kit and Neon Postgres"
     link: https://aws.amazon.com/blogs/mobile/building-rag-based-applications-with-aws-amplify-ai-kit-and-neon-postgres/
 ---

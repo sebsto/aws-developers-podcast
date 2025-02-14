@@ -30,6 +30,6 @@ links:
     link: https://docs.aws.amazon.com/panorama/latest/dev/panorama-welcome.html
   - text: "Kinesis Video Stream"
     link: https://aws.amazon.com/kinesis/video-streams
-  - name: "Blog : How Swimming Australia uses machine learning for real-time training pool analytics with AWS Panorama"
+  - text: "Blog : How Swimming Australia uses machine learning for real-time training pool analytics with AWS Panorama"
     link: https://aws.amazon.com/blogs/media/how-swimming-australia-uses-machine-learning-for-real-time-training-pool-analytics-with-aws-panorama/
 ---
