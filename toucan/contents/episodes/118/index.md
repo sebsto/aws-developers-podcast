@@ -19,18 +19,21 @@ social-background: 118.png
 appleEpisodeId: 1000662777205
 aws-categories: 
   - "Networking & Content Distribution"
+links:
+  - text: "Amazon CloudFront hosting toolkit"
+    link: https://aws.amazon.com/blogs/networking-and-content-delivery/introducing-cloudfront-hosting-toolkit/
+  - text: "AWS CodePipeline"
+    link: https://docs.aws.amazon.com/codepipeline/latest/userguide/welcome.html
+  - text: "Amazon CloudFront functions"
+    link: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/cloudfront-functions.html
+  - text: "Amazon CloudFront Key Value Store"
+    link: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/kvs-with-functions.html
+  - text: "AWS CodeBuild"
+    link: https://docs.aws.amazon.com/codebuild/latest/userguide/welcome.html
+  - text: "AWS Step Functions"
+    link: https://docs.aws.amazon.com/step-functions/latest/dg/welcome.html
+  - text: "Build on AWS Edge"
+    link: https://aws.amazon.com/developer/application-security-performance/?whats-new-cards.sort-by=item.additionalFields.postDateTime&whats-new-cards.sort-order=desc&public-talk-id.sort-by=item.additionalFields.DisplayDate&public-talk-id.sort-order=desc&blogs-id.sort-by=item.additionalFields.createdDate&blogs-id.sort-order=desc
+  - text: "A/B Testing on AWS"
+    link: https://aws.amazon.com/developer/application-security-performance/articles/a-b-testing/
 ---
-
-
-## Links
-
-Here are the links to the tools, technologies, or articles we mentioned in this episode.
-
-- [Amazon CloudFront hosting toolkit](https://aws.amazon.com/blogs/networking-and-content-delivery/introducing-cloudfront-hosting-toolkit/)
-- [AWS CodePipeline](https://docs.aws.amazon.com/codepipeline/latest/userguide/welcome.html)
-- [Amazon CloudFront functions](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/cloudfront-functions.html)
-- [Amazon CloudFront Key Value Store](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/kvs-with-functions.html)
-- [AWS CodeBuild](https://docs.aws.amazon.com/codebuild/latest/userguide/welcome.html)
-- [AWS Step Functions](https://docs.aws.amazon.com/step-functions/latest/dg/welcome.html)
-- [Build on AWS Edge](https://aws.amazon.com/developer/application-security-performance/?whats-new-cards.sort-by=item.additionalFields.postDateTime&whats-new-cards.sort-order=desc&public-talk-id.sort-by=item.additionalFields.DisplayDate&public-talk-id.sort-order=desc&blogs-id.sort-by=item.additionalFields.createdDate&blogs-id.sort-order=desc)
-- [A/B Testing on AWS](https://aws.amazon.com/developer/application-security-performance/articles/a-b-testing/)

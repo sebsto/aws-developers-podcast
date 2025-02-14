@@ -19,13 +19,13 @@ social-background: 130.png
 appleEpisodeId: 1000669385229 
 aws-categories:
   - "Machine Learning & AI"
+links:
+  - text: "Lakechain, a framework to implement and deploy your document processing pipelines."
+    link: https://github.com/awslabs/project-lakechain
+  - text: "Werner's video about the Cloud Development Kit (CDK)"
+    link: https://www.youtube.com/watch?v=AYYTrDaEwLs
+  - text: "The Cloud Development Kit (CDK)"
+    link: https://aws.amazon.com/cdk/
+  - text: "AWS Developers Podcast episode 126: Domain-driven design for cloud automation"
+    link: https://developers.podcast.go-aws.com/web/podcasts/episode_126/index.html
 ---
-
-## Links
-
-Here are the links to the tools, technologies, or articles we mentioned in this episode.
-
-- [Lakechain](https://github.com/awslabs/project-lakechain), a framework to implement and deploy tour document processing pipelines.
-- The [Cloud Development Kit (CDK)](https://aws.amazon.com/cdk/)
-- [Werner's video about the Cloud Development Kit (CDK)](https://www.youtube.com/watch?v=AYYTrDaEwLs)
-- AWS Developers Podcast episode 126 : [Domain-driven design for cloud automation](https://developers.podcast.go-aws.com/web/podcasts/episode_126/index.html)

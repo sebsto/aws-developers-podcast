@@ -16,12 +16,11 @@ social-background: 135.png
 appleEpisodeId: 1000673525533
 aws-categories:
   - "Compute"
+links:
+  - text: "AWS Graviton"
+    link: https://aws.amazon.com/ec2/graviton/
+  - text: "Arm64 migration guide"
+    link: https://github.com/aws/aws-graviton-getting-started/blob/main/transition-guide.md
+  - text: "Java Native Interface (JNI)"
+    link: https://en.wikipedia.org/wiki/Java_Native_Interface
 ---
-
-## Links
-
-Here are the links to the tools, technologies, or articles we mentioned in this episode.
-
-- [AWS Graviton](https://aws.amazon.com/ec2/graviton/)
-- [Arm64 migration guide](https://github.com/aws/aws-graviton-getting-started/blob/main/transition-guide.md)
-- [Java Native Interface (JNI)](https://en.wikipedia.org/wiki/Java_Native_Interface)

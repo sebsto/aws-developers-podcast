@@ -21,16 +21,15 @@ category: podcasts
 aws-categories:
   - "Serverless"
   - "Networking & Content Distribution"
+links:
+  - text: "AWS On Air: New features of Amazon EventBridge/AWS Step Functions"
+    link: https://www.youtube.com/watch?v=Q3V-pLLZwFY
+  - text: "AWS re:Invent 2024: Private API integration for Amazon EventBridge and AWS Step Functions"
+    link: https://www.youtube.com/watch?v=9YoKQGZrDgY
+  - text: "AWS re:Invent 2024: Simplify cross-VPC resource access with PrivateLink and VPC Lattice"
+    link: https://www.youtube.com/watch?v=SRgwjU18nvk
+  - text: "Securely share AWS resources across VPC and account boundaries with PrivateLink, VPC Lattice, EventBridge, and Step Functions"
+    link: https://aws.amazon.com/blogs/aws/securely-share-aws-resources-across-vpc-and-account-boundaries-with-privatelink-vpc-lattice-eventbridge-and-step-functions
+  - text: "Blog: Invoking Private API Gateway Endpoints From Step Functions"
+    link: https://benoitboure.com/invoking-private-api-gateway-endpoints-from-step-functions
 ---
-
-## Links
-
-Here are the links to the tools, technologies, or articles we mentioned in this episode.
-
-- [AWS On Air: New features of Amazon EventBridge/AWS Step Functions](https://www.youtube.com/watch?v=Q3V-pLLZwFY)
-- [AWS re:Invent 2024: Private API integration for Amazon EventBridge and AWS Step Functions](https://www.youtube.com/watch?v=9YoKQGZrDgY)
-- [AWS re:Invent 2024: Simplify cross-VPC resource access with PrivateLink and VPC Lattice](https://www.youtube.com/watch?v=SRgwjU18nvk)
-
-- [Securely share AWS resources across VPC and account boundaries with PrivateLink, VPC Lattice, EventBridge, and Step Functions](https://aws.amazon.com/blogs/aws/securely-share-aws-resources-across-vpc-and-account-boundaries-with-privatelink-vpc-lattice-eventbridge-and-step-functions)
-
-- Blog: [Invoking Private API Gateway Endpoints From Step Functions](https://benoitboure.com/invoking-private-api-gateway-endpoints-from-step-functions)

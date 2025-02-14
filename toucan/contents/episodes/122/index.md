@@ -19,11 +19,7 @@ social-background: 122.png
 appleEpisodeId: 1000662777231
 aws-categories:
   - "Serverless"
+links:
+  - text: "Serverless on AWS"
+    link: https://aws.amazon.com/serverless/
 ---
-
-
-## Links
-
-Here are the links to the tools, technologies, or articles we mentioned in this episode.
-
-- [Serverless on AWS](https://aws.amazon.com/serverless/)

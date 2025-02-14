@@ -19,12 +19,11 @@ social-background: 134.png
 appleEpisodeId: 1000672659254
 aws-categories:
   - "Security, Identity & Compliance"
+links:
+  - text: "IAM Identity Center"
+    link: https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html
+  - text: "Trusted Identity Propagation"
+    link: https://docs.aws.amazon.com/singlesignon/latest/userguide/trustedidentitypropagation-overview.html
+  - text: "Integrate Tableau with Trusted Identity Center"
+    link: https://aws.amazon.com/blogs/aws/aws-analytics-services-streamline-user-access-to-data-permissions-setting-and-auditing/
 ---
-
-## Links
-
-Here are the links to the tools, technologies, or articles we mentioned in this episode.
-
-- [IAM Identity Center](https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html)
-- [Trusted Identity Propagation](https://docs.aws.amazon.com/singlesignon/latest/userguide/trustedidentitypropagation-overview.html)
-- [Integrate Tableau with Trusted Identity Center](https://aws.amazon.com/blogs/aws/aws-analytics-services-streamline-user-access-to-data-permissions-setting-and-auditing/)

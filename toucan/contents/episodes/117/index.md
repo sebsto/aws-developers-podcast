@@ -20,15 +20,17 @@ social-background: 117.png
 appleEpisodeId: 1000662777148
 aws-categories: 
   - "Machine Learning & AI"
+links:
+  - text: "Amazon Bedrock Converse API"
+    link: https://docs.aws.amazon.com/bedrock/latest/userguide/conversation-inference.html
+  - text: "A developer's guide to Bedrock's new Converse API (Dennis' blog post series)"
+    link: https://community.aws/content/2dtauBCeDa703x7fDS9Q30MJoBA/amazon-bedrock-converse-api-developer-guide
+  - text: "Getting started with the Amazon Bedrock Converse API (James blog posts series, showing tools in action)"
+    link: https://community.aws/content/2hHgVE7Lz6Jj1vFv39zSzzlCilG/getting-started-with-the-amazon-bedrock-converse-api?lang=en
+  - text: "Another blog post about using tools with converse API, Davide Gallitelli"
+    link: https://dgallitelli95.medium.com/amazon-bedrock-explained-with-memes-converse-api-and-tool-usage-w-anthropic-claude-3-001c341347ca
+  - text: "Dennis' example to use tools (in python) from the page from the Amazon Bedrock documentation"
+    link: https://docs.aws.amazon.com/bedrock/latest/userguide/bedrock-runtime_example_bedrock-runtime_Scenario_ToolUseDemo_AnthropicClaude_section.html)
+  - text: "The full source code of the documentation examples on GitHub"
+    link: https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock-runtime/cross-model-scenarios/tool_use_demo
 ---
-
-
-## Links
-
-Here are the links to the tools, technologies, or articles we mentioned in this episode.
-
-- [Amazon Bedrock Converse API](https://docs.aws.amazon.com/bedrock/latest/userguide/conversation-inference.html)
-- [A developer's guide to Bedrock's new Converse API (Dennis' blog post series)](https://community.aws/content/2dtauBCeDa703x7fDS9Q30MJoBA/amazon-bedrock-converse-api-developer-guide)
-- [Getting started with the Amazon Bedrock Converse API (James blog posts series, showing tools in action)](https://community.aws/content/2hHgVE7Lz6Jj1vFv39zSzzlCilG/getting-started-with-the-amazon-bedrock-converse-api?lang=en)
-- [Another blog post about using tools with converse API, Davide Gallitelli](https://dgallitelli95.medium.com/amazon-bedrock-explained-with-memes-converse-api-and-tool-usage-w-anthropic-claude-3-001c341347ca)
-- Dennis' example to use tools (in python) : [the page from the Amazon Bedrock documentation](https://docs.aws.amazon.com/bedrock/latest/userguide/bedrock-runtime_example_bedrock-runtime_Scenario_ToolUseDemo_AnthropicClaude_section.html) and the [full source code on GitHub](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/bedrock-runtime/cross-model-scenarios/tool_use_demo)

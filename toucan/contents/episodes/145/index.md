@@ -17,15 +17,17 @@ social-background: 145.png
 # appleEpisodeId: 1000681107139
 aws-categories:
   - "Machine Learning & AI"
+links:
+  - text: "Commodore 64"
+    link: https://en.wikipedia.org/wiki/Commodore_64
+  - text: "Amazon Q for Developers"
+    link: https://aws.amazon.com/q/developer/
+  - text: "A framework to adopt generative AI assistants for builders"
+    link: https://it20.info/2024/5/a-framework-to-adopt-generative-ai-assistants-for-builders/
+  - name: "The Commodore 64 programming reference guide (Consider making a donation)"
+    link: https://archive.org/details/c64-programmer-ref
+  - name: "Ric's blog post: Back to the future: Writing 6502 assembler with Amazon Q Developer"
+    link: https://community.aws/content/2oEqDGCIsQwoPrL3wjoSReyHnan/back-to-the-future-writing-6502-assembler-with-amazon-q-developer?lang=en
+  - name: "Create your free AWS Builder ID account"
+    link: https://docs.aws.amazon.com/signin/latest/userguide/sign-in-aws_builder_id.html
 ---
-
-## Links
-
-Here are the links to the tools, technologies, or articles we mentioned in this episode.
-
-- [Commodore 64](https://en.wikipedia.org/wiki/Commodore_64)
-- The [Commodore 64 programming reference guide](https://archive.org/details/c64-programmer-ref) (Consider making a donation)
-- [Amazon Q for Developers](https://aws.amazon.com/q/developer/)
-- Ric's blog post: [Back to the future: Writing 6502 assembler with Amazon Q Developer](https://community.aws/content/2oEqDGCIsQwoPrL3wjoSReyHnan/back-to-the-future-writing-6502-assembler-with-amazon-q-developer?lang=en)
-- [A framework to adopt generative AI assistants for builders](https://it20.info/2024/5/a-framework-to-adopt-generative-ai-assistants-for-builders/)
-- Create your [free AWS Builder ID](https://docs.aws.amazon.com/signin/latest/userguide/sign-in-aws_builder_id.html) account.

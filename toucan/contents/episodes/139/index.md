@@ -19,13 +19,13 @@ social-background: 139.png
 appleEpisodeId: 1000677039579
 aws-categories:
   - "Machine Learning & AI"
+links:
+  - text: "The multi agent orchestrator"
+    link: https://github.com/awslabs/multi-agent-orchestrator
+  - text: "Use case 1: From 'Bonjour' to 'Boarding Pass': Multilingual AI Chatbot for Flight Reservations"
+    link: https://community.aws/content/2lCi8jEKydhDm8eE8QFIQ5K23pF/from-bonjour-to-boarding-pass-multilingual-ai-chatbot-for-flight-reservations
+  - text: "Use case 2: Beyond Auto-Replies: Building an AI-Powered E-commerce Support system"
+    link: https://community.aws/content/2lq6cYYwTYGc7S3Zmz28xZoQNQj/beyond-auto-replies-building-an-ai-powered-e-commerce-support-system
+  - text: "Use case 3: Speak Up, AI: Voicing Your Agents with Amazon Connect, Lex, and Bedrock"
+    name: https://community.aws/content/2mt7CFG7xg4yw6GRHwH9akhg0oD/speak-up-ai-voicing-your-agents-with-amazon-connect-lex-and-bedrock
 ---
-
-## Links
-
-Here are the links to the tools, technologies, or articles we mentioned in this episode.
-
-- [The multi agent orchestrator](https://github.com/awslabs/multi-agent-orchestrator)
-- Use case 1: [From 'Bonjour' to 'Boarding Pass': Multilingual AI Chatbot for Flight Reservations](https://community.aws/content/2lCi8jEKydhDm8eE8QFIQ5K23pF/from-bonjour-to-boarding-pass-multilingual-ai-chatbot-for-flight-reservations)
-- Use case 2: [Beyond Auto-Replies: Building an AI-Powered E-commerce Support system](https://community.aws/content/2lq6cYYwTYGc7S3Zmz28xZoQNQj/beyond-auto-replies-building-an-ai-powered-e-commerce-support-system)
-- Use case 3: [Speak Up, AI: Voicing Your Agents with Amazon Connect, Lex, and Bedrock](https://community.aws/content/2mt7CFG7xg4yw6GRHwH9akhg0oD/speak-up-ai-voicing-your-agents-with-amazon-connect-lex-and-bedrock)

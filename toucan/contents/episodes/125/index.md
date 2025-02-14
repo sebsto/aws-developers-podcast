@@ -16,14 +16,15 @@ social-background: 125.png
 appleEpisodeId: 1000664785131
 aws-categories:
   - "Developer Tools"
+links:
+  - text: "Definition of GitOps"
+    link: https://about.gitlab.com/topics/gitops/
+  - text: "AWS Developers podcast episode with Johannes where we talked about CI/CD"
+    link: https://soundcloud.com/awsdevelopers/episode-082-changing-the-way-we-look-at-cicd-with-johannes-koch
+  - text: "CloudFormation Git Sync"
+    link: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/git-sync.html
+  - text: "AWS Community Day for Germany, Austria, and Switzerland"
+    link: https://www.aws-community-day.de/
+  - text: "AWS CodePipeline"
+    link: https://docs.aws.amazon.com/codepipeline/latest/userguide/welcome.html
 ---
-
-## Links
-
-Here are the links to the tools, technologies, or articles we mentioned in this episode.
-
-- [Definition of GitOps](https://about.gitlab.com/topics/gitops/)  
-- [AWS Developers podcast episode with Johannes where we talked about CI/CD](https://soundcloud.com/awsdevelopers/episode-082-changing-the-way-we-look-at-cicd-with-johannes-koch)  
-- [CloudFormation Git Sync](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/git-sync.html)  
-- [AWS Community Day for Germany, Austria, and Switzerland](https://www.aws-community-day.de/)  
-- [AWS CodePipeline](https://docs.aws.amazon.com/codepipeline/latest/userguide/welcome.html)

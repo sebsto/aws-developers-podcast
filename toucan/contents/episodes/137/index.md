@@ -20,12 +20,11 @@ appleEpisodeId: 1000675303451
 aws-categories:
   - "Compute"
   - "Serverless"
+links:
+  - text: "AWS Lambda"
+    link: https://docs.aws.amazon.com/lambda/latest/dg/welcome.html
+  - text: "Firecracker microVM"
+    link: https://firecracker-microvm.github.io/
+  - text: "How Lambda loads data from the block devices"
+    link: https://www.usenix.org/system/files/atc23-brooker.pdf
 ---
-
-## Links
-
-Here are the links to the tools, technologies, or articles we mentioned in this episode.
-
-- [AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html)
-- [Firecracker microVM](https://firecracker-microvm.github.io/)
-- [How Lambda loads data from the block devices](https://www.usenix.org/system/files/atc23-brooker.pdf)

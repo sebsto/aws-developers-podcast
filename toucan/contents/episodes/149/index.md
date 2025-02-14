@@ -17,15 +17,17 @@ author: Sébastien Stormacq
 category: podcasts
 aws-categories:
   - "Databases"
+links:
+  - text: "Doc][Amazon RDS Blue/Green deployments overview"
+    link: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/blue-green-deployments-overview.html
+  - text: "Amazon RDS Blue Green now allows performant storage switchover"
+    link: https://aws.amazon.com/about-aws/whats-new/2024/11/amazon-rds-blue-green-deployments-green-storage-performant-switchover/
+  - text: "Amazon RDS Blue Green now allows minor version update"
+    link: https://aws.amazon.com/about-aws/whats-new/2024/11/rds-blue-green-deployments-upgrade-rds-postgresql/
+  - text: "Amazon RDS Blue Green now allows to shrink storage"
+    link: https://aws.amazon.com/about-aws/whats-new/2024/11/amazon-rds-blue-green-deployments-storage-volume-shrink/
+  - text: "Amazon RDS Blue Green now supports Postgres"
+    link: https://aws.amazon.com/about-aws/whats-new/2023/10/amazon-rds-blue-green-deployments-aurora-rds-postgresql/
+  - text: "The first podcast that talked about Amazon RDS Blue Green (03 March 2023)"
+    link: https://podcasts.apple.com/us/podcast/episode-073-fully-managed-blue-green-deployments-in/id1574162669?i=1000602676634
 ---
-
-## Links
-
-Here are the links to the tools, technologies, or articles we mentioned in this episode.
-
-- [Doc][Amazon RDS Blue/Green deployments overview](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/blue-green-deployments-overview.html)
-- [Amazon RDS Blue Green now allows performant storage switchover](https://aws.amazon.com/about-aws/whats-new/2024/11/amazon-rds-blue-green-deployments-green-storage-performant-switchover/)
-- [Amazon RDS Blue Green now allows minor version update](https://aws.amazon.com/about-aws/whats-new/2024/11/rds-blue-green-deployments-upgrade-rds-postgresql/)
-- [Amazon RDS Blue Green now allows to shrink storage](https://aws.amazon.com/about-aws/whats-new/2024/11/amazon-rds-blue-green-deployments-storage-volume-shrink/)
-- [Amazon RDS Blue Green now supports Postgres](https://aws.amazon.com/about-aws/whats-new/2023/10/amazon-rds-blue-green-deployments-aurora-rds-postgresql/)
-- [The first podcast that talked about Amazon RDS Blue Green](https://podcasts.apple.com/us/podcast/episode-073-fully-managed-blue-green-deployments-in/id1574162669?i=1000602676634) (03 March 2023) 

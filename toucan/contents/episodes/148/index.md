@@ -15,13 +15,13 @@ category: podcasts
 social-background: 148.png
 aws-categories:
   - "Diversity, Equity, and Inclusion"
+links:
+  - text: "From sitting-at-home mom to Data Scientist"
+    link: https://community.aws/content/2fSeNg9i4tnvmVz7twxmnppCwNS/from-sitting-at-home-mom-to-data-scientist#comments
+  - text: "Data science courses on Udemy"
+    link: https://www.udemy.com/courses/search/?src=ukw&q=data+science
+  - text: "Darya's blog article about the All Builder Grant to attend re:Invent"
+    link: https://community.aws/content/2iga3e457iDcDlNjJxlA7XOH7eo/all-builders-welcome-grant-attend-aws-re-invent-for-free?lang=en
+  - text: "SLB"
+    link: https://www.slb.com/
 ---
-
-## Links
-
-Here are the links to the tools, technologies, or articles we mentioned in this episode.
-
-- [From sitting-at-home mom to Data Scientist](https://community.aws/content/2fSeNg9i4tnvmVz7twxmnppCwNS/from-sitting-at-home-mom-to-data-scientist#comments)
-- [Data science courses on Udemy](https://www.udemy.com/courses/search/?src=ukw&q=data+science)
-- [Darya's blog article about the All Builder Grant to attend re:Invent](https://community.aws/content/2iga3e457iDcDlNjJxlA7XOH7eo/all-builders-welcome-grant-attend-aws-re-invent-for-free?lang=en)
-- [SLB](https://www.slb.com/)

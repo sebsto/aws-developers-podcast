@@ -36,12 +36,9 @@ social-background: 119.png
 appleEpisodeId: 1000662777122
 aws-categories:
   - "Front-End Web & Mobile"
+links:
+  - text: "AWS Spatial computing blog channel"
+    link: https://aws.amazon.com/blogs/spatial/
+  - text: "A visual assets management system"
+    link: https://aws.amazon.com/blogs/spatial/visual-asset-management-system-2-0-release/
 ---
-
-
-## Links
-
-Here are the links to the tools, technologies, or articles we mentioned in this episode.
-
-- [AWS Spatial computing blog channel](https://aws.amazon.com/blogs/spatial/)
-- [A visual assets management system](https://aws.amazon.com/blogs/spatial/visual-asset-management-system-2-0-release/)

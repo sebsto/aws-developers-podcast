@@ -16,16 +16,13 @@ social-background: 127.png
 appleEpisodeId: 1000666310578
 aws-categories:
   - "Serverless"
+links:
+  - text: "Serverless State of the Union, podcast episode #122, with Holly Mesrobian, VP of Serverless compute"
+    link: https://developers.podcast.go-aws.com/web/podcasts/episode_122/index.html
+  - text: "AWS Data API"
+    link: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/data-api.html
+  - text: "Localstack to test serverless application locally"
+    link: https://github.com/localstack/localstack
+  - text: "Lumigo"
+    link: https://lumigo.io/
 ---
-
-## Links
-
-Here are the links to the tools, technologies, or articles we mentioned in this episode.
-
-- [Serverless State of the Union, podcast episode #122](https://developers.podcast.go-aws.com/web/podcasts/episode_122/index.html), with Holly Mesrobian, VP of Serverless compute.
-
-- [AWS Data API](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/data-api.html)
-
-- [Localstack](https://github.com/localstack/localstack) to test serverless application locally.
-
-- [Lumigo](https://lumigo.io/) - observability for serverless applications

@@ -22,16 +22,19 @@ social-background: 116.png
 appleEpisodeId: 1000662777204
 aws-categories:
    - "Databases"
+links:
+  - text: "Matt's session at AWS re:Invent 2022"
+    link: https://www.youtube.com/watch?v=0gpEbbx2Hy0
+  - text: "AWS RDS Prescriptive Guidance - Amazon RDS Monitoring and Alerting"
+    link: https://docs.aws.amazon.com/prescriptive-guidance/latest/amazon-rds-monitoring-alerting/overview.html
+  - text: "AWS Schema Conversion Tool"
+    link: https://aws.amazon.com/dms/schema-conversion-tool/
+  - text: "Qlik Data Capture"
+    link: https://www.qlik.com/us/change-data-capture/data-capture
+  - text: "AWS Database Migration Service"
+    link: https://aws.amazon.com/dms/
+  - text: "Migration Oracle databases to Amazon RDS, a tutorial"
+    link: https://aws.amazon.com/tutorials/move-to-managed/migrate-oracle-to-amazon-rds/
+  - text: "Training at a Cloud Guru"
+    link: https://www.pluralsight.com/cloud-guru
 ---
-
-## Links
-
-Here are the links to the tools, technologies, or articles we mentioned in this episode.
-
-- [Matt's session at AWS re:Invent 2022](https://www.youtube.com/watch?v=0gpEbbx2Hy0)
-- [AWS RDS Prescriptive Guidance - Amazon RDS Monitoring and Alerting](https://docs.aws.amazon.com/prescriptive-guidance/latest/amazon-rds-monitoring-alerting/overview.html)
-- [AWS Schema Conversion Tool](https://aws.amazon.com/dms/schema-conversion-tool/)
-- [Qlik Data Capture](https://www.qlik.com/us/change-data-capture/data-capture)
-- [AWS Database Migration Service](https://aws.amazon.com/dms/)
-- [Migration Oracle databases to Amazon RDS, a tutorial](https://aws.amazon.com/tutorials/move-to-managed/migrate-oracle-to-amazon-rds/)
-- [Training at a Cloud Guru](https://www.pluralsight.com/cloud-guru)

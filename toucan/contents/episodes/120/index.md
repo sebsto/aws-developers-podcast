@@ -23,13 +23,11 @@ social-background: 120.png
 appleEpisodeId: 1000662777203
 aws-categories:
   - "Developer Tools"
+links:
+  - text: "AWS CodeArtifact"
+    link: https://docs.aws.amazon.com/codeartifact/latest/ug/welcome.html
+  - text: "Recent blog posts I wrote about CodeArtifact"
+    link: https://aws.amazon.com/blogs/aws/category/developer-tools/aws-code-artifact/
+  - text: "83% of maven servers bandwidth is consumed by 1% of its client IP addresses, the Sonatype blog post"
+    link: https://www.sonatype.com/blog/maven-central-and-the-tragedy-of-the-commons
 ---
-
-
-## Links
-
-Here are the links to the tools, technologies, or articles we mentioned in this episode.
-
-- [AWS CodeArtifact](https://docs.aws.amazon.com/codeartifact/latest/ug/welcome.html)
-- [Recent blog posts I wrote about CodeArtifact](https://aws.amazon.com/blogs/aws/category/developer-tools/aws-code-artifact/)
-- [83% of maven servers bandwidth is consumed by 1% of its client IP addresses](https://www.sonatype.com/blog/maven-central-and-the-tragedy-of-the-commons), the Sonatype blog post.

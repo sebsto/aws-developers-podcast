@@ -22,12 +22,11 @@ social-background: 131.png
 appleEpisodeId: 1000670128800
 aws-categories:
   - "Training & Certification"
+links:
+  - text: "Patrick's book to get prepared for the AWS SA Pro certification : AWS Certified Solutions Architect - Professional Exam Guide (SAP-C02): Gain the practical skills, knowledge, and confidence to ace the AWS (SAP-C02) exam on your first attempt"
+    link: https://www.amazon.com/AWS-Certified-Solutions-Architect-Professional/dp/1801813132
+  - text: "The AWS Solution Architect Professional exam details"
+    link: https://aws.amazon.com/certification/certified-solutions-architect-professional/
+  - text: "A free course on SkillBuilder to study the AWS Architect Professional exam"
+    link: https://explore.skillbuilder.aws/learn/course/external/view/elearning/14951/exam-prep-standard-course-aws-certified-solutions-architect-professional-sap-c02
 ---
-
-## Links
-
-Here are the links to the tools, technologies, or articles we mentioned in this episode.
-
-- Patrick's book to get prepared for the AWS SA Pro certification : [AWS Certified Solutions Architect - Professional Exam Guide (SAP-C02): Gain the practical skills, knowledge, and confidence to ace the AWS (SAP-C02) exam on your first attempt](https://www.amazon.com/AWS-Certified-Solutions-Architect-Professional/dp/1801813132)
-- [The AWS Solution Architect Professional exam details](https://aws.amazon.com/certification/certified-solutions-architect-professional/)
-- [A free course on SkillBuilder to study the AWS Architect Professional exam](https://explore.skillbuilder.aws/learn/course/external/view/elearning/14951/exam-prep-standard-course-aws-certified-solutions-architect-professional-sap-c02)

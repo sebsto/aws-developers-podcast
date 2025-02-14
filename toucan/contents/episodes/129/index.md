@@ -24,10 +24,7 @@ social-background: 129.png
 appleEpisodeId: 1000668568813
 aws-categories:
   - "Databases"
+links:
+  - text: "RDS Storage options"
+    link: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_Storage.html
 ---
-
-## Links
-
-Here are the links to the tools, technologies, or articles we mentioned in this episode.
-
-- [RDS Storage options](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_Storage.html)

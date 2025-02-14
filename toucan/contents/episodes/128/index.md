@@ -20,10 +20,7 @@ social-background: 128.png
 appleEpisodeId: 1000667231313
 aws-categories:
   - "Serverless"
+links:
+  - text: "AWS News App"
+    link: https://aws-news.com/
 ---
-
-## Links
-
-Here are the links to the tools, technologies, or articles we mentioned in this episode.
-
-- [AWS News App](https://aws-news.com/)

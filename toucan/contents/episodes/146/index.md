@@ -14,10 +14,7 @@ author: Sébastien Stormacq
 social-background: 146.png
 aws-categories:
   - "Management & Governance"
+links:
+  - text: "AWS Account Setup: My 10-Step Checklist After 14 Years"
+    link: https://community.aws/content/2jeVwnfpXuhvXFcYzBilLEgF2vR/aws-account-setup-my-10-step-checklist-after-14-years
 ---
-
-## Links
-
-Here are the links to the tools, technologies, or articles we mentioned in this episode.
-
-- [AWS Account Setup: My 10-Step Checklist After 14 Years](https://community.aws/content/2jeVwnfpXuhvXFcYzBilLEgF2vR/aws-account-setup-my-10-step-checklist-after-14-years)

@@ -16,11 +16,9 @@ social-background: 142.png
 appleEpisodeId: 1000679514148
 aws-categories:
   - "General"
+links:
+  - text: "Last week in AWS"
+    link: https://www.lastweekinaws.com/
+  - text: "Get the details of the main launches at re:Invent, read the AWS News blog"
+    link: https://aws.amazon.com/blogs/aws/
 ---
-
-## Links
-
-Here are the links to the tools, technologies, or articles we mentioned in this episode.
-
-- [Last week in AWS](https://www.lastweekinaws.com/) podcasts and newsletter.
-- [Get the details of the main launches at re:Invent, read the AWS News blog](https://aws.amazon.com/blogs/aws/)

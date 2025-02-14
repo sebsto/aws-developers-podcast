@@ -20,13 +20,11 @@ appleEpisodeId: 1000671737804
 aws-categories:
   - "Developer Tools"
   - "Machine Learning & AI"
+links:
+  - text: "Amazon Q Developer"
+    link: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/what-is.html
+  - text: "Amazon Q Developer pricing and tier of services"
+    link: https://aws.amazon.com/q/developer/pricing/
+  - text: "Amazon Q Developer customization for enterprises"
+    link: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/customizations-admin-activate.html
 ---
-
-## Links
-
-Here are the links to the tools, technologies, or articles we mentioned in this episode.
-
-- [Amazon Q Developer](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/what-is.html)
-- [Amazon Q Developer pricing and tier of services](https://aws.amazon.com/q/developer/pricing/)
-- [Amazon Q Developer customization for enterprises](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/customizations-admin-activate.html)
-

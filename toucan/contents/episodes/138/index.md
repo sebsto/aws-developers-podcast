@@ -19,15 +19,17 @@ social-background: 138.png
 appleEpisodeId: 1000676167896
 aws-categories:
   - "Security, Identity & Compliance"
+links:
+  - text: "Twilio"
+    link: https://www.twilio.com/en-us
+  - text: "Google Zanzibar"
+    link: https://research.google/pubs/zanzibar-googles-consistent-global-authorization-system/
+  - text: "Amazon Verified Permission"
+    link: https://aws.amazon.com/verified-permissions/
+  - text: "Cedar: Learn about the language, tutorial and playground"
+    link: https://cedarpolicy.com
+  - text: "AWS blog: How we designed Cedar to be intuitive to use, fast, and safe"
+    link: https://aws.amazon.com/blogs/security/how-we-designed-cedar-to-be-intuitive-to-use-fast-and-safe/
+  - text: "AWS blog: Authorize API Gateway APIs using Amazon Verified Permissions"
+    link: https://aws.amazon.com/blogs/security/authorize-api-gateway-apis-using-amazon-verified-permissions-and-amazon-cognito/
 ---
-
-## Links
-
-Here are the links to the tools, technologies, or articles we mentioned in this episode.
-
-- [Twilio](https://www.twilio.com/en-us)
-- [Google Zanzibar](https://research.google/pubs/zanzibar-googles-consistent-global-authorization-system/)
-- [Amazon Verified Permission](https://aws.amazon.com/verified-permissions/)
-- [Cedar: Learn about the language, tutorial and playground](https://cedarpolicy.com)
-- [AWS blog: How we designed Cedar to be intuitive to use, fast, and safe](https://aws.amazon.com/blogs/security/how-we-designed-cedar-to-be-intuitive-to-use-fast-and-safe/)
-- [AWS blog: Authorize API Gateway APIs using Amazon Verified Permissions](https://aws.amazon.com/blogs/security/authorize-api-gateway-apis-using-amazon-verified-permissions-and-amazon-cognito/)

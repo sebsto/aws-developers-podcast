@@ -16,14 +16,13 @@ social-background: 126.png
 appleEpisodeId: 1000665561732
 aws-categories:
   - "Developer Tools"
+links:
+  - text: "Gregor Hohpe's blog : the architect elevator"
+    link: https://architectelevator.com/blog/
+  - text: "Cloud Automation à la DDD: From stringly typed to affordances"
+    link: https://architectelevator.com/cloud/ddd-technical-domains/
+  - text: "Gregor's books"
+    link: https://www.amazon.com/s?k=gregor+hohpe&crid=2YLBKU473CMMD&sprefix=gregor+hohpe%2Caps%2C152&ref=nb_sb_noss_1
+  - text: "The Design Of Everyday Things, Don Norman"
+    link: https://www.amazon.com/Design-Everyday-Things-Revised-Expanded/dp
 ---
-
-## Links
-
-Here are the links to the tools, technologies, or articles we mentioned in this episode.
-
-- [Gregor Hohpe's blog : the architect elevator](https://architectelevator.com/blog/)
-- [Cloud Automation à la DDD: From stringly typed to affordances](https://architectelevator.com/cloud/ddd-technical-domains/)
-- [Gregor's books](https://www.amazon.com/s?k=gregor+hohpe&crid=2YLBKU473CMMD&sprefix=gregor+hohpe%2Caps%2C152&ref=nb_sb_noss_1) on amazon.com
-- [The Design Of Everyday Things](https://www.amazon.com/Design-Everyday-Things-Revised-Expanded/dp), Don Norman 
-

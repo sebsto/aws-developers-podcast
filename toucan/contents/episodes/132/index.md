@@ -23,13 +23,11 @@ social-background: 132.png
 appleEpisodeId: 1000670884673
 aws-categories:
   - "Security, Identity & Compliance"
+links:
+  - text: "IAM Identity Center"
+    link: https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html
+  - text: "Renaming of AWS SSO to IAM Identity Center"
+    link: https://aws.amazon.com/about-aws/whats-new/2022/07/aws-single-sign-on-aws-sso-now-aws-iam-identity-center/
+  - text: "System for cross-domain identity management (SCIM)"
+    link: https://scim.cloud/
 ---
-
-## Links
-
-Here are the links to the tools, technologies, or articles we mentioned in this episode.
-
-- [IAM Identity Center](https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html)
-- [Renaming of AWS SSO to IAM Identity Center](https://aws.amazon.com/about-aws/whats-new/2022/07/aws-single-sign-on-aws-sso-now-aws-iam-identity-center/)
-- [System for cross-domain identity management (SCIM)](https://scim.cloud/)
-

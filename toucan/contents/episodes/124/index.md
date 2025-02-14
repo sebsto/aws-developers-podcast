@@ -16,13 +16,11 @@ social-background: 124.png
 appleEpisodeId: 1000664097840
 aws-categories:
   - "Networking & Content Distribution"
+links:
+  - text: "Amazon Global Network"
+    link: https://aws.amazon.com/about-aws/global-infrastructure/
+  - text: "Overview of Data Transfer Costs for Common Architectures"
+    link: https://aws.amazon.com/blogs/architecture/overview-of-data-transfer-costs-for-common-architectures/
+  - text: "Free Data Transfer Out announcement"
+    link: https://aws.amazon.com/blogs/aws/free-data-transfer-out-to-internet-when-moving-out-of-aws/
 ---
-
-
-## Links
-
-Here are the links to the tools, technologies, or articles we mentioned in this episode.
-
-- [Amazon Global Network](https://aws.amazon.com/about-aws/global-infrastructure/)
-- [Overview of Data Transfer Costs for Common Architectures](https://aws.amazon.com/blogs/architecture/overview-of-data-transfer-costs-for-common-architectures/)
-- [Free Data Transfer Out announcement](https://aws.amazon.com/blogs/aws/free-data-transfer-out-to-internet-when-moving-out-of-aws/)

@@ -21,15 +21,15 @@ appleEpisodeId: 1000681107139
 aws-categories:
   - "Machine Learning & AI"
   - "Analytics"
+links:
+  - text: "Swimming AU Team"
+    link: https://www.swimming.org.au/
+  - text: "Sparta 2 and swimming"
+    link: https://www.welltold.com.au/journalism/big-data-helping-aussies-to-olympic-fast-lane
+  - text: "AWS Panorama"
+    link: https://docs.aws.amazon.com/panorama/latest/dev/panorama-welcome.html
+  - text: "Kinesis Video Stream"
+    link: https://aws.amazon.com/kinesis/video-streams
+  - name: "Blog : How Swimming Australia uses machine learning for real-time training pool analytics with AWS Panorama"
+    link: https://aws.amazon.com/blogs/media/how-swimming-australia-uses-machine-learning-for-real-time-training-pool-analytics-with-aws-panorama/
 ---
-
-## Links
-
-Here are the links to the tools, technologies, or articles we mentioned in this episode.
-
-- [Swimming AU Team](https://www.swimming.org.au/)
-- Blog : [How Swimming Australia uses machine learning for real-time training pool analytics with AWS Panorama](https://aws.amazon.com/blogs/media/how-swimming-australia-uses-machine-learning-for-real-time-training-pool-analytics-with-aws-panorama/)
-- [Sparta 2 and swimming](https://www.welltold.com.au/journalism/big-data-helping-aussies-to-olympic-fast-lane)
-- [AWS Panorama](https://docs.aws.amazon.com/panorama/latest/dev/panorama-welcome.html)
-- [Kinesis Video Stream](https://aws.amazon.com/kinesis/video-streams)
-

@@ -16,13 +16,11 @@ social-background: 147.png
 aws-categories:
   - "Machine Learning & AI"
   - "Developer Tools"
+links:
+  - text: "poolside.ai"
+    link: https://poolside.ai
+  - text: "Poolside AI is now available from Amazon Bedrock and Amazon EC2"
+    link: https://press.aboutamazon.com/aws/2024/12/poolside-and-aws-announce-strategic-agreement-to-enable-secure-customized-generative-ai-for-software-engineering-on-amazon-bedrock-and-amazon-elastic-cloud-compute-ec2
+  - text: "AWS re:Invent: Dive into poolside: AI models just for software engineering (AIM133)"
+    link: https://www.youtube.com/watch?v=1vj_5H0aCV8
 ---
-
-## Links
-
-Here are the links to the tools, technologies, or articles we mentioned in this episode.
-
-- [poolside.ai](https://poolside.ai)
-- [Poolside AI is now available from Amazon Bedrock and Amazon EC2](https://press.aboutamazon.com/aws/2024/12/poolside-and-aws-announce-strategic-agreement-to-enable-secure-customized-generative-ai-for-software-engineering-on-amazon-bedrock-and-amazon-elastic-cloud-compute-ec2)
-- [AWS re:Invent: Dive into poolside: AI models just for software engineering (AIM133)](https://www.youtube.com/watch?v=1vj_5H0aCV8)
-

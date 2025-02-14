@@ -23,12 +23,11 @@ category: podcasts
 aws-categories:
   - "Security, Identity & Compliance"
   - "Front-End Web & Mobile"
+links:
+  - text: "Amazon Cognito"
+    link: https://docs.aws.amazon.com/cognito/latest/developerguide/getting-started-user-pools.html
+  - text: "Improve your app authentication workflow with new Amazon Cognito features"
+    link: https://aws.amazon.com/blogs/aws/improve-your-app-authentication-workflow-with-new-amazon-cognito-features/
+  - text: "Announcing new feature tiers: Essentials and Plus for Amazon Cognito"
+    link: https://aws.amazon.com/about-aws/whats-new/2024/11/new-feature-tiers-essentials-plus-amazon-cognito/
 ---
-
-## Links
-
-Here are the links to the tools, technologies, or articles we mentioned in this episode.
-
-- [Amazon Cognito](https://docs.aws.amazon.com/cognito/latest/developerguide/getting-started-user-pools.html)
-- [Improve your app authentication workflow with new Amazon Cognito features](https://aws.amazon.com/blogs/aws/improve-your-app-authentication-workflow-with-new-amazon-cognito-features/)
-- [Announcing new feature tiers: Essentials and Plus for Amazon Cognito](https://aws.amazon.com/about-aws/whats-new/2024/11/new-feature-tiers-essentials-plus-amazon-cognito/)

@@ -18,12 +18,11 @@ author: Sébastien Stormacq
 category: podcasts
 aws-categories:
   - "Analytics"
+links:
+  - text: "The AWS SDK for Pandas"
+    link: https://github.com/aws/aws-sdk-pandas
+  - text: "Ray clusters"
+    link: https://docs.ray.io/en/latest/cluster/getting-started.html
+  - text: "Modin"
+    link: https://github.com/modin-project/modin
 ---
-
-## Links
-
-Here are the links to the tools, technologies, or articles we mentioned in this episode.
-
-- [The AWS SDK for Pandas](https://github.com/aws/aws-sdk-pandas)
-- [Ray clusters](https://docs.ray.io/en/latest/cluster/getting-started.html)
-- [Modin](https://github.com/modin-project/modin)

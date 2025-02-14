@@ -16,16 +16,17 @@ social-background: 121.png
 appleEpisodeId: 1000662777147
 aws-categories:
   - "Front-End Web & Mobile, Serverless"
+links:
+  - text: "Derek's blog about AppSync async Lambda resolvers"
+    link: https://community.aws/content/2hlqAp86YvckSS2DrVvZ1qdArqF/async-lambda-and-appsync?lang=en
+  - text: "AWS AppSync"
+    link: https://docs.aws.amazon.com/appsync/latest/devguide/what-is-appsync.html
+  - text: "AWS Lambda"
+    link: https://docs.aws.amazon.com/lambda/latest/dg/welcome.html
+  - text: "Streaming a response from a Lambda function"
+    link: https://docs.aws.amazon.com/lambda/latest/dg/configuration-response-streaming.html
+  - text: "AWS AppSync sample code"
+    link: https://github.com/aws-samples/aws-appsync-resolver-samples
+  - text: "Michael (App Sync Developer Advocate) YouTube channel"
+    link: https://www.youtube.com/@focusotter/videos
 ---
-
-
-## Links
-
-Here are the links to the tools, technologies, or articles we mentioned in this episode.
-
-- [Derek's blog about AppSync async Lambda resolvers](https://community.aws/content/2hlqAp86YvckSS2DrVvZ1qdArqF/async-lambda-and-appsync?lang=en)
-- [AWS AppSync](https://docs.aws.amazon.com/appsync/latest/devguide/what-is-appsync.html)
-- [AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html)
-- [Streaming a response from a Lambda function](https://docs.aws.amazon.com/lambda/latest/dg/configuration-response-streaming.html)
-- [AWS AppSync sample code](https://github.com/aws-samples/aws-appsync-resolver-samples)
-- [Michael (App Sync Developer Advocate) YouTube channel](https://www.youtube.com/@focusotter/videos)

@@ -16,14 +16,13 @@ social-background: 123.png
 appleEpisodeId: 1000663391167
 aws-categories:
   - "Front-End Web & Mobile"
+links:
+  - text: "Getting started with AWS Amplify"
+    link: https://docs.amplify.aws/react/start/
+  - text: "Amplify project on GitHub"
+    link: https://github.com/aws-amplify
+  - text: "Amplify Discord"
+    link: https://discord.gg/amplify
+  - text: "Integrate Amazon Bedrock services with Amplify and AppSync"
+    link: https://aws.amazon.com/blogs/mobile/use-generative-ai-and-next-js-with-aws-amplify-to-build-a-fullstack-recipe-generator/
 ---
-
-
-## Links
-
-Here are the links to the tools, technologies, or articles we mentioned in this episode.
-
-- [Getting started with AWS Amplify](https://docs.amplify.aws/react/start/)
-- [Amplify project on GitHub](https://github.com/aws-amplify)
-- [Amplify Discord](https://discord.gg/amplify)
-- [Integrate Amazon Bedrock services with Amplify and AppSync](https://aws.amazon.com/blogs/mobile/use-generative-ai-and-next-js-with-aws-amplify-to-build-a-fullstack-recipe-generator/)
