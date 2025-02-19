@@ -23,36 +23,42 @@
         <itunes:name>{{rss.owner.name}}</itunes:name>
         <itunes:email>{{rss.owner.email}}</itunes:email>
     </itunes:owner>
+
+<!-- https://help.apple.com/itc/podcasts_connect/#/itcb54353390 --> 
 {{#items}}
 <item>
     <title>{{ title }}</title>
-    <description>{{ description }}</description>
-    <content:encoded><![CDATA[{{ description }} {{#guests}}with <a href='{{link}}'>{{name}}</a>, {{title}}{{^last()}} ; {{/last()}}{{/guests}}<p/>{{& contents }}]]></content:encoded>
-    <aws:host>{{ author }}</aws:host>
-    <pubDate>{{ publicationDate}}</pubDate>
-    <link>{{ permalink }}index.html</link>
     <enclosure url="{{ medialink }}{{ file }}" length="{{ size }}" type="audio/mpeg"/>
     <guid isPermaLink="false">{{ file }}</guid>
-    {{#empty(guests)}}
-    <aws:guest>Sébastien Stormacq, Developer Advocate, AWS</aws:guest>
-    {{/empty(guests)}}
-    {{#guests}}
-    <aws:guest>
-    <![CDATA[ <a href='{{link}}'>{{name}}</a>, {{title}}{{^last()}} ; {{/last()}}]]>
-    </aws:guest>
-    {{/guests}}
-    <itunes:title>{{ title }}</itunes:title>
-    <itunes:subtitle/>
-    <itunes:summary>{{description}}</itunes:summary>
-    <itunes:author>{{ author }}</itunes:author>
+
+    <pubDate>{{ publicationDate}}</pubDate>
+    <description>{{ description }}</description>
+    <content:encoded>
+		<![CDATA[{{ description }}<p/>{{#guests}}With <a href='{{link}}'>{{name}}</a>, {{title}}{{^last()}} ; {{/last()}}{{/guests}}<p/>{{^empty(links)}}<li>{{#links}}<ul><a href="{{ link }}">{{ text }}</a></ul>{{/links}}</li>{{/empty(links)}}{{& contents }}]]>
+		</content:encoded>
+    <link>{{ permalink }}index.html</link>
     <itunes:image href="{{ imagelink }}{{social-background}}"/>
     <itunes:duration>{{ duration }}</itunes:duration>
-    <itunes:episode>{{ episode }}</itunes:episode>
-    {{#empty(aws-categorie)}}<aws:categories/>{{/empty(aws-categorie)}}
-    {{^empty(aws-categorie)}}
-    <aws:categories>{{# aws-categories }}{{.}}{{^last()}}, {{/last()}}{{/ aws-categories }}</aws:categories>
-    {{/empty(aws-categorie)}}
     <itunes:explicit>no</itunes:explicit>
+    
+    <itunes:title>{{ title }}</itunes:title>
+    <itunes:subtitle/>
+    <itunes:episode>{{ episode }}</itunes:episode>
+
+		<aws:host>{{ author }}</aws:host>
+    {{#guests}}
+    <aws:guest>
+		<aws:guest-name>{{name}}</aws:guest-name>
+		<aws:guest-title>{{title}}</aws:guest-title>
+		<aws:guest-link>{{link}}</aws:guest-link>
+    <aws:guest-display><![CDATA[ <a href='{{link}}'>{{name}}</a>, {{title}}{{^last()}} ; {{/last()}}]]></aws:guest-display>
+    </aws:guest>
+    {{/guests}}
+		<!-- <itunes:summary>{{description}}</itunes:summary> -->
+    {{#empty(aws-categories)}}<aws:categories/>{{/empty(aws-categories)}}
+    {{^empty(aws-categories)}}
+    <aws:categories>{{# aws-categories }}<aws:category>{{.}}</aws:category>{{/ aws-categories }}</aws:categories>
+    {{/empty(aws-categories)}}
 </item>
 {{/items}}
 
