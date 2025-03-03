@@ -21,7 +21,7 @@ aws-categories:
   - "Developer Tools"
   - "Compute"
 links:
-  - text: "Elastic Cache"
+  - text: "ElastiCache"
     link: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/WhatIs.html
   - text: "Memory DB"
     link: https://docs.aws.amazon.com/memorydb/latest/devguide/what-is-memorydb.html
