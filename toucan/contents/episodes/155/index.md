@@ -18,6 +18,8 @@ aws-categories:
 links:
   - text: "AWS documentation home page"
     link: https://docs.aws.amazon.com
+  - text: "AWS Documentation update — progress, challenges, and what’s next for 2025"
+    link: https://aws.amazon.com/blogs/aws-insights/aws-documentation-update-progress-challenges-and-whats-next-for-2025/
   - text: "AWS Decision Guides"
     link: https://aws.amazon.com/getting-started/decision-guides
   - text: "Corey Quinn re:Caps re:Invent in the AWS Developers Podcast, episode 142"
