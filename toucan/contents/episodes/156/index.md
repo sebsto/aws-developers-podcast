@@ -8,11 +8,11 @@ guests:
   - name: "Rajesh Pandey"
     link: https://www.linkedin.com/in/rajeshpandeyiiit/
     title: "Principal Software Development Engineer, AWS Lambda"
-episode: 155
+episode: 156
 duration: "00:42:49" 
 size: 53962620
-file: 155.mp3	
-social-background: 155.png
+file: 156.mp3	
+social-background: 156.png
 publication: 2025-03-14 04:00:00 +0100
 author: "Sébastien Stormacq"
 category: podcasts
