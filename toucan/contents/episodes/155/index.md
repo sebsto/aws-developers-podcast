@@ -6,8 +6,8 @@ guests:
     link: "https://www.linkedin.com/in/gregorywilson/ "
     title: "Director Doc, SDK, and CLI, AWS"
 episode: 155
-duration: "00:50:20" 
-size: 96637099
+duration: "00:50:05" 
+size: 71274987
 file: 155.mp3	
 social-background: 155.png
 publication: 2025-03-07 04:00:00 +0100
