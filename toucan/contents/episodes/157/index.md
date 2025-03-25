@@ -17,7 +17,7 @@ publication: 2025-03-21 04:00:00 +0100
 author: "Sébastien Stormacq"
 category: podcasts
 aws-categories:
-  - "Serverless"
+  - "Developer Tools"
 links:
   - text: "DuoLingo"
     link: https://www.duolingo.com/
