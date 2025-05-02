@@ -16,6 +16,6 @@ category: podcasts
 aws-categories:
   - "Training & Certification"
 links:
-- text: "AWS Certifications
+- text: "AWS Certifications"
   link: https://aws.amazon.com/certification/
 ---
