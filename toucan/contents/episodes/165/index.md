@@ -1,5 +1,5 @@
 ---
-title:  "Inside Valkey GLIDE: building a next-gen Vakey client library with Rust"
+title:  "Inside Valkey GLIDE: building a next-gen Valkey client library with Rust"
 description: "This week on the AWS Developers Podcast, we sit down with Avi Fenesh to explore the evolution of Redis into Valkey, an open-source alternative born after Redis changed its licensing model. They take a deep dive into Valkey GLIDE, a new client library designed to provide a seamless developer experience, making it easier to connect to Valkey with zero configuration. The conversation covers the architectural decisions behind Valkey GLIDE, its implementation in Rust for performance and safety, and how it supports multiple programming languages. Avi explains how the AWS-led project has grown into a thriving community-driven effort, placing developer experience, security, and scalability at its core. Topics include API design, Unix domain socket security, and how Valkey GLIDE handles complex scenarios like topology changes in clustered environments. Whether you’re building with Redis, experimenting with Rust, or just curious about the future of open source in-memory database solutions, this episode offers insights into how Valkey GLIDE is reshaping client-library development with a strong focus on community and usability."
 guests:
   - name: "Avi Fenesh"
