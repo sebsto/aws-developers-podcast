@@ -7,7 +7,7 @@ guests:
     title: "Solution Architect, GenAI Lead, Ryanair"
   - name: "Krzysztof Głuszczyk"
     link: https://www.linkedin.com/in/kgluszczyk/
-    title: "Software Engineer, Ryanair"
+    title: "Principal Software Engineer, GenAI Lead, Ryanair"
 episode: 167
 duration: "00:36:12" 
 size: 44602895
