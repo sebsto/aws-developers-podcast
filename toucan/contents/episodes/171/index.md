@@ -9,7 +9,7 @@ guests:
   - name: "Simon Hanmer"
     link: https://www.linkedin.com/in/simonhanmer/
     title: "UK&I Principal Consultant, GlobalLogic"
-episode: 170
+episode: 171
 duration: "00:38:46" 
 size: 49185003
 file: 171.mp3
