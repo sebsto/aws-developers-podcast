@@ -16,7 +16,7 @@ category: podcasts
 aws-categories:
   - "Analytics"
 links:
-- text: "The previosu episode of the AWS Developers Podcast talking about the golden jacket"
+- text: "The previous episode of the AWS Developers Podcast talking about the golden jacket"
   link: https://developers.podcast.go-aws.com/web/episodes/163/index.html
 - text: "Jupyter notebooks"
   link: https://jupyter.org/
