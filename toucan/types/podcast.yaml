@@ -1,0 +1,14 @@
+id: podcast
+paths: 
+  - episodes
+
+properties:
+    title:
+        type: string
+        required: true
+    publication:
+        type: date
+        required: true
+    image:
+        type: asset
+        required: false

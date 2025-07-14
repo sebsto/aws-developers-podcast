@@ -5,7 +5,7 @@
   "scripts": {
     "start": "webpack --watch",
     "build": "webpack",
-    "copy": "[[ ! -d build ]] && exit -1; echo 'Copying assets from build to toucan directory' && cp build/css/* toucan/themes/aws_podcasts/assets/css && cp build/fonts/* toucan/themes/aws_podcasts/assets/fonts && cp build/images/* toucan/themes/aws_podcasts/assets/images && cp build/js/* toucan/themes/aws_podcasts/assets/js && cp build/index.html toucan/themes/aws_podcasts/assets/_index.html && echo 'Done'",
+    "copy": "[[ ! -d build ]] && exit -1; echo 'Copying assets from build to toucan directory' && cp build/css/* toucan/templates/aws_podcasts/assets/css && cp build/fonts/* toucan/templates/aws_podcasts/assets/fonts && cp build/images/* toucan/templates/aws_podcasts/assets/images && cp build/js/* toucan/templates/aws_podcasts/assets/js && cp build/index.html toucan/templates/aws_podcasts/assets/_index.html && echo 'Done'",
     "dist": "/usr/local/bin/toucan generate ./toucan ./dist --base-url https://developers.podcast.go-aws.com/web",
     "preview": "/usr/local/bin/toucan generate ./toucan ./dist --base-url https://preview-en.podcast.go-aws.com"
   },
