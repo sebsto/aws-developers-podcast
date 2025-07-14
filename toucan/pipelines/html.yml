@@ -1,0 +1,63 @@
+id: html
+
+assets:
+    behaviors:
+        - id: copy
+    properties:
+        - action: add
+          property: css
+          resolvePath: true
+          input:
+                name: "style" 
+                ext: "css"
+        - action: add
+          property: js
+          resolvePath: true
+          input:
+                name: "main" 
+                ext: "js"
+        - action: set
+          property: image
+          resolvePath: true
+          input:
+                name: "cover" 
+                ext: "jpg"
+
+queries:
+    latest:
+        contentType: podcast
+        scope: detail
+        limit: 1
+        orderBy:
+            - key: publication
+              direction: desc
+    podcasts:
+        contentType: podcast
+        scope: detail
+
+contentTypes: 
+    include:
+        - page
+        - podcast
+
+iterators:
+    podcast.pagination:
+        contentType: podcast
+        scope: detail
+        limit: 10
+        orderBy:
+            - key: publication
+              direction: desc
+
+engine: 
+    id: mustache
+    options:
+        contentTypes: 
+            page:
+                view: "pages.default"
+            podcast:
+                view: "pages.detail"
+output:
+    path: "{{slug}}"
+    file: index
+    ext: html

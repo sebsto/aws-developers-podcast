@@ -36,18 +36,4 @@ links:
     link: https://aws.amazon.com/blogs/aws/amazon_simple_q/
   - text: "Amazon EC2 beta  (21 Apr 2005)"
     link: https://aws.amazon.com/blogs/aws/amazon_ec2_beta/
- 
-links:
-  - text: "Jeff's post to announce the 20th anniversary of the AWS News blog channel"
-    link: https://www.linkedin.com/feed/update/urn:li:activity:7261779180458000384/
-  - text: "The very first post on the AWS News blog channel (09 Nov 2004)"
-    link: https://aws.amazon.com/blogs/aws/welcome/
-  - text: "Amazon SQS beta (21 Apr 2005)"
-    link: https://aws.amazon.com/blogs/aws/simple_queue_se/
-  - text: "Amazon S3 launch (14 Mar 2006)"
-    link: https://aws.amazon.com/blogs/aws/amazon_s3/
-  - text: "Amazon SQS launch (13 Jul 2006)"
-    link: https://aws.amazon.com/blogs/aws/amazon_simple_q/
-  - text: "Amazon EC2 beta (25 Aug 2006)"
-    link: https://aws.amazon.com/blogs/aws/amazon_ec2_beta/
 ---

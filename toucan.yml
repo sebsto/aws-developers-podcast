@@ -1,0 +1,11 @@
+targets:
+    - name: dev
+      config: toucan
+      input: toucan
+      default: true
+
+    - name: live
+      config: toucan
+      input: toucan
+      #output: /tmp/output
+      url: "https://developers.podcast.go-aws.com/web/"

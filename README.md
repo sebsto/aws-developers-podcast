@@ -29,7 +29,7 @@ Node version used is `23.3.0` as indicated by the .nvmrc file.
 
 > [!IMPORTANT] 
 > `index.html` was manually split to `mustache` template files.
-> Any changes to `index.html` must be reported manually to the corresponding `.mustache` files in the `toucan/themes/aws_podcasts` directory
+> Any changes to `index.html` must be reported manually to the corresponding `.mustache` files in the `toucan/templates/aws_podcasts` directory
 
 > [!NOTE]
 > To install `toucan`: 
