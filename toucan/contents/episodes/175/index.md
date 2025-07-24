@@ -1,6 +1,6 @@
 ---
 title: "The power of MCP servers with Amazon Bedrock agents"
-description: ""
+description: "In this episode, we dive into the world of Amazon Bedrock Agent and MCP with special guest Vivek Raja, an AWS machine learning hero. Recorded live from the AWS Summit in Bangalore, we explore the evolving landscape of AI agents, the significance of the Model Context Protocol (MCP), and how these technologies are shaping the future of development. Join us as we discuss the practical applications, challenges, and opportunities that come with integrating AI agents into your workflow. Whether you're a seasoned developer or just starting out, this episode offers insights into the cutting-edge tools and protocols that are transforming the industry. Tune in and discover how to use these technologies in your projects."
 guests:
   - name: "Vivek Raja"
     link: https://www.linkedin.com/in/meetvivekraja/
