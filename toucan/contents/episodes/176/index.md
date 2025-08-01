@@ -6,8 +6,8 @@ guests:
     link: https://www.linkedin.com/in/jones-zachariah-noel-n/
     title: "Sr DevRel Engineer @ New Relic | AWS Serverless Hero"
 episode: 176
-duration: "00:29:04" 
-size: 35336417
+duration: "00:28:33" 
+size: 34776647
 file: 176.mp3
 social-background: 176.png
 publication: 2025-08-01 04:00:00 +0100
