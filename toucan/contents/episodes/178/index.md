@@ -26,6 +26,6 @@ aws-categories:
   - "Diversity, Equity, and Inclusion"
 links:
 - text: "Woman in Tech @ AWS"
-  link:https://aws.amazon.com/careers/life-at-aws-how-aws-is-helping-women-and-girls-succeed-in-technology-careers/
+  link: https://aws.amazon.com/careers/life-at-aws-how-aws-is-helping-women-and-girls-succeed-in-technology-careers/
 
 ---
