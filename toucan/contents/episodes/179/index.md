@@ -4,7 +4,7 @@ description: "In this episode, Jacob Gillespie, co-founder and CTO of Depot, rev
 guests:
   - name: "Jacob Gillespie"
     link:https://www.linkedin.com/in/jacobwgillespie/
-    title: "Co-Founder & CTO @ Depot"
+    title: "Co-Founder & CTO, Depot"
 episode: 179
 duration: "00:40:14" 
 size: 46114930
