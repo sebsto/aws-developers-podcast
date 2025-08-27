@@ -1,0 +1,20 @@
+site:
+    settings:
+        path: toucan
+blocks:
+    path: toucan/blocks
+contents:
+    path: toucan/contents
+pipelines:
+    path: toucan/pipelines
+templates:
+    location:
+        path: toucan/templates
+    current:
+        path: aws_podcasts
+types:
+    path: toucan/types
+dataTypes:
+    date:
+        input:
+            format: "yyyy-MM-dd HH:mm:ss Z"
