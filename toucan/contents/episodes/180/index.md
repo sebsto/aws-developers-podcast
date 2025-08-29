@@ -13,7 +13,7 @@ duration: "00:42:14"
 size: 52322349
 file: 180.mp3
 social-background: 180.png
-publication: 2025-08-29 04:00:00 +0100
+publication: 9999-08-29 04:00:00 +0100
 author: "Sébastien Stormacq"
 category: podcasts
 aws-categories:
