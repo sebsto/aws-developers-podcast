@@ -1,26 +1,21 @@
 ---
-title: "When AI meets biology: Using LLM to find natural alternatives to antibiotics"
-description: "In this episode, we explore how Phagos, a French biotech startup, combines biology, data science, and cloud computing to combat antimicrobial resistance. Their innovative approach uses bacteriophages - natural predators of bacteria - as an alternative to antibiotics. We discuss how they leverage AWS services, including SageMaker and batch processing, to analyze genomic data and train specialized language models that can predict phage-bacteria interactions. Our guests explain how they process terabytes of genetic data, train and deploy AI models, and create user-friendly interfaces for their lab scientists. This fascinating conversation reveals how cloud computing and artificial intelligence are revolutionizing biotechnology and potentially helping solve one of this century's biggest health challenges."
+title: "Gaming Development Demystified"
+description: "In this episode, we dive deep into the world of game development with our special guest Matheus, a former game developer turned AWS Developer Advocate. We explore why and how to get started in game development, discussing everything from game engines to the technical challenges of creating games. Matheus shares his personal journey from Brazil to becoming a game developer, and provides practical advice for developers looking to enter the gaming industry. We cover essential topics like game physics, matchmaking engines, testing strategies, and the intersection between game development and cloud computing. Whether you're a seasoned developer curious about gaming or a complete beginner, this episode offers valuable insights into the creative and technical aspects of game development. This episode is also available on video https://www.youtube.com/watch?v=9RTglcxR9QA"
 guests:
-  - name: "András Asbóth"
-    link: https://www.linkedin.com/in/andr%C3%A1s-asb%C3%B3th-95b43b1a4/
-    title: "Bioinformatician / Cloud Dev, Phagos"
-  - name: "Andrea Di Gioacchino"
-    link: https://www.linkedin.com/in/adigioacchino/
-    title: "Head of data, Phagos"
+  - name: "Matheus Guimaraes"
+    link: https://www.linkedin.com/in/codingmatheus/
+    title: "Developer Advocate, AWS"
 episode: 180
-duration: "00:42:14" 
-size: 52322349
+duration: "00:50:03" 
+size: 62356694
 file: 180.mp3
 social-background: 180.png
-publication: 9999-08-29 04:00:00 +0100
+publication: 2025-09-05 04:00:00 +0100
 author: "Sébastien Stormacq"
 category: podcasts
 aws-categories:
-  - "Machine Learning & AI"
+  - "General"
 links:
-- text: "Phagos"
-  link: https://phagos.org/
-- text: "NextFlow"
-  link: https://www.nextflow.io/docs/latest/index.html
+- text: "Watch this episode on video"
+  link: https://www.youtube.com/watch?v=9RTglcxR9QA
 ---
