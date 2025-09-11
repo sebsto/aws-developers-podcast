@@ -1,23 +1,24 @@
 ---
-title: "When AI meets biology: Using LLM to find natural alternatives to antibiotics"
-description: "In this episode, we explore how Phagos, a French biotech startup, combines biology, data science, and cloud computing to combat antimicrobial resistance. Their innovative approach uses bacteriophages - natural predators of bacteria - as an alternative to antibiotics. We discuss how they leverage AWS services, including SageMaker and batch processing, to analyze genomic data and train specialized language models that can predict phage-bacteria interactions. Our guests explain how they process terabytes of genetic data, train and deploy AI models, and create user-friendly interfaces for their lab scientists. This fascinating conversation reveals how cloud computing and artificial intelligence are revolutionizing biotechnology and potentially helping solve one of this century's biggest health challenges."
+title: "Scaling E-commerce with Serverless: The Moonpig Story"
+description: "In this episode, we dive deep into Moonpig's migration journey from an on-premise ASP.NET monolithic application to a fully serverless architecture on AWS. Richard Pearson, Head of Engineering, and Alexis Lowe, Principal Engineer at Moonpig, share their experience transforming a 25-year-old e-commerce platform. They discuss how they tackled the challenges of migrating from SQL Server to DynamoDB, implemented multi-region deployment, and achieved seamless scalability for their peak trading periods. Learn about their \"no VPC\" policy, their approach to observability, and how they organized their teams to embrace DevOps culture. This episode is particularly relevant for organizations considering a similar journey to serverless architecture or looking to scale their platforms globally."
 guests:
-  - name: "András Asbóth"
-    link: https://www.linkedin.com/in/andr%C3%A1s-asb%C3%B3th-95b43b1a4/
-    title: "Bioinformatician / Cloud Dev, Phagos"
+  - name: "Richard Pearson"
+    link: https://www.linkedin.com/in/catdevnull/
+    title: "Head of Engineering, Moonpig"
+  - name: "Alexis Lowe"
+    link: https://www.linkedin.com/in/alexis-lowe-75426382/ 
+    title: "Principal Engineer, Moonpig"
 episode: 183
-duration: "00:42:14" 
-size: 52322349
+duration: "00:37:10" 
+size: 45282755
 file: 183.mp3
 social-background: 183.png
-publication: 9999-08-29 04:00:00 +0100
+publication: 2025-09-26 04:00:00 +0100
 author: "Sébastien Stormacq"
 category: podcasts
 aws-categories:
-  - "Machine Learning & AI"
+  - "Serverless"
 links:
-- text: "Phagos"
-  link: https://phagos.org/
-- text: "NextFlow"
-  link: https://www.nextflow.io/docs/latest/index.html
+- text: "Moonpig"
+  link: https://moonpig.com
 ---
