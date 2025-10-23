@@ -9,6 +9,10 @@ import * as origins from 'aws-cdk-lib/aws-cloudfront-origins';
 import * as acm from 'aws-cdk-lib/aws-certificatemanager';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as wafv2 from 'aws-cdk-lib/aws-wafv2';
+import * as sns from 'aws-cdk-lib/aws-sns';
+import * as subscriptions from 'aws-cdk-lib/aws-sns-subscriptions';
+import * as events from 'aws-cdk-lib/aws-events';
+import * as targets from 'aws-cdk-lib/aws-events-targets';
 
 import { Platform } from 'aws-cdk-lib/aws-ecr-assets';
 import { Construct } from 'constructs';
@@ -30,6 +34,15 @@ const getGithubConnectionArn = (scope: Construct): string => {
 export class PipelineStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
+
+    // Create SNS topic for build failure notifications
+    const buildFailureTopic = new sns.Topic(this, 'BuildFailureTopic', {
+      topicName: 'aws-developers-podcast-build-failures',
+      displayName: 'AWS Developers Podcast Build Failures'
+    });
+
+    // Add email subscription
+    buildFailureTopic.addSubscription(new subscriptions.EmailSubscription('stormacq@amazon.com'));
   
     // create an image and upload it to the ECR repo created during the bootstrap
     // must disable containerd in docker for this to work
@@ -60,6 +73,7 @@ export class PipelineStack extends cdk.Stack {
     const pipeline = new codepipeline.Pipeline(this, 'DeploymentPipeline', {
       pipelineName: 'AWSDevelopersPodcastPipeline',
       crossAccountKeys: false, // If you're deploying to the same account
+      pipelineType: codepipeline.PipelineType.V2,
       executionMode: codepipeline.ExecutionMode.QUEUED
     });
 
@@ -108,6 +122,29 @@ export class PipelineStack extends cdk.Stack {
         }),
       ],
     });
+
+    // Create EventBridge rule for pipeline failures
+    const pipelineFailureRule = new events.Rule(this, 'PipelineFailureRule', {
+      eventPattern: {
+        source: ['aws.codepipeline'],
+        detailType: ['CodePipeline Pipeline Execution State Change'],
+        detail: {
+          state: ['FAILED'],
+          pipeline: [pipeline.pipelineName]
+        }
+      }
+    });
+
+    // Add SNS topic as target for the rule
+    pipelineFailureRule.addTarget(new targets.SnsTopic(buildFailureTopic, {
+      message: events.RuleTargetInput.fromText(
+        'AWS Developers Podcast pipeline failed!\n\n' +
+        'Pipeline: ${detail.pipeline}\n' +
+        'Execution ID: ${detail.execution-id}\n' +
+        'State: ${detail.state}\n' +
+        'Time: ${time}'
+      )
+    }));
 
     // There is no L2 construct for scheduler yet 
     // https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_scheduler-readme.html
