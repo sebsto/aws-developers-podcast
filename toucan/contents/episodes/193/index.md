@@ -1,4 +1,3 @@
-
 ---
 title: "Native Speed, Modern Safety: Swift for Backend Development"
 description: "Join us as we explore Swift beyond iOS with Sebastien Stormacq, AWS Developer Advocate and Swift specialist. Discover why Swift is becoming a compelling choice for server-side development, offering native compilation, memory safety without garbage collection, and modern concurrency features that deliver exceptional performance and cost efficiency.
