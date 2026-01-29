@@ -15,7 +15,7 @@ duration: "00:49:01"
 size: 93650111
 file: 193.mp3
 social-background: 193.png
-publication: 2026-01-28 04:00:00 +0100
+publication: 2026-01-29 08:00:00 +0100
 author: "Romain Jourdan"
 category: podcasts
 aws-categories:
