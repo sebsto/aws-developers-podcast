@@ -12,10 +12,10 @@ copyright_year: "2023-2025"
 french_podcast_url: "https://francais.podcast.go-aws.com"
 developer_podcast_url: "https://developers.podcast.go-aws.com"
 youtube: "https://www.youtube.com/playlist?list=PLZ_TUMnTqfu8a3992JRToUOzAhnwONZ7I"
-linkedin: "https://www.linkedin.com/in/sebastienstormacq/"
+linkedin: "https://www.linkedin.com/in/rjourdan/"
 instagram: "https://www.instagram.com/awsdevelopers"
-twitter: "https://x.com/sebsto"
-bluesky: "https://bsky.app/profile/sebsto.bsky.social"
+twitter: "https://x.com/rjourdan"
+bluesky: "https://bsky.app/profile/rjourdan.com"
 
 # data appearing on the home page (home/text.mustache)
 sources:
@@ -45,8 +45,8 @@ imagelink: "https://developers.podcast.go-aws.com/img/"
 rss:
   artwork: podcast-artwork.png
   owner:
-    name: "Sébastien Stormacq"
-    email: "stormacq@amazon.com"
+    name: "Romain Jourdan"
+    email: "romjour@amazon.ch"
 
 # op3.dev dashboard page 
 #

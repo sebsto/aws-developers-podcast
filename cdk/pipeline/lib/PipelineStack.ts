@@ -42,7 +42,7 @@ export class PipelineStack extends cdk.Stack {
     });
 
     // Add email subscription
-    buildFailureTopic.addSubscription(new subscriptions.EmailSubscription('stormacq@amazon.com'));
+    buildFailureTopic.addSubscription(new subscriptions.EmailSubscription('romjour@amazon.com'));
   
     // create an image and upload it to the ECR repo created during the bootstrap
     // must disable containerd in docker for this to work
