@@ -1,9 +1,7 @@
 ---
 title: "Native Speed, Modern Safety: Swift for Backend Development"
 description: "Join us as we explore Swift beyond iOS with Sebastien Stormacq, AWS Developer Advocate and Swift specialist. Discover why Swift is becoming a compelling choice for server-side development, offering native compilation, memory safety without garbage collection, and modern concurrency features that deliver exceptional performance and cost efficiency.
-
 Seb shares how Apple processes billions of daily requests using Swift on AWS infrastructure, achieving 40% better performance and 30% lower costs when migrating services from Java. We dive into the technical advantages that make Swift competitive with traditional backend languages, explore the vibrant server-side ecosystem with frameworks like Vapor and Hummingbird, and discuss practical implementations including serverless architectures on AWS Lambda.
-
 Whether you're a Swift developer curious about server-side possibilities, a full-stack developer looking to unify your tech stack, or a backend engineer evaluating language options, this conversation offers practical insights into Swift's capabilities beyond the client."
 guests:
   - name: "Sebastien Stormacq"
@@ -22,6 +20,10 @@ aws-categories:
   - "Serverless"
   - "Programming Languages"
 links:
+- text: "Download the Swift Expert Power for Kiro"
+  link: https://github.com/sebsto/swift-kiro-power
+- text: "The Visual Studio Code extension for Swift is now available on Open VSX Registry"
+  link: https://open-vsx.org/extension/swiftlang/swift-vscode
 - text: "Interview with Chris Lattner: From Swift to Mojo and High-Performance AI Engineering"
   link: https://youtu.be/Fxp3131i1yE?si=-LE7SvPGbcwGcXue
 - text: "Swift AWS Lambda Runtime Repository"
