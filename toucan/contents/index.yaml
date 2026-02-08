@@ -11,7 +11,7 @@ dark_mode: "Dark mode"
 copyright_year: "2023-2025"
 french_podcast_url: "https://francais.podcast.go-aws.com"
 developer_podcast_url: "https://developers.podcast.go-aws.com"
-youtube: "https://www.youtube.com/playlist?list=PLZ_TUMnTqfu8a3992JRToUOzAhnwONZ7I"
+youtube: "https://www.youtube.com/@AWSDevelopersPodcast"
 linkedin: "https://www.linkedin.com/in/rjourdan/"
 instagram: "https://www.instagram.com/awsdevelopers"
 twitter: "https://x.com/rjourdan"
@@ -23,7 +23,7 @@ sources:
   amazon_music: "https://music.amazon.com/podcasts/f8bf7630-2521-4b40-be90-c46a9222c159/aws-developers-podcast"
   apple_podcast: "https://podcasts.apple.com/be/podcast/aws-developers-podcast/id1574162669"
   spotify: "https://open.spotify.com/show/7rQjgnBvuyr18K03tnEHBI"
-  youtube: "https://www.youtube.com/playlist?list=PLZ_TUMnTqfu8a3992JRToUOzAhnwONZ7I"
+  youtube: "https://www.youtube.com/@AWSDevelopersPodcast"
 
 podcast_description: 
    title: "About the podcast"
