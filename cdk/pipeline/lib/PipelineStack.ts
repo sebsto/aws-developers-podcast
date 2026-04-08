@@ -161,19 +161,19 @@ export class PipelineStack extends cdk.Stack {
     }));
     
     // Create the schedule
-    const scheduleFriday = new scheduler.CfnSchedule(this, 'ADPFridayPipelineSchedule', {
+    const scheduleWednesday = new scheduler.CfnSchedule(this, 'ADPWednesdayPipelineSchedule', {
       flexibleTimeWindow: {
         mode: 'OFF'
       },
-      scheduleExpression: 'cron(0 4 ? * FRI *)',
+      scheduleExpression: 'cron(0 4 ? * WED *)',
       scheduleExpressionTimezone: 'UTC',
       target: {
         arn: pipeline.pipelineArn,
         roleArn: schedulerRole.roleArn,
         input: JSON.stringify({}),
       },
-      name: 'developers-podcast-friday-pipeline',
-      description: 'Triggers the Developers Podcast pipeline every Friday at 4am UTC',
+      name: 'developers-podcast-wednesday-pipeline',
+      description: 'Triggers the Developers Podcast pipeline every Wednesday at 4am UTC',
       state: 'ENABLED',
     });
     
