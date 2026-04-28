@@ -165,15 +165,15 @@ export class PipelineStack extends cdk.Stack {
       flexibleTimeWindow: {
         mode: 'OFF'
       },
-      scheduleExpression: 'cron(0 4 ? * WED *)',
-      scheduleExpressionTimezone: 'UTC',
+      scheduleExpression: 'cron(0 9 ? * WED *)',
+      scheduleExpressionTimezone: 'Europe/Paris',
       target: {
         arn: pipeline.pipelineArn,
         roleArn: schedulerRole.roleArn,
         input: JSON.stringify({}),
       },
       name: 'developers-podcast-wednesday-pipeline',
-      description: 'Triggers the Developers Podcast pipeline every Wednesday at 4am UTC',
+      description: 'Triggers the Developers Podcast pipeline every Wednesday at 9am CET (7am UTC)',
       state: 'ENABLED',
     });
     
