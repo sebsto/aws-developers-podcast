@@ -1,5 +1,5 @@
 ---
-title: "Episode 200: Java & Spring AI Are Winning the Enterprise AI Race — with James Ward & Josh Long"
+title: "Spring AI and AgentCore: Building Enterprise AI Agents in Java"
 description: "It's a milestone — episode 200! And to mark the occasion, we're doing something we've never done before: hosting two guests at the same time. James Ward (Principal Developer Advocate at AWS) and Josh Long (Spring Developer Advocate at Broadcom, Java Champion, and host of 'A Bootiful Podcast') join Romain for a wide-ranging conversation about why Java and Spring AI are becoming the go-to stack for enterprise AI development.
 We kick off with Spring AI's rapid evolution — from its 1.0 GA release to the just-released 2.0.0-M3 milestone — and why it's far more than an LLM wrapper. James and Josh break down how Spring AI provides clean abstractions across 20+ models and vector stores, with type-safe, compile-time validation that prevents the kind of string-typo failures that plague dynamically typed AI code in production.
 The numbers back it up: an Azul study found that 62% of surveyed companies are building AI solutions on Java and the JVM. James and Josh explain why — enterprise teams need security, observability, and scalability baked in, not bolted on.
