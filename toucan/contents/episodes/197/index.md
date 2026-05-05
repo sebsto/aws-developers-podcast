@@ -1,5 +1,5 @@
 ---
-title: "Mike Chambers: From OpenClaw to AI Functions — What's Next for Agentic Development"
+title: "Your AI Agent Can't Multitask — Here's How to Fix It"
 description: "Mike Chambers is back — calling in from the other side of the globe — and he brought a lot to unpack. We pick up threads from our first conversation and follow them into genuinely exciting (and occasionally mind-bending) territory.
 We start with OpenClaw, the open-source agentic framework that took the developer world by storm. Mike shares his take on why it happened now — not just what it is — and why the timing was almost inevitable given how developers had been quietly experimenting with local agents for the past year.
 Then we go deep on asynchronous tool calling — a project Mike has been working on since mid-2024 that finally works reliably, thanks to more capable models. The idea: let your agent kick off a long-running task, keep the conversation going naturally, and have the result arrive without interrupting the flow. Mike walks through how he built this on top of Strands Agents SDK and why he's planning to propose it as a contribution to the open-source project.
