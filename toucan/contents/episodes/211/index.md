@@ -2,7 +2,13 @@
 title: "Why Your Agent Evaluations Will Fail You (and How to Fix Them Before Production)"
 description: "Anthropic deprecated Sonnet 3.5. Some of Xelix's pipelines migrated smoothly. Others broke — and customers noticed within hours. What separated the two? Evaluation.
 Paul Solomon and James Price Farr have spent 5+ years building AI systems that process millions of invoices for enterprise customers. In this episode, they share the evaluation-first framework that now saves them every time a model changes, an orchestration layer fails, or an agent picks the wrong tool.
-We cover: why monitoring tool calls matters more than monitoring outputs, the 3 tiers of automation (and why most teams jump to agents too early), how extended thinking on Bedrock actually reduced their costs, why steering files hit 100% accuracy where prompts alone capped at 82%, and how to earn customer trust by starting at 10% automation and scaling up only after you prove reliability.
+Key takeaways:
+- Evaluation-first, not evaluation-after — Retrofitting evaluation on an agent already in production is painful. Build your eval pipeline before you build the agent.
+- Monitor tool calls, not just outputs — If the agent isn't selecting the right tools, nothing downstream will be correct. Tool-call monitoring is your leading indicator.
+- 3 tiers of automation — Not everything needs an agent. Rules-based → single LLM call → agentic system. Pick the simplest tier that solves the problem.
+- Extended thinking tames token explosion — After migrating to newer, more verbose models, enabling extended thinking (with a budget) moved reasoning out of expensive output tokens and brought costs back under control.
+- Human-in-the-loop by default — Start with human review on every output, then earn trust toward "touchless" automation as customers gain confidence.
+- Pragmatism wins — Use whatever technology works best for the problem. Not every feature needs an LLM.
 Recorded live at AWS Summit London."
 guests:
   - name: "Paul Solomon"
