@@ -22,7 +22,7 @@ duration: "00:56:01"
 size: 0
 file: 215.mp3
 social-background: 215.png
-publication: 2026-07-08 09:00:00 +0200
+publication: 2026-07-01 09:00:00 +0200
 author: "Romain Jourdan"
 category: podcasts
 aws-categories:
