@@ -25,7 +25,7 @@ const getGithubConnectionArn = (scope: Construct): string => {
     case '401955065246': // Development account
       return 'arn:aws:codestar-connections:eu-central-1:401955065246:connection/1a3722f1-bd2f-40d4-badf-accd624640c6';
     case '533267385481': // Production account
-      return 'arn:aws:codestar-connections:us-west-2:533267385481:connection/5cbad601-4ff6-4618-a47e-02a7495d90fe';
+      return 'arn:aws:codestar-connections:us-west-2:533267385481:connection/71d399bc-b280-4066-b56a-03095ff9cc8f';
     default:
       throw new Error(`No GitHub connection ARN configured for account ${account}`);
   }
