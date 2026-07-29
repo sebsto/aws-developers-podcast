@@ -1,4 +1,3 @@
-
 ---
 title: "How Prime Video's engineers manage agents, not code"
 description: "Prime Video serves over 300 million monthly customers across 240+ territories and 8,000+ device types. Lilia Abaibourova leads the AI-native transformation there. Prime Video started early, adopting CodeWhisperer as soon as it became available in preview, progressing through Amazon Q Developer, and now using Kiro to put agentic development in the hands of engineers, product managers, and designers.
